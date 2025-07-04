@@ -173,3 +173,23 @@ circleWrapper5.addEventListener("mouseleave", () => {
   });
 
 
+const toggleBtn = document.getElementById('toggleBtn');
+const extraText = document.getElementById('extraText');
+const plusIconClass = 'ri-add-line';
+const subtractIconClass = 'ri-subtract-fill';
+
+toggleBtn.addEventListener('click', () => {
+  const isHidden = extraText.classList.contains('hidden');
+  
+  if (isHidden) {
+    extraText.classList.remove('hidden');
+    // switch icon to subtract
+    toggleBtn.querySelector('i').classList.remove(plusIconClass);
+    toggleBtn.querySelector('i').classList.add(subtractIconClass);
+  } else {
+    extraText.classList.add('hidden');
+    // switch icon back to plus
+    toggleBtn.querySelector('i').classList.remove(subtractIconClass);
+    toggleBtn.querySelector('i').classList.add(plusIconClass);
+  }
+});
