@@ -6,6 +6,83 @@ html {
 }
 
 
+
+#custom-arrows button.slick-arrow {
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #ddd;
+    transition: .3s;
+}
+
+#custom-arrows button.slick-next.slick-arrow {
+    left: 90px;
+}
+
+#custom-arrows button.slick-arrow:hover{
+    box-shadow: 0 0 6px #ddd;
+    color: #000;
+}
+
+#custom-arrows button.slick-arrow:hover i{
+    color: #000;
+    transition: .3s;
+}
+
+
+
+.circle:before {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    content: "";
+    border: 1px solid #D9D9D9;
+}
+
+.circle:after {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    content: "";
+    border: 1px solid #D9D9D9;
+}
+
+
+.testimonial-area ul, .team-slider ul {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: 14px;
+}
+
+.testimonial-area ul li, .team-slider ul li {
+    display: inline-block;
+}
+
+.testimonial-area ul li button, .team-slider ul li button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    background: #716F73;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+.testimonial-area ul li.slick-active button, .team-slider ul li.slick-active button {
+    background: #573DB8;
+}
 body {
   overflow-x: hidden;
   font-family: "DM Sans", sans-serif;

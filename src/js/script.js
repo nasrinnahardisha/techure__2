@@ -173,23 +173,80 @@ circleWrapper5.addEventListener("mouseleave", () => {
   });
 
 
-const toggleBtn = document.getElementById('toggleBtn');
-const extraText = document.getElementById('extraText');
-const plusIconClass = 'ri-add-line';
-const subtractIconClass = 'ri-subtract-fill';
 
-toggleBtn.addEventListener('click', () => {
-  const isHidden = extraText.classList.contains('hidden');
-  
-  if (isHidden) {
-    extraText.classList.remove('hidden');
-    // switch icon to subtract
-    toggleBtn.querySelector('i').classList.remove(plusIconClass);
-    toggleBtn.querySelector('i').classList.add(subtractIconClass);
-  } else {
-    extraText.classList.add('hidden');
-    // switch icon back to plus
-    toggleBtn.querySelector('i').classList.remove(subtractIconClass);
-    toggleBtn.querySelector('i').classList.add(plusIconClass);
+
+
+
+
+
+
+
+
+ const toggleBtn1 = document.getElementById('toggleBtn1');
+  const toggleBtn2 = document.getElementById('toggleBtn2');
+  const toggleBtn3 = document.getElementById('toggleBtn3');
+
+  const extraText1 = document.getElementById('extraText1');
+  const extraText2 = document.getElementById('extraText2');
+  const extraText3 = document.getElementById('extraText3');
+
+  const plusIconClass = 'ri-add-line';
+  const subtractIconClass = 'ri-subtract-fill';
+
+  function toggleContent(toggleBtn, extraText) {
+    const icon = toggleBtn.querySelector('i');
+    const isHidden = extraText.classList.contains('hidden');
+
+    if (isHidden) {
+      extraText.classList.remove('hidden');
+      icon.classList.remove(plusIconClass);
+      icon.classList.add(subtractIconClass);
+    } else {
+      extraText.classList.add('hidden');
+      icon.classList.remove(subtractIconClass);
+      icon.classList.add(plusIconClass);
+    }
   }
+
+  toggleBtn1.addEventListener('click', () => toggleContent(toggleBtn1, extraText1));
+  toggleBtn2.addEventListener('click', () => toggleContent(toggleBtn2, extraText2));
+  toggleBtn3.addEventListener('click', () => toggleContent(toggleBtn3, extraText3));
+
+
+
+
+
+$(document).ready(function ($) {
+
+  
+  $('.project-slide').slick({
+    slidesToShow: 1,
+    prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-arrow-left text-2xl text-[#c9c9c9]"></i> </button>',
+    nextArrow: '<button type="button" class="slick-next"><i class="fa fa-arrow-right text-2xl text-[#c9c9c9]"></i></button>',
+    appendArrows: $('#custom-arrows'),
+    autoplay: true,
+    autoplaySpeed: 3000,
+  });
+
+    $('.team-slider').slick({
+    slidesToShow: 2,
+    arrows: false,
+    dots: true,
+    autoplay: false,
+   autoplaySpeed: 3000, 
+   responsive: [
+     {
+       breakpoint: 1024, 
+       settings: {
+         slidesToShow: 2,
+       }
+     },
+     {
+       breakpoint: 768, 
+       settings: {
+         slidesToShow: 1,
+       }
+     }
+   ]
+  });
 });
