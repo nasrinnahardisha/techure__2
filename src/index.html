@@ -4,45 +4,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../images/title-logo.png" type="image/png">
   <title>Techure || HOME</title>
+  <link rel="stylesheet" href="../src/css/slick.css">
+  <link rel="stylesheet" href="../src/css/magnific-popup.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
   <link href="./output.css" rel="stylesheet" />
   <link rel="stylesheet" href="../src/style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup/dist/magnific-popup.css" />
-  	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-  	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 </head>
 
 <body>
   <header class="fixed w-full z-50 py-[20px] px-[15px] bg-[#F7F1FC]">
     <div class="container">
       <div class="header flex items-center justify-between">
-        <div class="logo ml-[7px]">
-          <a href="#"><img src="../images/logo.png" alt="logo" /></a>
+        <div class="logo ml-0 xl:ml-[7px]">
+          <a href="index.html"><img src="../images/logo.png" alt="logo" /></a>
         </div>
-        <nav id="nav-links " class="hidden xl:flex ml-[107px]">
+        <nav id="nav-links" class="hidden xl:flex ml-[107px]">
           <ul class="nav__links flex items-center gap-[17px] text-[18px] font-bold leading-[20px] text-[#031F42]">
-            <li>
-              <a href="#" class="flex gap-[5px] items-center">Home
-                <span class="text-[#031F42]"><i class="ri-arrow-drop-down-line"></i></span></a>
+
+            <li class="relative group">
+              <a href="index.html" class="flex gap-[5px] items-center">
+                Home
+                <i class="ri-arrow-down-s-line transition-transform duration-300 group-hover:rotate-180 text-lg"></i>
+              </a>
+              <ul
+                class="submenu absolute left-0 mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out w-48 bg-[#F7F1FC] rounded shadow z-50">
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Web Design</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Login Forms</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Card Design</a></li>
+              </ul>
             </li>
-            <li><a href="#courses">About Us</a></li>
-            <li>
-              <a href="#pricing" class="flex gap-[5px] items-center">Services
-                <span class="text-[#031F42]"><i class="ri-arrow-drop-down-line"></i></span></a>
+
+            <li><a href="#about">About Us</a></li>
+            <li class="relative group">
+              <a href="#services" class="flex gap-[5px] items-center">Services
+                <i class="ri-arrow-down-s-line transition-transform duration-300 group-hover:rotate-180 text-lg"></i>
+              </a>
+              <ul
+                class="submenu absolute left-0 mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out  bg-[#F7F1FC] rounded shadow z-50">
+                <li><a href="#"
+                    class="flex items-center justify-between gap-2 px-6 py-3 whitespace-nowrap text-[#031F42] hover:bg-[#e4dcf4]">Web
+                    Development</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">UI/UX Design</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">App Development</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Digital Marketing</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">SEO Optimization</a></li>
+              </ul>
             </li>
-            <li>
-              <a href="#reviews" class="flex gap-[5px] items-center">Projects
-                <span class="text-[#031F42]"><i class="ri-arrow-drop-down-line"></i></span></a>
+            <li class="relative group">
+              <a href="#projects" class="flex gap-[5px] items-center">Projects
+                <i class="ri-arrow-down-s-line transition-transform duration-300 group-hover:rotate-180 text-lg"></i>
+              </a>
+              <ul
+                class="submenu absolute left-0 mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out w-48 bg-[#F7F1FC] rounded shadow z-50">
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Web Design</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Login Forms</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Card Design</a></li>
+              </ul>
             </li>
-            <li>
+            <li class="relative group">
               <a href="#reviews" class="flex gap-[5px] items-center">Blog
-                <span class="text-[#031F42]"><i class="ri-arrow-drop-down-line"></i></span></a>
+                <i class="ri-arrow-down-s-line transition-transform duration-300 group-hover:rotate-180 text-lg"></i>
+              </a>
+              <ul
+                class="submenu absolute left-0 mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out w-48 bg-[#F7F1FC] rounded shadow z-50">
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Web Design</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Login Forms</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Card Design</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Card Design</a></li>
+              </ul>
             </li>
-            <li><a href="#reviews">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="hidden xl:flex items-center gap-10 mr-[-7px]">
@@ -51,13 +86,28 @@
             (629) 555-0129
           </div>
 
-          <button aria-label="Button" class="focus:outline-none">
+          <button id="openSidebar" aria-label="Button" class="focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none">
               <circle cx="25.5" cy="25.5" r="25.5" fill="#573DB8" />
               <path d="M25 21L35 21" stroke="white" stroke-width="2" />
               <path d="M15 28L35 28" stroke="white" stroke-width="2" />
             </svg>
           </button>
+          <div id="contactSidebar"
+            class="fixed top-0 right-0 h-full w-[300px] bg-white shadow-lg z-[9999] transform translate-x-full transition-transform duration-300 ease-in-out">
+            <div class="p-6 flex flex-col gap-4">
+              <h3 class="text-xl font-bold text-[#573DB8]">Contact Us</h3>
+              <p class="text-gray-600">Phone: (629) 555-0129</p>
+              <p class="text-gray-600">Email: info@example.com</p>
+              <div class="flex gap-3">
+                <a href="#" class="text-[#573DB8] text-2xl"><i class="ri-facebook-fill"></i></a>
+                <a href="#" class="text-[#573DB8] text-2xl"><i class="ri-instagram-line"></i></a>
+                <a href="#" class="text-[#573DB8] text-2xl"><i class="ri-twitter-x-line"></i></a>
+              </div>
+              <button id="closeSidebar" class="mt-4 text-[#573DB8] font-semibold underline">Close</button>
+            </div>
+          </div>
+
         </div>
         <div class="flex items-center gap-4 xl:hidden">
           <div class="hidden sm:flex gap-2.5 text-[18px] font-bold leading-[27px] text-[#07000E]">
@@ -79,33 +129,69 @@
         </div>
 
         <nav id="mobile-nav"
-          class="hidden opacity-0 -translate-y-5 absolute top-[78px] left-0 w-full bg-[#F7F1FC] p-6 shadow-lg z-50 xl:hidden transition-all duration-500 ease-in-out">
-          <ul
-            class="flex flex-col justify-center items-center gap-10 text-[18px] font-bold leading-[20px] text-[#031F42]">
-            <li>
-              <a href="#" class="flex gap-[5px] items-center">Home <i class="ri-arrow-drop-down-line"></i></a>
+          class="hidden opacity-0 translate-x-0 fixed top-[78px] right-0 h-screen w-[350px] bg-[#F7F1FC] p-6 shadow-lg z-50 xl:hidden transition-all duration-500 ease-in-out">
+          <ul class="flex flex-col justify-center  gap-10 text-[18px] font-bold leading-[20px] text-[#031F42]">
+            <li class="relative group">
+              <a href="index.html" class="flex gap-[5px] items-center">
+                Home
+                <i class="ri-arrow-down-s-line transition-transform duration-300 group-hover:rotate-180 text-lg"></i>
+              </a>
+              <ul
+                class="submenu absolute left-24 mt-[-7px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out w-48 bg-[#F7F1FC] rounded shadow z-50">
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Web Design</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Login Forms</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Card Design</a></li>
+              </ul>
             </li>
-            <li><a href="#courses">About Us</a></li>
-            <li>
-              <a href="#pricing" class="flex gap-[5px] items-center">Services <i
-                  class="ri-arrow-drop-down-line"></i></a>
+
+            <li><a href="#about">About Us</a></li>
+            <li class="relative group">
+              <a href="#work" class="flex gap-[5px] items-center">Services
+                <i class="ri-arrow-down-s-line transition-transform duration-300 group-hover:rotate-180 text-lg"></i>
+              </a>
+              <ul
+                class="submenu absolute left-24 mt-[-7px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out  bg-[#F7F1FC] rounded shadow z-50">
+                <li><a href="#"
+                    class="flex items-center justify-between gap-2 px-6 py-3 whitespace-nowrap text-[#031F42] hover:bg-[#e4dcf4]">Web
+                    Development</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">UI/UX Design</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">App Development</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Digital Marketing</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">SEO Optimization</a></li>
+              </ul>
             </li>
-            <li>
-              <a href="#reviews" class="flex gap-[5px] items-center">Projects <i
-                  class="ri-arrow-drop-down-line"></i></a>
+            <li class="relative group">
+              <a href="#projects" class="flex gap-[5px] items-center">Projects
+                <i class="ri-arrow-down-s-line transition-transform duration-300 group-hover:rotate-180 text-lg"></i>
+              </a>
+              <ul
+                class="submenu absolute left-24 mt-[-7px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out w-48 bg-[#F7F1FC] rounded shadow z-50">
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Web Design</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Login Forms</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Card Design</a></li>
+              </ul>
             </li>
-            <li>
-              <a href="#reviews" class="flex gap-[5px] items-center">Blog <i class="ri-arrow-drop-down-line"></i></a>
+            <li class="relative group">
+              <a href="#reviews" class="flex gap-[5px] items-center">Blog
+                <i class="ri-arrow-down-s-line transition-transform duration-300 group-hover:rotate-180 text-lg"></i>
+              </a>
+              <ul
+                class="submenu absolute left-24 mt-[-7px] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out w-48 bg-[#F7F1FC] rounded shadow z-50">
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Web Design</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Login Forms</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Card Design</a></li>
+                <li><a href="#" class="block px-6 py-3 text-[#031F42] hover:bg-[#e4dcf4]">Card Design</a></li>
+              </ul>
             </li>
-            <li><a href="#reviews">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
 
-  <section class="hero px-[15px] relative mt-[90px]">
-    <div class="hidden xl:flex fixed top-[314px] left-[120px] space-y-[62px] flex-col z-10">
+  <section class="hero  px-[15px] relative mt-[90px]">
+    <div class="hidden xl:flex  absolute top-[225px] left-[120px] space-y-[62px] flex-col z-10">
       <a href="https://www.quora.com/" target="_blank" rel="noopener noreferrer">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
           <path
@@ -218,7 +304,7 @@
           </div>
           <div class="flex gap-5 items-center justify-center lg:justify-start">
             <span
-              class="xl:text-[69px] lg:text-[50px] text-[30px] font-bold xl:leading-[69px] md:leading-[53.407px] leading-[30px] tracking-[-2.039px] text-[#07000E]"><span
+              class="flex xl:text-[69px] lg:text-[50px] text-[30px] font-bold xl:leading-[69px] md:leading-[53.407px] leading-[30px] tracking-[-2.039px] text-[#07000E]"><span
                 class="counter" data-target="140">0</span> +</span>
 
             <span
@@ -308,8 +394,8 @@
     </div>
   </section>
 
-  <section
-    class="cta py-[40px] sm:py-[50px] md:py-[70px] lg:py-[100px] xl:py-[150px] px-[35px] md:px-[15px] bg-[#F7F1FC]">
+  <section id="services"
+    class="services py-[40px] sm:py-[50px] md:py-[70px] lg:py-[100px] xl:py-[150px] px-[35px] md:px-[15px] bg-[#F7F1FC]">
     <div class="container">
       <div
         class="flex ml-0 xl:ml-[6px] flex-col lg:flex-row gap-6 md:gap-[30px] items-start lg:items-center justify-between">
@@ -323,8 +409,9 @@
           <div class="both-btn flex items-center pl-[7px]">
             <a href="#" class="custom-btn"> View All Service </a>
             <div class="flex justify-center items-center">
-              <div class="icon-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+              <div class="icon-wrapper group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                  class="transition-transform duration-300 group-hover:rotate-45 ">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M27.838 13.4025L13.4015 27.839L12.1641 26.6016L26.6006 12.165L27.838 13.4025Z" fill="white" />
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -340,8 +427,8 @@
         </div>
         <div class="w-full lg:w-8/12">
           <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-[30px]">
-            <div
-              class="relative w-full xl:w-[370px] h-full xl:h-[252px] py-6 lg:py-10 pl-[30px] md:pl-[40px] lg:pl-[60px] pr-5 md:pr-[30px] flex-shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] flex flex-col justify-between ml-0 xl:ml-[37px]">
+            <a href="#"
+              class="relative w-full xl:w-[370px] h-full xl:h-[252px] py-6 lg:py-10 pl-[30px] md:pl-[40px] lg:pl-[60px] pr-5 md:pr-[30px] flex-shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] flex flex-col justify-between ml-0 xl:ml-[37px] transition-all duration-300 ease-in-out hover:border-[#573DB8] hover:shadow-xl hover:scale-[1.02]">
               <div class="flex flex-col justify-between h-full">
                 <h4 class="text-[#07000E] text-xl md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px]">
                   Data Safe Pro
@@ -350,22 +437,23 @@
                 <div class="pt-3 md:pt-5 pb-6 md:pb-[35px] text-[#716F73] text-[18px] font-medium leading-[28.01px]">
                   <p>Information Technology rapidly field that encompasses</p>
                 </div>
-                <a href="#">
-                  <div class="read-btn">
-                    Read More
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M20.7242 9.90145L9.89683 20.7289L8.96875 19.8008L19.7962 8.97338L20.7242 9.90145Z"
-                        fill="#07000E" />
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M19.3254 9.43636C17.1428 11.6189 17.2787 15.3217 19.3254 17.3683L19.7894 17.8324L20.7175 16.9043L20.2534 16.4403C18.6995 14.8863 18.6031 12.0148 20.2534 10.3644L20.7172 9.90065L19.7892 8.97257L19.3254 9.43636Z"
-                        fill="#07000E" />
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M20.2554 10.3586C18.0729 12.5411 14.3701 12.4052 12.3234 10.3586L11.8594 9.89453L12.7875 8.96645L13.2515 9.43049C14.8055 10.9845 17.677 11.0809 19.3273 9.43052L19.7911 8.96673L20.7192 9.89481L20.2554 10.3586Z"
-                        fill="#07000E" />
-                    </svg>
-                  </div>
-                </a>
+
+                <div class="read-btn group">
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                    class="transition-transform duration-300 group-hover:rotate-45">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20.7242 9.90145L9.89683 20.7289L8.96875 19.8008L19.7962 8.97338L20.7242 9.90145Z"
+                      fill="#07000E" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M19.3254 9.43636C17.1428 11.6189 17.2787 15.3217 19.3254 17.3683L19.7894 17.8324L20.7175 16.9043L20.2534 16.4403C18.6995 14.8863 18.6031 12.0148 20.2534 10.3644L20.7172 9.90065L19.7892 8.97257L19.3254 9.43636Z"
+                      fill="#07000E" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20.2554 10.3586C18.0729 12.5411 14.3701 12.4052 12.3234 10.3586L11.8594 9.89453L12.7875 8.96645L13.2515 9.43049C14.8055 10.9845 17.677 11.0809 19.3273 9.43052L19.7911 8.96673L20.7192 9.89481L20.2554 10.3586Z"
+                      fill="#07000E" />
+                  </svg>
+                </div>
+
               </div>
               <div
                 class="absolute top-1/2 -translate-y-1/2 xl:left-[-40px] xl:w-[80px] xl:h-[80px] flex items-center justify-center rounded-full bg-white shadow-[0_0_60px_rgba(0,0,0,0.05)] md:left-[-30px] md:w-[70px] md:h-[70px] left-[-20px] w-[60px] h-[60px]">
@@ -419,10 +507,10 @@
                     fill="#573DB8" />
                 </svg>
               </div>
-            </div>
+            </a>
 
-            <div
-              class="relative w-full xl:w-[370px] h-full xl:h-[252px] py-6 lg:py-10 pl-[30px] md:pl-[40px] lg:pl-[60px] pr-5 md:pr-[30px] flex-shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] flex flex-col justify-between ml-0 xl:ml-[41px]">
+            <a href="#"
+              class="relative w-full xl:w-[370px] h-full xl:h-[252px] py-6 lg:py-10 pl-[30px] md:pl-[40px] lg:pl-[60px] pr-5 md:pr-[30px] flex-shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] flex flex-col justify-between ml-0 xl:ml-[41px] transition-all duration-300 ease-in-out hover:border-[#573DB8] hover:shadow-xl hover:scale-[1.02]">
               <div class="flex flex-col justify-between h-full">
                 <h4 class="text-[#07000E] text-xl md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px]">
                   Cloud Sync Solutions
@@ -431,22 +519,23 @@
                 <div class="pt-3 md:pt-5 pb-6 md:pb-[35px] text-[#716F73] text-[18px] font-medium leading-[28.01px]">
                   <p>Information Technology rapidly field that encompasses</p>
                 </div>
-                <a href="#">
-                  <div class="read-btn">
-                    Read More
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M20.7242 9.90145L9.89683 20.7289L8.96875 19.8008L19.7962 8.97338L20.7242 9.90145Z"
-                        fill="#07000E" />
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M19.3254 9.43636C17.1428 11.6189 17.2787 15.3217 19.3254 17.3683L19.7894 17.8324L20.7175 16.9043L20.2534 16.4403C18.6995 14.8863 18.6031 12.0148 20.2534 10.3644L20.7172 9.90065L19.7892 8.97257L19.3254 9.43636Z"
-                        fill="#07000E" />
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M20.2554 10.3586C18.0729 12.5411 14.3701 12.4052 12.3234 10.3586L11.8594 9.89453L12.7875 8.96645L13.2515 9.43049C14.8055 10.9845 17.677 11.0809 19.3273 9.43052L19.7911 8.96673L20.7192 9.89481L20.2554 10.3586Z"
-                        fill="#07000E" />
-                    </svg>
-                  </div>
-                </a>
+
+                <div class="read-btn group">
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                    class="transition-transform duration-300 group-hover:rotate-45">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20.7242 9.90145L9.89683 20.7289L8.96875 19.8008L19.7962 8.97338L20.7242 9.90145Z"
+                      fill="#07000E" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M19.3254 9.43636C17.1428 11.6189 17.2787 15.3217 19.3254 17.3683L19.7894 17.8324L20.7175 16.9043L20.2534 16.4403C18.6995 14.8863 18.6031 12.0148 20.2534 10.3644L20.7172 9.90065L19.7892 8.97257L19.3254 9.43636Z"
+                      fill="#07000E" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20.2554 10.3586C18.0729 12.5411 14.3701 12.4052 12.3234 10.3586L11.8594 9.89453L12.7875 8.96645L13.2515 9.43049C14.8055 10.9845 17.677 11.0809 19.3273 9.43052L19.7911 8.96673L20.7192 9.89481L20.2554 10.3586Z"
+                      fill="#07000E" />
+                  </svg>
+                </div>
+
               </div>
               <div
                 class="absolute top-1/2 -translate-y-1/2 xl:left-[-40px] xl:w-[80px] xl:h-[80px] flex items-center justify-center rounded-full bg-white shadow-[0_0_60px_rgba(0,0,0,0.05)] md:left-[-30px] md:w-[70px] md:h-[70px] left-[-20px] w-[60px] h-[60px]">
@@ -500,9 +589,9 @@
                     fill="#573DB8" />
                 </svg>
               </div>
-            </div>
-            <div
-              class="relative w-full xl:w-[370px] h-full xl:h-[252px] py-6 lg:py-10 pl-[30px] md:pl-[40px] lg:pl-[60px] pr-5 md:pr-[30px] flex-shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] flex flex-col justify-between ml-0 xl:ml-[37px]">
+            </a>
+            <a href="#"
+              class="relative w-full xl:w-[370px] h-full xl:h-[252px] py-6 lg:py-10 pl-[30px] md:pl-[40px] lg:pl-[60px] pr-5 md:pr-[30px] flex-shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] flex flex-col justify-between ml-0 xl:ml-[37px] transition-all duration-300 ease-in-out hover:border-[#573DB8] hover:shadow-xl hover:scale-[1.02]">
               <div class="flex flex-col justify-between h-full">
                 <h4 class="text-[#07000E] text-xl md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px]">
                   Tech Fortress Solutions
@@ -511,22 +600,21 @@
                 <div class="pt-3 md:pt-5 pb-6 md:pb-[35px] text-[#716F73] text-[18px] font-medium leading-[28.01px]">
                   <p>Information Technology rapidly field that encompasses</p>
                 </div>
-                <a href="#">
-                  <div class="read-btn">
-                    Read More
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M20.7242 9.90145L9.89683 20.7289L8.96875 19.8008L19.7962 8.97338L20.7242 9.90145Z"
-                        fill="#07000E" />
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M19.3254 9.43636C17.1428 11.6189 17.2787 15.3217 19.3254 17.3683L19.7894 17.8324L20.7175 16.9043L20.2534 16.4403C18.6995 14.8863 18.6031 12.0148 20.2534 10.3644L20.7172 9.90065L19.7892 8.97257L19.3254 9.43636Z"
-                        fill="#07000E" />
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M20.2554 10.3586C18.0729 12.5411 14.3701 12.4052 12.3234 10.3586L11.8594 9.89453L12.7875 8.96645L13.2515 9.43049C14.8055 10.9845 17.677 11.0809 19.3273 9.43052L19.7911 8.96673L20.7192 9.89481L20.2554 10.3586Z"
-                        fill="#07000E" />
-                    </svg>
-                  </div>
-                </a>
+                <div class="read-btn group">
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                    class="transition-transform duration-300 group-hover:rotate-45">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20.7242 9.90145L9.89683 20.7289L8.96875 19.8008L19.7962 8.97338L20.7242 9.90145Z"
+                      fill="#07000E" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M19.3254 9.43636C17.1428 11.6189 17.2787 15.3217 19.3254 17.3683L19.7894 17.8324L20.7175 16.9043L20.2534 16.4403C18.6995 14.8863 18.6031 12.0148 20.2534 10.3644L20.7172 9.90065L19.7892 8.97257L19.3254 9.43636Z"
+                      fill="#07000E" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20.2554 10.3586C18.0729 12.5411 14.3701 12.4052 12.3234 10.3586L11.8594 9.89453L12.7875 8.96645L13.2515 9.43049C14.8055 10.9845 17.677 11.0809 19.3273 9.43052L19.7911 8.96673L20.7192 9.89481L20.2554 10.3586Z"
+                      fill="#07000E" />
+                  </svg>
+                </div>
               </div>
               <div
                 class="absolute top-1/2 -translate-y-1/2 xl:left-[-40px] xl:w-[80px] xl:h-[80px] flex items-center justify-center rounded-full bg-white shadow-[0_0_60px_rgba(0,0,0,0.05)] md:left-[-30px] md:w-[70px] md:h-[70px] left-[-20px] w-[60px] h-[60px]">
@@ -580,10 +668,10 @@
                     fill="#573DB8" />
                 </svg>
               </div>
-            </div>
+            </a>
 
-            <div
-              class="relative w-full xl:w-[370px] h-full xl:h-[252px] py-6 lg:py-10 pl-[30px] md:pl-[40px] lg:pl-[60px] pr-5 md:pr-[30px] flex-shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] flex flex-col justify-between ml-0 xl:ml-[41px]">
+            <a href="#"
+              class="relative w-full xl:w-[370px] h-full xl:h-[252px] py-6 lg:py-10 pl-[30px] md:pl-[40px] lg:pl-[60px] pr-5 md:pr-[30px] flex-shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] flex flex-col justify-between ml-0 xl:ml-[41px] transition-all duration-300 ease-in-out hover:border-[#573DB8] hover:shadow-xl hover:scale-[1.02]">
               <div class="flex flex-col justify-between h-full">
                 <h4 class="text-[#07000E] text-xl md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px]">
                   Byte Guard Protection
@@ -592,22 +680,22 @@
                 <div class="pt-3 md:pt-5 pb-6 md:pb-[35px] text-[#716F73] text-[18px] font-medium leading-[28.01px]">
                   <p>Information Technology rapidly field that encompasses</p>
                 </div>
-                <a href="#">
-                  <div class="read-btn">
-                    Read More
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M20.7242 9.90145L9.89683 20.7289L8.96875 19.8008L19.7962 8.97338L20.7242 9.90145Z"
-                        fill="#07000E" />
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M19.3254 9.43636C17.1428 11.6189 17.2787 15.3217 19.3254 17.3683L19.7894 17.8324L20.7175 16.9043L20.2534 16.4403C18.6995 14.8863 18.6031 12.0148 20.2534 10.3644L20.7172 9.90065L19.7892 8.97257L19.3254 9.43636Z"
-                        fill="#07000E" />
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M20.2554 10.3586C18.0729 12.5411 14.3701 12.4052 12.3234 10.3586L11.8594 9.89453L12.7875 8.96645L13.2515 9.43049C14.8055 10.9845 17.677 11.0809 19.3273 9.43052L19.7911 8.96673L20.7192 9.89481L20.2554 10.3586Z"
-                        fill="#07000E" />
-                    </svg>
-                  </div>
-                </a>
+                <div class="read-btn group">
+                  Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                    class="transition-transform duration-300 group-hover:rotate-45">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20.7242 9.90145L9.89683 20.7289L8.96875 19.8008L19.7962 8.97338L20.7242 9.90145Z"
+                      fill="#07000E" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M19.3254 9.43636C17.1428 11.6189 17.2787 15.3217 19.3254 17.3683L19.7894 17.8324L20.7175 16.9043L20.2534 16.4403C18.6995 14.8863 18.6031 12.0148 20.2534 10.3644L20.7172 9.90065L19.7892 8.97257L19.3254 9.43636Z"
+                      fill="#07000E" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M20.2554 10.3586C18.0729 12.5411 14.3701 12.4052 12.3234 10.3586L11.8594 9.89453L12.7875 8.96645L13.2515 9.43049C14.8055 10.9845 17.677 11.0809 19.3273 9.43052L19.7911 8.96673L20.7192 9.89481L20.2554 10.3586Z"
+                      fill="#07000E" />
+                  </svg>
+                </div>
+
               </div>
               <div
                 class="absolute top-1/2 -translate-y-1/2 xl:left-[-40px] xl:w-[80px] xl:h-[80px] flex items-center justify-center rounded-full bg-white shadow-[0_0_60px_rgba(0,0,0,0.05)] md:left-[-30px] md:w-[70px] md:h-[70px] left-[-20px] w-[60px] h-[60px]">
@@ -661,14 +749,15 @@
                     fill="#573DB8" />
                 </svg>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="about bg-[#F7F1FC] pb-[40px] sm:pb-[50px] md:pb-[100px] lg:pb-[150px] px-[15px] ml-0 xl:ml-[-8px]">
+  <section id="about"
+    class="about counter-section bg-[#F7F1FC] pb-[40px] sm:pb-[50px] md:pb-[100px] lg:pb-[150px] px-[15px] ml-0 xl:ml-[-8px]">
     <div class="container">
       <div class="max-w-[780px] mx-auto text-center pb-[180px] lg:pb-[207px]">
         <div class="sub-title">
@@ -861,7 +950,8 @@
               <div class="flex gap-[32px] justify-center lg:justify-start items-center">
                 <div class="flex flex-col items-center lg:items-start gap-[10px] w-[179px] h-[110px] justify-center">
                   <span
-                    class="text-[#07000E] text-[33px] sm:text-[36px] md:text-[42px] lg:text-[60px] xl:text-[72px] font-bold leading-[1] tracking-[-2px]">600+</span>
+                    class="text-[#07000E] text-[33px] sm:text-[36px] md:text-[42px] lg:text-[60px] xl:text-[72px] font-bold leading-[1] tracking-[-2px]"><span
+                      class="counter" data-target="600">0</span>+</span>
 
                   <span class="text-[#07000E] text-[16px] sm:text-[18px] font-medium leading-[28px]">Team member</span>
                 </div>
@@ -871,7 +961,8 @@
               <div class="flex gap-[32px] justify-center pl-0 xl:pl-[34px] items-center">
                 <div class="flex w-[151px] h-[110px] flex-col items-center lg:items-start gap-[10px] justify-center">
                   <span
-                    class="text-[#07000E] text-[33px] sm:text-[36px] md:text-[42px] lg:text-[60px] xl:text-[72px] font-bold leading-[1] tracking-[-2px]">2k+</span>
+                    class="text-[#07000E] text-[33px] sm:text-[36px] md:text-[42px] lg:text-[60px] xl:text-[72px] font-bold leading-[1] tracking-[-2px]"><span
+                      class="counter" data-target="2">0</span>k+</span>
                   <span class="text-[#07000E] text-[16px] sm:text-[18px] font-medium leading-[28px]">Service
                     Complete</span>
                 </div>
@@ -881,7 +972,8 @@
               <div class="flex gap-[32px] justify-center lg:justify-end pr-0 xl:pr-5 items-center">
                 <div class="flex w-[125px] h-[110px] flex-col items-center lg:items-start gap-[10px] justify-center">
                   <span
-                    class="text-[#07000E] text-[33px] sm:text-[36px] md:text-[42px] lg:text-[60px] xl:text-[72px] font-bold leading-[1] tracking-[-2px]">53+</span>
+                    class="text-[#07000E] text-[33px] sm:text-[36px] md:text-[42px] lg:text-[60px] xl:text-[72px] font-bold leading-[1] tracking-[-2px]"><span
+                      class="counter" data-target="53">0</span>+</span>
                   <span class="text-[#07000E] text-[16px] sm:text-[18px] font-medium leading-[28px]">Winning
                     award</span>
                 </div>
@@ -891,7 +983,8 @@
               <div class="flex gap-[32px] justify-center lg:justify-end items-center">
                 <div class="flex w-[123px] h-[110px] flex-col items-center lg:items-start gap-[10px] justify-center">
                   <span
-                    class="text-[#07000E] text-[33px] sm:text-[36px] md:text-[42px] lg:text-[60px] xl:text-[72px] font-bold leading-[1] tracking-[-2px]">53+</span>
+                    class="text-[#07000E] text-[33px] sm:text-[36px] md:text-[42px] lg:text-[60px] xl:text-[72px] font-bold leading-[1] tracking-[-2px]"><span
+                      class="counter" data-target="53">0</span>+</span>
                   <span class="text-[#07000E] text-[16px] sm:text-[18px] font-medium leading-[28px]">Client
                     Reviews</span>
                 </div>
@@ -903,7 +996,7 @@
     </div>
   </section>
 
-  <section
+  <section id="projects"
     class="project pt-[40px] md:pt-[70px] lg:pt-[100px] xl:pt-[148px] pb-[40px] md:pb-[60px] lg:pb-[80px] xl:pb-[120px] px-[15px]">
     <div class="container">
       <div class="relative">
@@ -927,43 +1020,52 @@
       </div>
       <div class="flex flex-col gap-[60px] md:gap-[80px] pt-10 md:pt-[50px] lg:pt-[60px] pl-0 xl:pl-[7px]">
         <div class="flex flex-col md:flex-row gap-[40px] md:gap-[75px]">
-          <div class="flex flex-col gap-5">
+          <a href="#" class="flex flex-col gap-5 group">
             <div class="relative w-full">
               <button
                 class="absolute top-[20px] left-[20px] inline-flex h-[40px] px-[20px] py-[5px] justify-center items-center gap-[10px] rounded-[20px] bg-[#07000E] text-white text-[18px] font-medium leading-7">
                 Cloud Sync Solutions
               </button>
-              <img src="../images/latest1.png" class="w-full md:w-[605px] h-auto md:h-[485px]" alt="img" />
+              <img src="../images/latest1.png"
+                class="w-full md:w-[605px] h-auto md:h-[485px] transform transition duration-500 ease-in-out group-hover:scale-105"
+                alt="img" />
             </div>
-            <h4 class="text-[#07000E] text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] not-italic">
+            <h4
+              class="text-[#07000E] text-[20px] md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] not-italic">
               Shaping the Digital Landscape
             </h4>
-          </div>
-          <div class="flex gap-5 flex-col">
+          </a>
+          <a href="#" class="flex gap-5 flex-col group">
             <div class="relative w-full">
               <button
                 class="absolute top-[20px] left-[26px] inline-flex h-[40px] px-[20px] py-[5px] justify-center items-center gap-[10px] rounded-[20px] bg-[#573DB8] text-white text-[18px] font-medium leading-7">
                 Cyber Shield Defense
               </button>
-              <img src="../images/latest2.png" class="w-full md:w-[605px] h-auto md:h-[559px] pl-[7px]" alt="img" />
+              <img src="../images/latest2.png"
+                class="w-full md:w-[605px] h-auto md:h-[559px] pl-0 xl:pl-[7px] transform transition duration-500 ease-in-out group-hover:scale-105"
+                alt="img" />
             </div>
-            <h4 class="text-[#07000E] text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] not-italic pl-[5px]">
+            <h4
+              class="text-[#07000E] text-[20px] md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] not-italic pl-0 xl:pl-[5px]">
               Shaping the Digital Landscape
             </h4>
-          </div>
+          </a>
         </div>
         <div class="flex flex-col md:flex-row gap-[30px] md:gap-[75px]">
-          <div class="flex gap-5 flex-col mt-0 xl:mt-[-74px] order-2 md:order-1">
+          <div class="flex gap-5 flex-col mt-0 xl:mt-[-74px] order-2 md:order-1 group">
             <div class="relative w-full">
               <button
                 class="absolute top-[20px] left-[20px] inline-flex h-[40px] px-[20px] py-[5px] justify-center items-center gap-[10px] rounded-[20px] bg-[#07000E] text-white text-[18px] font-medium leading-7">
                 Net Connect Pro
               </button>
-              <img src="../images/latest3.png" class="w-full md:w-[605px] h-auto md:h-[485px]" alt="img" />
+              <img src="../images/latest3.png"
+                class="w-full md:w-[605px] h-auto md:h-[485px] transform transition duration-500 ease-in-out group-hover:scale-105"
+                alt="img" />
             </div>
-            <h4 class="text-[#07000E] text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] not-italic">
+            <a href="#"
+              class="text-[#07000E] text-[20px] md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] not-italic">
               Shaping the Digital Landscape
-            </h4>
+            </a>
             <div class="flex items-center pt-[10px] md:pt-[60px]">
               <a href="#" class="custom-btn"> View All Project</a>
               <div class="flex justify-center items-center">
@@ -982,23 +1084,27 @@
               </div>
             </div>
           </div>
-          <div class="flex gap-5 flex-col order-1 md:order-2">
+          <a href="#" class="flex gap-5 flex-col order-1 md:order-2 group">
             <div class="relative w-full">
               <button
                 class="absolute top-[20px] left-[26px] inline-flex h-[40px] px-[20px] py-[5px] justify-center items-center gap-[10px] rounded-[20px] bg-[#07000E] text-white text-[18px] font-medium leading-7">
                 Byte Guard Protection
               </button>
-              <img src="../images/latest4.png" class="w-full md:w-[605px] h-auto md:h-[559px] pl-[7px]" alt="img" />
+              <img src="../images/latest4.png"
+                class="w-full md:w-[605px] h-auto md:h-[559px] pl-0 xl:pl-[7px] transform transition duration-500 ease-in-out group-hover:scale-105"
+                alt="img" />
             </div>
 
-            <h4 class="text-[#07000E] text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] not-italic pl-[5px]">
+            <h4
+              class="text-[#07000E] text-[20px] md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] not-italic pl-0 xl:pl-[5px]">
               Shaping the Digital Landscape
             </h4>
-          </div>
+          </a>
         </div>
       </div>
     </div>
   </section>
+
 
   <section class="team-member py-[30px] sm:py-[45px] md:py-[70px] lg:py-[150px] bg-[#F7F1FC] px-[15px]">
     <div class="container">
@@ -1013,9 +1119,9 @@
 
       <div class="flex flex-wrap justify-center gap-3 md:gap-[26px]">
         <div
-          class="relative circle w-[410px] h-[410px] rounded-full border border-[#07000E] bg-[#fff] overflow-hidden xl:ml-[7px]">
+          class="relative circle w-[320px] h-[320px] md:w-[410px] md:h-[410px] rounded-full border border-[#07000E] bg-[#fff] overflow-hidden xl:ml-[7px]">
           <div
-            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[360px] h-[360px] flex items-center justify-center overflow-hidden">
+            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[360px] h-[320px] md:h-[360px] flex items-center justify-center overflow-hidden">
             <img src="../images/team1.png" alt="Darlene Robertson"
               class="w-full h-full object-cover object-center rounded-full mt-[-7px] ml-[-6px]" />
           </div>
@@ -1028,7 +1134,7 @@
 
           <!-- Social Menu -->
           <div id="socialMenu"
-            class="absolute bottom-[155px] left-[190px] flex flex-col gap-1 items-center bg-white rounded-full shadow-md z-50 transition-all duration-300 opacity-0 invisible">
+            class="absolute bottom-[155px] left-[148px] md:left-[190px] flex flex-col gap-1 items-center bg-white rounded-full shadow-md z-50 transition-all duration-300 opacity-0 invisible">
             <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
               class="group p-1 rounded-full transition-colors duration-300">
               <i class="ri-linkedin-box-fill text-xl text-[#07000E] group-hover:text-[#8FD45F]"></i>
@@ -1044,15 +1150,15 @@
           </div>
 
           <div
-            class="absolute w-[572px] h-[572px] ml-[-84px] mt-[294px] bg-[#573DB8] rounded-t-full flex items-center justify-center text-white font-bold text-[24px] leading-[34.91px]">
-            <h5 class="mt-[-455px] ml-[1px]">Darlene Robertson</h5>
+            class="absolute w-[572px] h-[572px] ml-[-125px] md:ml-[-84px] mt-[220px] md:mt-[294px] bg-[#573DB8] rounded-t-full flex items-center justify-center text-white font-bold text-[24px] leading-[34.91px]">
+            <h5 class="mt-[-485px] md:mt-[-455px] ml-[1px] text-[16px] md:text-[24px]">Darlene Robertson</h5>
           </div>
         </div>
 
         <div
-          class="relative circle2 w-[410px] h-[410px] rounded-full border border-[#07000E] bg-[#fff] overflow-hidden">
+          class="relative circle2 w-[320px] h-[320px] md:w-[410px] md:h-[410px]  rounded-full border border-[#07000E] bg-[#fff] overflow-hidden">
           <div
-            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[360px] h-[360px] flex items-center justify-center overflow-hidden">
+            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[360px] h-[320px] md:h-[360px] flex items-center justify-center overflow-hidden">
             <img src="../images/team2.png" alt="Darlene Robertson"
               class="w-full h-full object-cover object-center rounded-full mt-[-7px] ml-[-6px]" />
           </div>
@@ -1065,7 +1171,7 @@
 
           <!-- Social Menu -->
           <div id="socialMenu2"
-            class="absolute bottom-[155px] left-[190px] flex flex-col gap-1 items-center bg-white rounded-full shadow-md z-50 transition-all duration-300 opacity-0 invisible">
+            class="absolute bottom-[155px] left-[148px] md:left-[190px] flex flex-col gap-1 items-center bg-white rounded-full shadow-md z-50 transition-all duration-300 opacity-0 invisible">
             <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
               class="group p-1 rounded-full transition-colors duration-300">
               <i class="ri-linkedin-box-fill text-xl text-[#07000E] group-hover:text-[#8FD45F]"></i>
@@ -1081,15 +1187,15 @@
           </div>
 
           <div
-            class="absolute w-[572px] h-[572px] ml-[-84px] mt-[294px] bg-[#573DB8] rounded-t-full flex items-center justify-center text-white font-bold text-[24px] leading-[34.91px]">
-            <h5 class="mt-[-455px] ml-[1px]">Esther Howard</h5>
+            class="absolute w-[572px] h-[572px] ml-[-125px] md:ml-[-84px] mt-[220px] md:mt-[294px] bg-[#573DB8] rounded-t-full flex items-center justify-center text-white font-bold text-[24px] leading-[34.91px]">
+            <h5 class="mt-[-485px] md:mt-[-455px] ml-[1px] text-[16px] md:text-[24px]">Esther Howard</h5>
           </div>
         </div>
 
         <div
-          class="relative circle3 w-[410px] h-[410px] rounded-full border border-[#07000E] bg-[#fff] overflow-hidden">
+          class="relative circle3 w-[320px] h-[320px] md:w-[410px] md:h-[410px]  rounded-full border border-[#07000E] bg-[#fff] overflow-hidden">
           <div
-            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[360px] h-[360px] flex items-center justify-center overflow-hidden">
+            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[360px] h-[320px] md:h-[360px] flex items-center justify-center overflow-hidden">
             <img src="../images/team3.png" alt="Darlene Robertson"
               class="w-full h-full object-cover object-center rounded-full mt-[-7px] ml-[-6px]" />
           </div>
@@ -1102,7 +1208,7 @@
 
           <!-- Social Menu -->
           <div id="socialMenu3"
-            class="absolute bottom-[155px] left-[196px] flex flex-col gap-1 items-center bg-white rounded-full shadow-md z-50 transition-all duration-300 opacity-0 invisible">
+            class="absolute bottom-[155px] left-[148px] md:left-[190px] flex flex-col gap-1 items-center bg-white rounded-full shadow-md z-50 transition-all duration-300 opacity-0 invisible">
             <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
               class="group p-1 rounded-full transition-colors duration-300">
               <i class="ri-linkedin-box-fill text-xl text-[#07000E] group-hover:text-[#8FD45F]"></i>
@@ -1118,15 +1224,15 @@
           </div>
 
           <div
-            class="absolute w-[572px] h-[572px] ml-[-84px] mt-[294px] bg-[#573DB8] rounded-t-full flex items-center justify-center text-white font-bold text-[24px] leading-[34.91px]">
-            <h5 class="mt-[-455px] ml-[1px]">Devon Lane</h5>
+            class="absolute w-[572px] h-[572px] ml-[-125px] md:ml-[-84px] mt-[220px] md:mt-[294px] bg-[#573DB8] rounded-t-full flex items-center justify-center text-white font-bold text-[24px] leading-[34.91px]">
+            <h5 class="mt-[-485px] md:mt-[-455px] ml-[1px] text-[16px] md:text-[24px]">Devon Lane</h5>
           </div>
         </div>
 
         <div
-          class="relative circle4 w-[410px] h-[410px] rounded-full border border-[#07000E] bg-[#fff] overflow-hidden xl:ml-[12px]">
+          class="relative circle4 w-[320px] h-[320px] md:w-[410px] md:h-[410px]  rounded-full border border-[#07000E] bg-[#fff] overflow-hidden xl:ml-[12px]">
           <div
-            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[360px] h-[360px] flex items-center justify-center overflow-hidden">
+            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[360px] h-[320px] md:h-[360px] flex items-center justify-center overflow-hidden">
             <img src="../images/team4.png" alt="Darlene Robertson"
               class="w-full h-full object-cover object-center rounded-full mt-[-7px] ml-[-6px]" />
           </div>
@@ -1139,7 +1245,7 @@
 
           <!-- Social Menu -->
           <div id="socialMenu4"
-            class="absolute bottom-[155px] left-[190px] flex flex-col gap-1 items-center bg-white rounded-full shadow-md z-50 transition-all duration-300 opacity-0 invisible">
+            class="absolute bottom-[155px] left-[148px] md:left-[190px] flex flex-col gap-1 items-center bg-white rounded-full shadow-md z-50 transition-all duration-300 opacity-0 invisible">
             <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
               class="group p-1 rounded-full transition-colors duration-300">
               <i class="ri-linkedin-box-fill text-xl text-[#07000E] group-hover:text-[#8FD45F]"></i>
@@ -1155,15 +1261,15 @@
           </div>
 
           <div
-            class="absolute w-[572px] h-[572px] ml-[-84px] mt-[294px] bg-[#573DB8] rounded-t-full flex items-center justify-center text-white font-bold text-[24px] leading-[34.91px]">
-            <h5 class="mt-[-455px] ml-[1px]">Guy Hawkins</h5>
+            class="absolute w-[572px] h-[572px] ml-[-125px] md:ml-[-84px] mt-[220px] md:mt-[294px] bg-[#573DB8] rounded-t-full flex items-center justify-center text-white font-bold text-[24px] leading-[34.91px]">
+            <h5 class="mt-[-485px] md:mt-[-455px] ml-[1px] text-[16px] md:text-[24px]">Guy Hawkins</h5>
           </div>
         </div>
 
         <div
-          class="relative circle5 w-[410px] h-[410px] rounded-full border border-[#07000E] bg-[#fff] overflow-hidden">
+          class="relative circle5 w-[320px] h-[320px] md:w-[410px] md:h-[410px]  rounded-full border border-[#07000E] bg-[#fff] overflow-hidden">
           <div
-            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[360px] h-[360px] flex items-center justify-center overflow-hidden">
+            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[360px] h-[320px] md:h-[360px] flex items-center justify-center overflow-hidden">
             <img src="../images/team5.png" alt="Darlene Robertson"
               class="w-full h-full object-cover object-center rounded-full mt-[-7px] ml-[-6px]" />
           </div>
@@ -1176,7 +1282,7 @@
 
           <!-- Social Menu -->
           <div id="socialMenu5"
-            class="absolute bottom-[155px] left-[190px] flex flex-col gap-1 items-center bg-white rounded-full shadow-md z-50 transition-all duration-300 opacity-0 invisible">
+            class="absolute bottom-[155px] left-[148px] md:left-[190px] flex flex-col gap-1 items-center bg-white rounded-full shadow-md z-50 transition-all duration-300 opacity-0 invisible">
             <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
               class="group p-1 rounded-full transition-colors duration-300">
               <i class="ri-linkedin-box-fill text-xl text-[#07000E] group-hover:text-[#8FD45F]"></i>
@@ -1192,13 +1298,14 @@
           </div>
 
           <div
-            class="absolute w-[572px] h-[572px] ml-[-84px] mt-[294px] bg-[#573DB8] rounded-t-full flex items-center justify-center text-white font-bold text-[24px] leading-[34.91px]">
-            <h5 class="mt-[-455px] ml-[1px]">Annette Black</h5>
+            class="absolute w-[572px] h-[572px] ml-[-125px] md:ml-[-84px] mt-[220px] md:mt-[294px] bg-[#573DB8] rounded-t-full flex items-center justify-center text-white font-bold text-[24px] leading-[34.91px]">
+            <h5 class="mt-[-485px] md:mt-[-455px] ml-[1px] text-[16px] md:text-[24px]">Annette Black</h5>
           </div>
         </div>
       </div>
     </div>
   </section>
+
 
   <section class="story bg-[#F7F1FC] pb-[40px] md:pb-[60px] lg:pb-[80px] xl:pb-[150px] px-[15px]">
     <div class="container">
@@ -1277,22 +1384,22 @@
         <div
           class="w-full md:w-4/12 flex flex-col gap-[20px] lg:gap-[30px] ml-0 xl:ml-[7px] items-center lg:items-start">
           <div
-            class="w-full md:w-[250px] lg:w-[310px] xl:w-[410px] h-[60px] px-[25px] py-4 rounded-[20px] bg-[#F7F1FC] text-[#07000E] flex gap-[14px] items-center md:justify-start justify-center">
+            class="w-full md:w-[250px] lg:w-[310px] xl:w-[410px] h-[60px] px-[25px] py-4 rounded-[20px] bg-[#F7F1FC] text-[#07000E] flex gap-[14px] items-center justify-start">
             <i class="ri-arrow-right-double-line text-[30px] font-black"></i>
             <span class="text-[18px] font-medium leading-[28.01px]">Connect Beyond Limits</span>
           </div>
           <div
-            class="w-full md:w-[250px] lg:w-[310px] xl:w-[410px] h-[60px] px-[25px] py-4 rounded-[20px] bg-[#F7F1FC] text-[#07000E] flex gap-[14px] items-center md:justify-start justify-center">
+            class="w-full md:w-[250px] lg:w-[310px] xl:w-[410px] h-[60px] px-[25px] py-4 rounded-[20px] bg-[#F7F1FC] text-[#07000E] flex gap-[14px] items-center justify-start">
             <i class="ri-arrow-right-double-line text-[30px] font-black"></i>
             <span class="text-[18px] font-medium leading-[28.01px]">Tech Innovation, Our Mission</span>
           </div>
           <div
-            class="w-full md:w-[250px] lg:w-[310px] xl:w-[410px] h-[60px] px-[25px] py-4 rounded-[20px] bg-[#F7F1FC] text-[#07000E] flex gap-[14px] items-center md:justify-start justify-center">
+            class="w-full md:w-[250px] lg:w-[310px] xl:w-[410px] h-[60px] px-[25px] py-4 rounded-[20px] bg-[#F7F1FC] text-[#07000E] flex gap-[14px] items-center justify-start">
             <i class="ri-arrow-right-double-line text-[30px] font-black"></i>
             <span class="text-[18px] font-medium leading-[28.01px]">Your Tech Partner for Excellence</span>
           </div>
           <div
-            class="w-full md:w-[250px] lg:w-[310px] xl:w-[410px] h-[60px] px-[25px] py-4 rounded-[20px] bg-[#F7F1FC] text-[#07000E] flex gap-[14px] items-center md:justify-start justify-center">
+            class="w-full md:w-[250px] lg:w-[310px] xl:w-[410px] h-[60px] px-[25px] py-4 rounded-[20px] bg-[#F7F1FC] text-[#07000E] flex gap-[14px] items-center justify-start">
             <i class="ri-arrow-right-double-line text-[30px] font-black"></i>
             <span class="text-[18px] font-medium leading-[28.01px]">Network Boost Innovations</span>
           </div>
@@ -1305,22 +1412,22 @@
 
         <div class="w-full md:w-4/12 flex flex-col gap-[30px] mr-0 xl:mr-[-10px] items-center lg:items-end">
           <div
-            class="w-full md:w-[250px] lg:w-[310px] xl:w-[410px] h-[60px] px-[25px] py-4 rounded-[20px] bg-[#F7F1FC] text-[#07000E] flex gap-[14px] items-center md:justify-start justify-center">
+            class="w-full md:w-[250px] lg:w-[310px] xl:w-[410px] h-[60px] px-[25px] py-4 rounded-[20px] bg-[#F7F1FC] text-[#07000E] flex gap-[14px] items-center justify-start">
             <i class="ri-arrow-right-double-line text-[30px] font-black"></i>
             <span class="text-[18px] font-medium leading-[28.01px]">Empowering Your Tech Journey</span>
           </div>
           <div
-            class="w-full md:w-[250px] lg:w-[310px] xl:w-[410px] h-[60px] px-[25px] py-4 rounded-[20px] bg-[#F7F1FC] text-[#07000E] flex gap-[14px] items-center md:justify-start justify-center">
+            class="w-full md:w-[250px] lg:w-[310px] xl:w-[410px] h-[60px] px-[25px] py-4 rounded-[20px] bg-[#F7F1FC] text-[#07000E] flex gap-[14px] items-center justify-start">
             <i class="ri-arrow-right-double-line text-[30px] font-black"></i>
             <span class="text-[18px] font-medium leading-[28.01px]">Inspiring Tech Transformations</span>
           </div>
           <div
-            class="w-full md:w-[250px] lg:w-[310px] xl:w-[410px] h-[60px] px-[25px] py-4 rounded-[20px] bg-[#F7F1FC] text-[#07000E] flex gap-[14px] items-center md:justify-start justify-center">
+            class="w-full md:w-[250px] lg:w-[310px] xl:w-[410px] h-[60px] px-[25px] py-4 rounded-[20px] bg-[#F7F1FC] text-[#07000E] flex gap-[14px] items-center justify-start">
             <i class="ri-arrow-right-double-line text-[30px] font-black"></i>
             <span class="text-[18px] font-medium leading-[28.01px]">Elevating Tech Experiences</span>
           </div>
           <div
-            class="w-full md:w-[250px] lg:w-[310px] xl:w-[410px] h-[60px] px-[25px] py-4 rounded-[20px] bg-[#F7F1FC] text-[#07000E] flex gap-[14px] items-center md:justify-start justify-center">
+            class="w-full md:w-[250px] lg:w-[310px] xl:w-[410px] h-[60px] px-[25px] py-4 rounded-[20px] bg-[#F7F1FC] text-[#07000E] flex gap-[14px] items-center justify-start">
             <i class="ri-arrow-right-double-line text-[30px] font-black"></i>
             <span class="text-[18px] font-medium leading-[28.01px]">Pioneering Tech Advancements</span>
           </div>
@@ -1467,7 +1574,7 @@
   </section>
 
 
-  <section class="tesimonials bg-[#F7F1FC] pb-[30px] sm:pb-[45px] md:pb-[70px] lg:pb-[150px] px-[15px]">
+  <section class="tesimonials bg-[#F7F1FC] pb-0 sm:pb-[45px] md:pb-[70px] lg:pb-[150px] px-[15px]">
     <div class="container">
       <div class="mx-auto text-center">
         <div class="sub-title pt-[2px]">
@@ -1475,129 +1582,157 @@
         </div>
         <div class="title pt-[10px] md:pt-[15px] mx-auto">
           <h2 class="pl-0 xl:pl-[11px] ml-0 xl:ml-[-4px]">
-           Whats Clients Say
+            Whats Clients Say
           </h2>
         </div>
       </div>
-         <div class="pt-[60px]">
-        <div class=" team-slider grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <div class="card w-[608px] h-[412px] ml-[30px] mb-[115px] rounded-[20px] border border-[#8FD45F] bg-white">
-            <div class="px-[32px] py-[38px]">
+      <div class="pt-[30px] md:pt-[60px]">
+        <div class="team-slider grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="card w-[608px] h-[412px] ml-[14px] md:ml-[30px] mb-[50px] md:mb-[115px] rounded-[20px] border border-[#8FD45F] bg-white">
+            <div class="px-[26px] md:px-[32px] py-[38px]">
               <div class="flex justify-between items-center">
                 <div class="flex gap-[20px] items-center">
-                    <img src="../images/tesi1-logo.png" alt="logo">
+                  <img src="../images/tesi1-logo.png" alt="logo">
                   <div class="flex flex-col gap-[5px]">
-                    <h5 class="text-[#07000E] font-bold text-[24px] leading-[34.91px] tracking-[-0.25px] not-italic ">Jenny Wilson</h5>
+                    <h5
+                      class="text-[#07000E] font-bold text-[20px] md:text-[24px] leading-[28.91px] md:leading-[34.91px] tracking-[-0.25px] not-italic ">
+                      Jenny Wilson</h5>
                     <span class="text-[#716F73] font-medium text-[18px] leading-[28.01px] not-italic "> Designer</span>
                   </div>
                 </div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none" class="ml-[-18px]">
-                    <path
-                      d="M59.5 9.07422V34.1699L51.1191 50.9316H39.3799L47.5898 34.5117L47.9521 33.7881L34.7861 33.7881V9.07422L59.5 9.07422ZM25.2139 9.07422L25.2139 34.1699L16.833 50.9316H5.09473L13.3047 34.5117L13.666 33.7881H0.5L0.5 9.07422L25.2139 9.07422Z"
-                      stroke="#573DB8" />
-                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                  class="ml-0 xl:ml-[-18px]">
+                  <path
+                    d="M59.5 9.07422V34.1699L51.1191 50.9316H39.3799L47.5898 34.5117L47.9521 33.7881L34.7861 33.7881V9.07422L59.5 9.07422ZM25.2139 9.07422L25.2139 34.1699L16.833 50.9316H5.09473L13.3047 34.5117L13.666 33.7881H0.5L0.5 9.07422L25.2139 9.07422Z"
+                    stroke="#573DB8" />
+                </svg>
               </div>
-              <div class="w-full h-[1px] my-[30px]"></div>
-              <div class="text-[#716F73] w-full xl:w-[550px]  font-medium text-[32px] leading-[44px] not-italic">
-                <p>Information Technology is Information a Technology is rapidly evolving field that encompasses the study </p>
+              <div class="w-full h-[1px] my-[10px] md:my-[30px]"></div>
+              <div
+                class="text-[#716F73] w-full xl:w-[550px]  font-medium text-[20px] md:text-[32px] leading-[28px] md:leading-[44px] not-italic text-center md:text-start">
+                <p>Information Technology is Information a Technology is rapidly evolving field that encompasses the
+                  study </p>
               </div>
-           <div class="flex gap-[10px] pt-[40px] text-[#FFB34E] text-[20px] font-black not-italic leading-none">
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill text-[#716F73]"></i>
-           </div>
+              <div
+                class="flex gap-[10px] pt-[28px] md:pt-[40px] text-[#FFB34E] text-[20px] font-black not-italic leading-none justify-center md:justify-start ">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill text-[#716F73]"></i>
+              </div>
             </div>
           </div>
-          <div class="card w-[608px] h-[412px] mb-[115px] ml-[30px]  rounded-[20px] border border-[#8FD45F] bg-white">
-            <div class="px-[32px] py-[38px]">
+          <div
+            class="card w-[608px] h-[412px] ml-[14px] md:ml-[30px] mb-[60px] md:mb-[115px] rounded-[20px] border border-[#8FD45F] bg-white">
+            <div class="px-[26px] md:px-[32px] py-[38px]">
               <div class="flex justify-between items-center">
                 <div class="flex gap-[20px] items-center">
-                    <img src="../images/tesi1-logo.png" alt="logo">
+                  <img src="../images/tesi1-logo.png" alt="logo">
                   <div class="flex flex-col gap-[5px]">
-                    <h5 class="text-[#07000E] font-bold text-[24px] leading-[34.91px] tracking-[-0.25px] not-italic ">Jenny Wilson</h5>
+                    <h5
+                      class="text-[#07000E] font-bold text-[20px] md:text-[24px] leading-[28.91px] md:leading-[34.91px] tracking-[-0.25px] not-italic ">
+                      Jenny Wilson</h5>
                     <span class="text-[#716F73] font-medium text-[18px] leading-[28.01px] not-italic "> Designer</span>
                   </div>
                 </div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none" class="ml-[-18px]">
-                    <path
-                      d="M59.5 9.07422V34.1699L51.1191 50.9316H39.3799L47.5898 34.5117L47.9521 33.7881L34.7861 33.7881V9.07422L59.5 9.07422ZM25.2139 9.07422L25.2139 34.1699L16.833 50.9316H5.09473L13.3047 34.5117L13.666 33.7881H0.5L0.5 9.07422L25.2139 9.07422Z"
-                      stroke="#573DB8" />
-                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                  class="ml-0 xl:ml-[-18px]">
+                  <path
+                    d="M59.5 9.07422V34.1699L51.1191 50.9316H39.3799L47.5898 34.5117L47.9521 33.7881L34.7861 33.7881V9.07422L59.5 9.07422ZM25.2139 9.07422L25.2139 34.1699L16.833 50.9316H5.09473L13.3047 34.5117L13.666 33.7881H0.5L0.5 9.07422L25.2139 9.07422Z"
+                    stroke="#573DB8" />
+                </svg>
               </div>
-              <div class="w-full h-[1px] my-[30px]"></div>
-              <div class="text-[#716F73]  font-medium w-full xl:w-[550px]   text-[32px] leading-[44px] not-italic">
-                <p>Information Technology is Information a Technology is rapidly evolving field that encompasses the study </p>
+              <div class="w-full h-[1px] my-[10px] md:my-[30px]"></div>
+              <div
+                class="text-[#716F73] w-full xl:w-[550px]  font-medium text-[20px] md:text-[32px] leading-[28px] md:leading-[44px] not-italic text-center md:text-start">
+                <p>Information Technology is Information a Technology is rapidly evolving field that encompasses the
+                  study </p>
               </div>
-           <div class="flex gap-[10px] pt-[40px] text-[#FFB34E] text-[20px] font-black not-italic leading-none">
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill text-[#716F73]"></i>
-           </div>
+              <div
+                class="flex gap-[10px] pt-[28px] md:pt-[40px] text-[#FFB34E] text-[20px] font-black not-italic leading-none justify-center md:justify-start ">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill text-[#716F73]"></i>
+              </div>
             </div>
           </div>
-          <div class="card w-[608px] h-[412px] mb-[115px] ml-[30px]  rounded-[20px] border border-[#8FD45F] bg-white">
-            <div class="px-[32px] py-[38px]">
+          <div
+            class="card w-[608px] h-[412px] ml-[14px] md:ml-[30px] mb-[60px] md:mb-[115px] rounded-[20px] border border-[#8FD45F] bg-white">
+            <div class="px-[26px] md:px-[32px] py-[38px]">
               <div class="flex justify-between items-center">
                 <div class="flex gap-[20px] items-center">
-                    <img src="../images/tesi1-logo.png" alt="logo">
+                  <img src="../images/tesi1-logo.png" alt="logo">
                   <div class="flex flex-col gap-[5px]">
-                    <h5 class="text-[#07000E] font-bold text-[24px] leading-[34.91px] tracking-[-0.25px] not-italic ">Jenny Wilson</h5>
+                    <h5
+                      class="text-[#07000E] font-bold text-[20px] md:text-[24px] leading-[28.91px] md:leading-[34.91px] tracking-[-0.25px] not-italic ">
+                      Jenny Wilson</h5>
                     <span class="text-[#716F73] font-medium text-[18px] leading-[28.01px] not-italic "> Designer</span>
                   </div>
                 </div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none" class="ml-[-18px]">
-                    <path
-                      d="M59.5 9.07422V34.1699L51.1191 50.9316H39.3799L47.5898 34.5117L47.9521 33.7881L34.7861 33.7881V9.07422L59.5 9.07422ZM25.2139 9.07422L25.2139 34.1699L16.833 50.9316H5.09473L13.3047 34.5117L13.666 33.7881H0.5L0.5 9.07422L25.2139 9.07422Z"
-                      stroke="#573DB8" />
-                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                  class="ml-0 xl:ml-[-18px]">
+                  <path
+                    d="M59.5 9.07422V34.1699L51.1191 50.9316H39.3799L47.5898 34.5117L47.9521 33.7881L34.7861 33.7881V9.07422L59.5 9.07422ZM25.2139 9.07422L25.2139 34.1699L16.833 50.9316H5.09473L13.3047 34.5117L13.666 33.7881H0.5L0.5 9.07422L25.2139 9.07422Z"
+                    stroke="#573DB8" />
+                </svg>
               </div>
-              <div class="w-full h-[1px] my-[30px]"></div>
-              <div class="text-[#716F73] w-full xl:w-[550px]   font-medium text-[32px] leading-[44px] not-italic">
-                <p>Information Technology is Information a Technology is rapidly evolving field that encompasses the study </p>
+              <div class="w-full h-[1px] my-[10px] md:my-[30px]"></div>
+              <div
+                class="text-[#716F73] w-full xl:w-[550px]  font-medium text-[20px] md:text-[32px] leading-[28px] md:leading-[44px] not-italic text-center md:text-start">
+                <p>Information Technology is Information a Technology is rapidly evolving field that encompasses the
+                  study </p>
               </div>
-           <div class="flex gap-[10px] pt-[40px] text-[#FFB34E] text-[20px] font-black not-italic leading-none">
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill text-[#716F73]"></i>
-           </div>
+              <div
+                class="flex gap-[10px] pt-[28px] md:pt-[40px] text-[#FFB34E] text-[20px] font-black not-italic leading-none justify-center md:justify-start ">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill text-[#716F73]"></i>
+              </div>
             </div>
           </div>
-          <div class="card w-[608px] h-[412px] mb-[115px]  ml-[30px]  rounded-[20px] border border-[#8FD45F] bg-white">
-            <div class="px-[32px] py-[38px]">
+          <div
+            class="card w-[608px] h-[412px] ml-[14px] md:ml-[30px] mb-[60px] md:mb-[115px] rounded-[20px] border border-[#8FD45F] bg-white">
+            <div class="px-[26px] md:px-[32px] py-[38px]">
               <div class="flex justify-between items-center">
                 <div class="flex gap-[20px] items-center">
-                    <img src="../images/tesi1-logo.png" alt="logo">
+                  <img src="../images/tesi1-logo.png" alt="logo">
                   <div class="flex flex-col gap-[5px]">
-                    <h5 class="text-[#07000E] font-bold text-[24px] leading-[34.91px] tracking-[-0.25px] not-italic ">Jenny Wilson</h5>
+                    <h5
+                      class="text-[#07000E] font-bold text-[20px] md:text-[24px] leading-[28.91px] md:leading-[34.91px] tracking-[-0.25px] not-italic ">
+                      Jenny Wilson</h5>
                     <span class="text-[#716F73] font-medium text-[18px] leading-[28.01px] not-italic "> Designer</span>
                   </div>
                 </div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none" class="ml-[-18px]">
-                    <path
-                      d="M59.5 9.07422V34.1699L51.1191 50.9316H39.3799L47.5898 34.5117L47.9521 33.7881L34.7861 33.7881V9.07422L59.5 9.07422ZM25.2139 9.07422L25.2139 34.1699L16.833 50.9316H5.09473L13.3047 34.5117L13.666 33.7881H0.5L0.5 9.07422L25.2139 9.07422Z"
-                      stroke="#573DB8" />
-                  </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                  class="ml-0 xl:ml-[-18px]">
+                  <path
+                    d="M59.5 9.07422V34.1699L51.1191 50.9316H39.3799L47.5898 34.5117L47.9521 33.7881L34.7861 33.7881V9.07422L59.5 9.07422ZM25.2139 9.07422L25.2139 34.1699L16.833 50.9316H5.09473L13.3047 34.5117L13.666 33.7881H0.5L0.5 9.07422L25.2139 9.07422Z"
+                    stroke="#573DB8" />
+                </svg>
               </div>
-              <div class="w-full h-[1px] my-[30px]"></div>
-              <div class="text-[#716F73] w-full xl:w-[550px]  font-medium text-[32px] leading-[44px] not-italic">
-                <p>Information Technology is Information a Technology is rapidly evolving field that encompasses the study </p>
+              <div class="w-full h-[1px] my-[10px] md:my-[30px]"></div>
+              <div
+                class="text-[#716F73] w-full xl:w-[550px]  font-medium text-[20px] md:text-[32px] leading-[28px] md:leading-[44px] not-italic text-center md:text-start">
+                <p>Information Technology is Information a Technology is rapidly evolving field that encompasses the
+                  study </p>
               </div>
-           <div class="flex gap-[10px] pt-[40px] text-[#FFB34E] text-[20px] font-black not-italic leading-none">
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill text-[#716F73]"></i>
-           </div>
+              <div
+                class="flex gap-[10px] pt-[28px] md:pt-[40px] text-[#FFB34E] text-[20px] font-black not-italic leading-none justify-center md:justify-start ">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill text-[#716F73]"></i>
+              </div>
             </div>
           </div>
-        
+
         </div>
       </div>
     </div>
@@ -1627,9 +1762,7 @@
                   </button>
                 </div>
                 <div id="extraText1" class="hidden text-white font-bold text-[18px] leading-[27px] max-w-full">
-                  Here are some key steps to protect yourself from cyber threats: Use strong passwords, enable
-                  two-factor
-                  authentication, keep your software updated, avoid suspicious links, and use antivirus software.
+                  Here are some key steps to protect yourself from cyber threats: Use strong passwords.
                 </div>
                 <hr class="w-full border-b border-gray-300 mt-[15px]" />
 
@@ -1644,9 +1777,7 @@
                   </button>
                 </div>
                 <div id="extraText2" class="hidden text-white font-bold text-[18px] leading-[27px] max-w-full">
-                  Here are some key steps to protect yourself from cyber threats: Use strong passwords, enable
-                  two-factor
-                  authentication, keep your software updated, avoid suspicious links, and use antivirus software.
+                  Here are some key steps to protect yourself from cyber threats: Use strong passwords.
                 </div>
                 <hr class="w-full border-b border-gray-300 mt-[15px]" />
 
@@ -1661,9 +1792,7 @@
                   </button>
                 </div>
                 <div id="extraText3" class="hidden text-white font-bold text-[18px] leading-[27px] max-w-full">
-                  Here are some key steps to protect yourself from cyber threats: Use strong passwords, enable
-                  two-factor
-                  authentication, keep your software updated, avoid suspicious links, and use antivirus software.
+                  Here are some key steps to protect yourself from cyber threats: Use strong passwords.
                 </div>
                 <hr class="w-full border-b border-gray-300 mt-[15px]" />
 
@@ -1697,6 +1826,7 @@
 
       <div
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[25px] xl:gap-[30px] mt-[30px] md:mt-[40px] lg:mt-[60px] ">
+
         <div
           class="card h-auto w-full  lg:max-w-[366px]   xl:max-w-[410px] lg:h-[477px] shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] bg-[#F7F1FC]  mx-auto">
           <div class="flex flex-col">
@@ -1704,7 +1834,7 @@
               <img src="../images/blog1.png" class="w-full h-auto object-cover" alt="logo">
             </div>
             <div class="px-[31px] py-[20px] xl:py-[8px]">
-              <div class="flex items-center gap-[30px]">
+              <div class="flex items-center gap-[20px] md:gap-[30px]">
                 <div class="flex items-center gap-[5px]">
                   <i class="ri-user-3-fill"></i>
                   <span class="text-[#716F73] text-[12px] font-normal leading-[160%]">Admin</span>
@@ -1715,7 +1845,7 @@
                 </div>
               </div>
               <h3
-                class="text-[#07000E] pt-[20px] pb-5 lg:pb-[30px] text-[24px] font-bold leading-[34.91px] tracking-[-0.25px]">
+                class="text-[#07000E] pt-[15px] md:pt-[20px] pb-[15px] lg:pb-[30px] text-[20px] md:text-[24px] font-bold leading-[30.91px] md:leading-[34.91px] tracking-[-0.25px]">
                 Redefining Excellence in Tech Shaping the Digital
               </h3>
               <a href="#" class="read-btn">
@@ -1737,10 +1867,88 @@
 
         </div>
         <div
+          class="card h-auto w-full  lg:max-w-[366px]   xl:max-w-[410px] lg:h-[477px] shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] bg-[#F7F1FC]  mx-auto">
+          <div class="flex flex-col">
+            <div class="p-[10px]">
+              <img src="../images/blog2.png" class="w-full h-auto object-cover" alt="logo">
+            </div>
+            <div class="px-[31px] py-[20px] xl:py-[8px]">
+              <div class="flex items-center gap-[20px] md:gap-[30px]">
+                <div class="flex items-center gap-[5px]">
+                  <i class="ri-user-3-fill"></i>
+                  <span class="text-[#716F73] text-[12px] font-normal leading-[160%]">Admin</span>
+                </div>
+                <div class="flex items-center gap-[5px]">
+                  <i class="ri-file-copy-fill"></i>
+                  <span class="text-[#716F73] text-[12px] font-normal leading-[160%]">Category</span>
+                </div>
+              </div>
+              <h3
+                class="text-[#07000E] pt-[15px] md:pt-[20px] pb-[15px] lg:pb-[30px] text-[20px] md:text-[24px] font-bold leading-[30.91px] md:leading-[34.91px] tracking-[-0.25px]">
+                Redefining Excellence in Tech Shaping the Digital
+              </h3>
+              <a href="#" class="read-btn">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.2054 14.875H3.78906V13.125H24.2054V14.875Z"
+                    fill="#07000E" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M23.3299 13.125C19.2145 13.125 15.8516 16.7441 15.8516 20.6033V21.4783H17.6016V20.6033C17.6016 17.6733 20.2179 14.875 23.3299 14.875H24.2044V13.125H23.3299Z"
+                    fill="#07000E" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M23.3299 14.8768C19.2145 14.8768 15.8516 11.2577 15.8516 7.39844V6.52344H17.6016V7.39844C17.6016 10.3286 20.2179 13.1268 23.3299 13.1268H24.2044V14.8768H23.3299Z"
+                    fill="#07000E" />
+                </svg>
+
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div
+          class="card h-auto w-full  lg:max-w-[366px]   xl:max-w-[410px] lg:h-[477px] shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] bg-[#F7F1FC]  mx-auto">
+          <div class="flex flex-col">
+            <div class="p-[10px]">
+              <img src="../images/blog3.png" class="w-full h-auto object-cover" alt="logo">
+            </div>
+            <div class="px-[31px] py-[20px] xl:py-[8px]">
+              <div class="flex items-center gap-[20px] md:gap-[30px]">
+                <div class="flex items-center gap-[5px]">
+                  <i class="ri-user-3-fill"></i>
+                  <span class="text-[#716F73] text-[12px] font-normal leading-[160%]">Admin</span>
+                </div>
+                <div class="flex items-center gap-[5px]">
+                  <i class="ri-file-copy-fill"></i>
+                  <span class="text-[#716F73] text-[12px] font-normal leading-[160%]">Category</span>
+                </div>
+              </div>
+              <h3
+                class="text-[#07000E] pt-[15px] md:pt-[20px] pb-[15px] lg:pb-[30px] text-[20px] md:text-[24px] font-bold leading-[30.91px] md:leading-[34.91px] tracking-[-0.25px]">
+                Redefining Excellence in Tech Shaping the Digital
+              </h3>
+              <a href="#" class="read-btn">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.2054 14.875H3.78906V13.125H24.2054V14.875Z"
+                    fill="#07000E" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M23.3299 13.125C19.2145 13.125 15.8516 16.7441 15.8516 20.6033V21.4783H17.6016V20.6033C17.6016 17.6733 20.2179 14.875 23.3299 14.875H24.2044V13.125H23.3299Z"
+                    fill="#07000E" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M23.3299 14.8768C19.2145 14.8768 15.8516 11.2577 15.8516 7.39844V6.52344H17.6016V7.39844C17.6016 10.3286 20.2179 13.1268 23.3299 13.1268H24.2044V14.8768H23.3299Z"
+                    fill="#07000E" />
+                </svg>
+
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <!-- <div
           class="card h-auto w-full lg:max-w-[366px]  xl:max-w-[410px] lg:h-[477px] shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] bg-[#F7F1FC]  mx-auto">
           <div class="flex flex-col">
             <div class="p-[10px]">
-              <img src="../images/blog1.png" class="w-full h-auto object-cover" alt="logo">
+              <img src="../images/blog2.png" class="w-full h-auto object-cover" alt="logo">
             </div>
             <div class="px-[31px] py-[20px] xl:py-[8px]">
               <div class="flex items-center gap-[30px]">
@@ -1754,7 +1962,7 @@
                 </div>
               </div>
               <h3
-                class="text-[#07000E] pt-[20px] pb-5 lg:pb-[30px] text-[24px] font-bold leading-[34.91px] tracking-[-0.25px]">
+                class="text-[#07000E] pt-[20px] pb-5 lg:pb-[30px] text-[20px] md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px]">
                 Pioneering Technology for IT That Transforms
               </h3>
               <a href="#" class="read-btn">
@@ -1779,7 +1987,7 @@
           class="card w-full h-auto lg:max-w-[366px]  xl:max-w-[410px] lg:h-[477px] shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] bg-[#F7F1FC]  mx-auto">
           <div class="flex flex-col">
             <div class="p-[10px]">
-              <img src="../images/blog1.png" class="w-full h-auto object-cover" alt="logo">
+              <img src="../images/blog3.png" class="w-full h-auto object-cover" alt="logo">
             </div>
             <div class="px-[31px] py-[20px] xl:py-[8px]">
               <div class="flex items-center gap-[30px]">
@@ -1793,7 +2001,7 @@
                 </div>
               </div>
               <h3
-                class="text-[#07000E] pt-[20px]  pb-5 lg:pb-[30px] text-[24px] font-bold leading-[34.91px] tracking-[-0.25px]">
+                class="text-[#07000E] pt-[20px]  pb-5 lg:pb-[30px] text-[20px] md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px]">
                 Through the Technological Not Just Informs
               </h3>
               <a href="#" class="read-btn">
@@ -1813,13 +2021,13 @@
             </div>
           </div>
 
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
 
 
-  <footer
+  <footer id="contact"
     class="pt-[30px] md:pt-[40px] lg:pt-[60px] xl:pt-[80px] bg-[#07000E] px-[15px] text-center lg:text-left items-center lg:items-start">
     <div class="container">
       <div class="flex flex-col lg:flex-row justify-between items-center text-center lg:text-left gap-[30px]">
@@ -1965,7 +2173,9 @@
   </footer>
 
 
-
+  <script src="../src/js/jquery-3.6.1.min.js"></script>
+  <script src="../src/js/slick.min.js"></script>
+  <script src="../src/js/jquery.magnific-popup.min.js"></script>
   <script src="../src/js/script.js"></script>
 </body>
 

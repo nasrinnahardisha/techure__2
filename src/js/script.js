@@ -1,28 +1,80 @@
+const menuToggle = document.getElementById('menu-toggle');
+const menuClose = document.getElementById('menu-close');
+const mobileNav = document.getElementById('mobile-nav');
 
-
-  const menuToggle = document.getElementById('menu-toggle');
-  const menuClose = document.getElementById('menu-close');
-  const mobileNav = document.getElementById('mobile-nav');
-
-  menuToggle.addEventListener('click', () => {
-    mobileNav.classList.remove('hidden');
-	 setTimeout(() => {
-    mobileNav.classList.remove('opacity-0', '-translate-y-4');
-    mobileNav.classList.add('opacity-100', 'translate-y-0');
+menuToggle.addEventListener('click', () => {
+  mobileNav.classList.remove('hidden');
+  setTimeout(() => {
+    mobileNav.classList.remove('opacity-0', 'translate-x-full');
+    mobileNav.classList.add('opacity-100', 'translate-x-0');
   }, 10);
-    menuToggle.classList.add('hidden');
-    menuClose.classList.remove('hidden');
-  });
 
- menuClose.addEventListener('click', () => {
-  mobileNav.classList.remove('opacity-100', 'translate-y-0');
-  mobileNav.classList.add('opacity-0', '-translate-y-4');
+  menuToggle.classList.add('hidden');
+  menuClose.classList.remove('hidden');
+});
+
+menuClose.addEventListener('click', closeMobileMenu);
+
+function closeMobileMenu() {
+  mobileNav.classList.remove('opacity-100', 'translate-x-0');
+  mobileNav.classList.add('opacity-0', 'translate-x-full');
+
   setTimeout(() => {
     mobileNav.classList.add('hidden');
-  }, 300); 
+  }, 300);
+
   menuToggle.classList.remove('hidden');
   menuClose.classList.add('hidden');
+}
+
+mobileNav.addEventListener('mouseleave', () => {
+  if (window.innerWidth < 1280 && mobileNav.classList.contains('translate-x-0')) {
+    closeMobileMenu();
+  }
 });
+
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 1280) {
+    if (mobileNav.classList.contains('translate-x-0')) {
+      closeMobileMenu();
+    }
+  }
+});
+
+
+
+
+
+
+const openSidebar = document.getElementById('openSidebar');
+const closeSidebar = document.getElementById('closeSidebar');
+const contactSidebar = document.getElementById('contactSidebar');
+
+openSidebar.addEventListener('click', () => {
+  contactSidebar.classList.remove('translate-x-full');
+  contactSidebar.classList.add('translate-x-0');
+});
+
+closeSidebar.addEventListener('click', () => {
+  contactSidebar.classList.remove('translate-x-0');
+  contactSidebar.classList.add('translate-x-full');
+});
+
+document.addEventListener('mousemove', function (e) {
+  const isInsideSidebar = contactSidebar.contains(e.target);
+  const isInsideButton = openSidebar.contains(e.target);
+  if (!isInsideSidebar && !isInsideButton) {
+    contactSidebar.classList.remove('translate-x-0');
+    contactSidebar.classList.add('translate-x-full');
+  }
+});
+
+
+
+
+
+
 
 
 
@@ -153,22 +205,42 @@ circleWrapper5.addEventListener("mouseleave", () => {
   });
 
 
-  $(document).ready(function () {
-    $('.counter').each(function () {
-      var $this = $(this);
-      var target = parseInt($this.attr('data-target'));
-      var count = 0;
-      var speed = 20; 
-      var increment = Math.ceil(target / 100);
+  function animateCounter($el) {
+    let target = parseInt($el.attr("data-target"));
+    let count = 0;
+    let speed = 20;
+    let increment = Math.ceil(target / 100);
 
-      var counterInterval = setInterval(function () {
-        count += increment;
-        if (count >= target) {
-          count = target;
-          clearInterval(counterInterval);
-        }
-        $this.text(count);
-      }, speed);
+    let counterInterval = setInterval(function () {
+      count += increment;
+      if (count >= target) {
+        count = target;
+        clearInterval(counterInterval);
+      }
+      $el.text(count);
+    }, speed);
+  }
+
+  $(document).ready(function () {
+    let counters = document.querySelectorAll(".counter");
+
+    let observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            let $el = $(entry.target);
+            $el.text("0"); 
+            animateCounter($el);
+          }
+        });
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+
+    counters.forEach((counter) => {
+      observer.observe(counter);
     });
   });
 
@@ -182,37 +254,49 @@ circleWrapper5.addEventListener("mouseleave", () => {
 
 
 
- const toggleBtn1 = document.getElementById('toggleBtn1');
-  const toggleBtn2 = document.getElementById('toggleBtn2');
-  const toggleBtn3 = document.getElementById('toggleBtn3');
-
-  const extraText1 = document.getElementById('extraText1');
-  const extraText2 = document.getElementById('extraText2');
-  const extraText3 = document.getElementById('extraText3');
+  const toggleButtons = document.querySelectorAll('[id^="toggleBtn"]');
+  const extraTexts = document.querySelectorAll('[id^="extraText"]');
 
   const plusIconClass = 'ri-add-line';
   const subtractIconClass = 'ri-subtract-fill';
 
-  function toggleContent(toggleBtn, extraText) {
-    const icon = toggleBtn.querySelector('i');
-    const isHidden = extraText.classList.contains('hidden');
-
-    if (isHidden) {
-      extraText.classList.remove('hidden');
-      icon.classList.remove(plusIconClass);
-      icon.classList.add(subtractIconClass);
-    } else {
-      extraText.classList.add('hidden');
-      icon.classList.remove(subtractIconClass);
-      icon.classList.add(plusIconClass);
-    }
+  function hideAllExcept(currentIndex) {
+    extraTexts.forEach((text, index) => {
+      const icon = toggleButtons[index].querySelector('i');
+      if (index !== currentIndex) {
+        text.classList.add('hidden');
+        icon.classList.remove(subtractIconClass);
+        icon.classList.add(plusIconClass);
+      }
+    });
   }
 
-  toggleBtn1.addEventListener('click', () => toggleContent(toggleBtn1, extraText1));
-  toggleBtn2.addEventListener('click', () => toggleContent(toggleBtn2, extraText2));
-  toggleBtn3.addEventListener('click', () => toggleContent(toggleBtn3, extraText3));
+  toggleButtons.forEach((btn, index) => {
+    btn.addEventListener('click', () => {
+      const currentText = extraTexts[index];
+      const icon = btn.querySelector('i');
+      const isHidden = currentText.classList.contains('hidden');
 
+      if (isHidden) {
+        hideAllExcept(index); // অন্য সব বন্ধ করে
+        currentText.classList.remove('hidden');
+        icon.classList.remove(plusIconClass);
+        icon.classList.add(subtractIconClass);
+      } else {
+        currentText.classList.add('hidden');
+        icon.classList.remove(subtractIconClass);
+        icon.classList.add(plusIconClass);
+      }
+    });
+  });
 
+  // প্রথম অ্যাকর্ডিয়ন ডিফল্টে খোলা থাকবে
+  window.addEventListener('DOMContentLoaded', () => {
+    extraTexts[0].classList.remove('hidden');
+    const icon = toggleButtons[0].querySelector('i');
+    icon.classList.remove(plusIconClass);
+    icon.classList.add(subtractIconClass);
+  });
 
 
 
@@ -227,6 +311,7 @@ $(document).ready(function ($) {
     autoplay: true,
     autoplaySpeed: 3000,
   });
+
 
     $('.team-slider').slick({
     slidesToShow: 2,
@@ -245,6 +330,7 @@ $(document).ready(function ($) {
        breakpoint: 768, 
        settings: {
          slidesToShow: 1,
+           dots: false
        }
      }
    ]
