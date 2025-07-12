@@ -78,21 +78,26 @@ document.addEventListener('mousemove', function (e) {
 
 
 
+jQuery(document).ready(function($) {
+  $('.slick.marquee').slick({
+    speed: 5000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    centerMode: true,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: true,
+    initialSlide: 1,
+    arrows: false,
+    buttons: false,
+    pauseOnHover: true
+  });
+});
 
-const marquee = document.getElementById('marquee');
-let speed = 1;
-let position = 0;
 
-function animateMarquee() {
-  position -= speed;
-  if (Math.abs(position) >= marquee.scrollWidth / 4) {
-    position = 0; 
-  }
-  marquee.style.transform = `translateX(${position}px)`;
-  requestAnimationFrame(animateMarquee);
-}
 
-animateMarquee();
 
 
 document.addEventListener("DOMContentLoaded", () => {

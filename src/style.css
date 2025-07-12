@@ -5,7 +5,10 @@ html {
     overflow-x: hidden;
 }
 
-
+body {
+  overflow-x: hidden;
+  font-family: "DM Sans", sans-serif;
+}
 
 #custom-arrows button.slick-arrow {
     position: absolute;
@@ -83,10 +86,12 @@ html {
 .testimonial-area ul li.slick-active button, .team-slider ul li.slick-active button {
     background: #573DB8;
 }
-body {
-  overflow-x: hidden;
-  font-family: "DM Sans", sans-serif;
+
+.slick .inner {
+  margin: 0 15px;
+  
 }
+
 
 .sub-title {
   color: #07000e;
