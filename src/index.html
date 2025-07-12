@@ -83,10 +83,10 @@
         <div class="hidden xl:flex items-center gap-10 mr-[-7px]">
           <div class="flex gap-2.5 text-[18px] font-bold leading-[27px] text-[#07000E]">
             <span><i class="ri-phone-fill text-[24px] font-black text-[#573DB8]"></i></span>
-            (629) 555-0129
+            <a href="tel:6295550129">(629) 555-0129</a>
           </div>
 
-          <button id="openSidebar" aria-label="Button" class="focus:outline-none">
+          <button id="openSidebar" aria-label="Button" class="focus:outline-none cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none">
               <circle cx="25.5" cy="25.5" r="25.5" fill="#573DB8" />
               <path d="M25 21L35 21" stroke="white" stroke-width="2" />
@@ -97,14 +97,29 @@
             class="fixed top-0 right-0 h-full w-[300px] bg-white shadow-lg z-[9999] transform translate-x-full transition-transform duration-300 ease-in-out">
             <div class="p-6 flex flex-col gap-4">
               <h3 class="text-xl font-bold text-[#573DB8]">Contact Us</h3>
-              <p class="text-gray-600">Phone: (629) 555-0129</p>
-              <p class="text-gray-600">Email: info@example.com</p>
+
+              <a href="tel:6295550129" class="text-gray-600">Phone: (629) 555-0129</a>
+              <a href="mailto:info@example.com" class="text-gray-600 hover:underline block">
+                Email: info@example.com
+              </a>
+
               <div class="flex gap-3">
-                <a href="#" class="text-[#573DB8] text-2xl"><i class="ri-facebook-fill"></i></a>
-                <a href="#" class="text-[#573DB8] text-2xl"><i class="ri-instagram-line"></i></a>
-                <a href="#" class="text-[#573DB8] text-2xl"><i class="ri-twitter-x-line"></i></a>
+                <a href="#"
+                  class="text-[#573DB8] text-2xl transition duration-300 hover:text-[#07000E] hover:scale-125">
+                  <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="#"
+                  class="text-[#573DB8] text-2xl transition duration-300 hover:text-[#07000E] hover:scale-125">
+                  <i class="ri-instagram-line"></i>
+                </a>
+                <a href="#"
+                  class="text-[#573DB8] text-2xl transition duration-300 hover:text-[#07000E] hover:scale-125">
+                  <i class="ri-twitter-x-line"></i>
+                </a>
               </div>
-              <button id="closeSidebar" class="mt-4 text-[#573DB8] font-semibold underline">Close</button>
+
+              <button id="closeSidebar"
+                class="mt-4 text-[#573DB8] font-semibold underline cursor-pointer">Close</button>
             </div>
           </div>
 
@@ -112,7 +127,7 @@
         <div class="flex items-center gap-4 xl:hidden">
           <div class="hidden sm:flex gap-2.5 text-[18px] font-bold leading-[27px] text-[#07000E]">
             <span><i class="ri-phone-fill text-[24px] font-black text-[#573DB8]"></i></span>
-            (629) 555-0129
+            <a href="tel:6295550129">(629) 555-0129</a>
           </div>
 
           <button id="menu-toggle" aria-label="Open menu" class="focus:outline-none">
@@ -406,8 +421,8 @@
           <div class="title pt-[10px] md:pt-[15px] pb-4 sm:pb-[20px] md:pb-[30px] lg:pb-[40px]">
             Pro Driven a Globally
           </div>
-          <div class="both-btn flex items-center pl-[7px]">
-            <a href="#" class="custom-btn"> View All Service </a>
+          <a href="#" class="both-btn flex items-center pl-[7px]">
+            <div class="custom-btn"> View All Service </div>
             <div class="flex justify-center items-center">
               <div class="icon-wrapper group">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -423,11 +438,11 @@
                 </svg>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="w-full lg:w-8/12">
           <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-[30px]">
-            <a href="#"
+            <div
               class="relative w-full xl:w-[370px] h-full xl:h-[252px] py-6 lg:py-10 pl-[30px] md:pl-[40px] lg:pl-[60px] pr-5 md:pr-[30px] flex-shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] flex flex-col justify-between ml-0 xl:ml-[37px] transition-all duration-300 ease-in-out hover:border-[#573DB8] hover:shadow-xl hover:scale-[1.02]">
               <div class="flex flex-col justify-between h-full">
                 <h4 class="text-[#07000E] text-xl md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px]">
@@ -438,7 +453,7 @@
                   <p>Information Technology rapidly field that encompasses</p>
                 </div>
 
-                <div class="read-btn group">
+                <a href="#" class="read-btn group">
                   Read More
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
                     class="transition-transform duration-300 group-hover:rotate-45">
@@ -452,7 +467,7 @@
                       d="M20.2554 10.3586C18.0729 12.5411 14.3701 12.4052 12.3234 10.3586L11.8594 9.89453L12.7875 8.96645L13.2515 9.43049C14.8055 10.9845 17.677 11.0809 19.3273 9.43052L19.7911 8.96673L20.7192 9.89481L20.2554 10.3586Z"
                       fill="#07000E" />
                   </svg>
-                </div>
+                </a>
 
               </div>
               <div
@@ -507,9 +522,9 @@
                     fill="#573DB8" />
                 </svg>
               </div>
-            </a>
+            </div>
 
-            <a href="#"
+            <div
               class="relative w-full xl:w-[370px] h-full xl:h-[252px] py-6 lg:py-10 pl-[30px] md:pl-[40px] lg:pl-[60px] pr-5 md:pr-[30px] flex-shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] flex flex-col justify-between ml-0 xl:ml-[41px] transition-all duration-300 ease-in-out hover:border-[#573DB8] hover:shadow-xl hover:scale-[1.02]">
               <div class="flex flex-col justify-between h-full">
                 <h4 class="text-[#07000E] text-xl md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px]">
@@ -520,7 +535,7 @@
                   <p>Information Technology rapidly field that encompasses</p>
                 </div>
 
-                <div class="read-btn group">
+                <a href="#" class="read-btn group">
                   Read More
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
                     class="transition-transform duration-300 group-hover:rotate-45">
@@ -534,7 +549,7 @@
                       d="M20.2554 10.3586C18.0729 12.5411 14.3701 12.4052 12.3234 10.3586L11.8594 9.89453L12.7875 8.96645L13.2515 9.43049C14.8055 10.9845 17.677 11.0809 19.3273 9.43052L19.7911 8.96673L20.7192 9.89481L20.2554 10.3586Z"
                       fill="#07000E" />
                   </svg>
-                </div>
+                </a>
 
               </div>
               <div
@@ -589,8 +604,8 @@
                     fill="#573DB8" />
                 </svg>
               </div>
-            </a>
-            <a href="#"
+            </div>
+            <div
               class="relative w-full xl:w-[370px] h-full xl:h-[252px] py-6 lg:py-10 pl-[30px] md:pl-[40px] lg:pl-[60px] pr-5 md:pr-[30px] flex-shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] flex flex-col justify-between ml-0 xl:ml-[37px] transition-all duration-300 ease-in-out hover:border-[#573DB8] hover:shadow-xl hover:scale-[1.02]">
               <div class="flex flex-col justify-between h-full">
                 <h4 class="text-[#07000E] text-xl md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px]">
@@ -600,7 +615,7 @@
                 <div class="pt-3 md:pt-5 pb-6 md:pb-[35px] text-[#716F73] text-[18px] font-medium leading-[28.01px]">
                   <p>Information Technology rapidly field that encompasses</p>
                 </div>
-                <div class="read-btn group">
+                <a href="#" class="read-btn group">
                   Read More
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
                     class="transition-transform duration-300 group-hover:rotate-45">
@@ -614,7 +629,7 @@
                       d="M20.2554 10.3586C18.0729 12.5411 14.3701 12.4052 12.3234 10.3586L11.8594 9.89453L12.7875 8.96645L13.2515 9.43049C14.8055 10.9845 17.677 11.0809 19.3273 9.43052L19.7911 8.96673L20.7192 9.89481L20.2554 10.3586Z"
                       fill="#07000E" />
                   </svg>
-                </div>
+                </a>
               </div>
               <div
                 class="absolute top-1/2 -translate-y-1/2 xl:left-[-40px] xl:w-[80px] xl:h-[80px] flex items-center justify-center rounded-full bg-white shadow-[0_0_60px_rgba(0,0,0,0.05)] md:left-[-30px] md:w-[70px] md:h-[70px] left-[-20px] w-[60px] h-[60px]">
@@ -668,9 +683,9 @@
                     fill="#573DB8" />
                 </svg>
               </div>
-            </a>
+            </div>
 
-            <a href="#"
+            <div
               class="relative w-full xl:w-[370px] h-full xl:h-[252px] py-6 lg:py-10 pl-[30px] md:pl-[40px] lg:pl-[60px] pr-5 md:pr-[30px] flex-shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] flex flex-col justify-between ml-0 xl:ml-[41px] transition-all duration-300 ease-in-out hover:border-[#573DB8] hover:shadow-xl hover:scale-[1.02]">
               <div class="flex flex-col justify-between h-full">
                 <h4 class="text-[#07000E] text-xl md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px]">
@@ -680,7 +695,7 @@
                 <div class="pt-3 md:pt-5 pb-6 md:pb-[35px] text-[#716F73] text-[18px] font-medium leading-[28.01px]">
                   <p>Information Technology rapidly field that encompasses</p>
                 </div>
-                <div class="read-btn group">
+                <a href="#" class="read-btn group">
                   Read More
                   <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
                     class="transition-transform duration-300 group-hover:rotate-45">
@@ -694,7 +709,7 @@
                       d="M20.2554 10.3586C18.0729 12.5411 14.3701 12.4052 12.3234 10.3586L11.8594 9.89453L12.7875 8.96645L13.2515 9.43049C14.8055 10.9845 17.677 11.0809 19.3273 9.43052L19.7911 8.96673L20.7192 9.89481L20.2554 10.3586Z"
                       fill="#07000E" />
                   </svg>
-                </div>
+                </a>
 
               </div>
               <div
@@ -749,7 +764,7 @@
                     fill="#573DB8" />
                 </svg>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -1020,57 +1035,58 @@
       </div>
       <div class="flex flex-col gap-[60px] md:gap-[80px] pt-10 md:pt-[50px] lg:pt-[60px] pl-0 xl:pl-[7px]">
         <div class="flex flex-col md:flex-row gap-[40px] md:gap-[75px]">
-          <a href="#" class="flex flex-col gap-5 group">
+          <div class="flex flex-col gap-5">
             <div class="relative w-full">
               <button
-                class="absolute top-[20px] left-[20px] inline-flex h-[40px] px-[20px] py-[5px] justify-center items-center gap-[10px] rounded-[20px] bg-[#07000E] text-white text-[18px] font-medium leading-7">
+                class="absolute z-10 top-[20px] left-[20px] inline-flex h-[40px] px-[20px] py-[5px] justify-center items-center gap-[10px] rounded-[20px] bg-[#07000E] text-white text-[18px] font-medium leading-7">
                 Cloud Sync Solutions
               </button>
               <img src="../images/latest1.png"
-                class="w-full md:w-[605px] h-auto md:h-[485px] transform transition duration-500 ease-in-out group-hover:scale-105"
-                alt="img" />
-            </div>
-            <h4
-              class="text-[#07000E] text-[20px] md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] not-italic">
-              Shaping the Digital Landscape
-            </h4>
-          </a>
-          <a href="#" class="flex gap-5 flex-col group">
-            <div class="relative w-full">
-              <button
-                class="absolute top-[20px] left-[26px] inline-flex h-[40px] px-[20px] py-[5px] justify-center items-center gap-[10px] rounded-[20px] bg-[#573DB8] text-white text-[18px] font-medium leading-7">
-                Cyber Shield Defense
-              </button>
-              <img src="../images/latest2.png"
-                class="w-full md:w-[605px] h-auto md:h-[559px] pl-0 xl:pl-[7px] transform transition duration-500 ease-in-out group-hover:scale-105"
-                alt="img" />
-            </div>
-            <h4
-              class="text-[#07000E] text-[20px] md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] not-italic pl-0 xl:pl-[5px]">
-              Shaping the Digital Landscape
-            </h4>
-          </a>
-        </div>
-        <div class="flex flex-col md:flex-row gap-[30px] md:gap-[75px]">
-          <div class="flex gap-5 flex-col mt-0 xl:mt-[-74px] order-2 md:order-1 group">
-            <div class="relative w-full">
-              <button
-                class="absolute top-[20px] left-[20px] inline-flex h-[40px] px-[20px] py-[5px] justify-center items-center gap-[10px] rounded-[20px] bg-[#07000E] text-white text-[18px] font-medium leading-7">
-                Net Connect Pro
-              </button>
-              <img src="../images/latest3.png"
-                class="w-full md:w-[605px] h-auto md:h-[485px] transform transition duration-500 ease-in-out group-hover:scale-105"
+                class="w-full md:w-[605px] h-auto md:h-[485px] transform transition duration-500 ease-in-out hover:scale-105"
                 alt="img" />
             </div>
             <a href="#"
-              class="text-[#07000E] text-[20px] md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] not-italic">
+              class="text-[#07000E] text-[20px] md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] not-italic hover:text-[#573DB8] transition-colors duration-300">
               Shaping the Digital Landscape
             </a>
-            <div class="flex items-center pt-[10px] md:pt-[60px]">
-              <a href="#" class="custom-btn"> View All Project</a>
+          </div>
+          <div class="flex gap-5 flex-col">
+            <div class="relative w-full">
+              <button
+                class="absolute z-10 top-[20px] left-[26px] inline-flex h-[40px] px-[20px] py-[5px] justify-center items-center gap-[10px] rounded-[20px] bg-[#573DB8] text-white text-[18px] font-medium leading-7">
+                Cyber Shield Defense
+              </button>
+              <img src="../images/latest2.png"
+                class="w-full md:w-[605px] h-auto md:h-[559px] pl-0 xl:pl-[7px] transform transition duration-500 ease-in-out hover:scale-105"
+                alt="img" />
+            </div>
+            <h4
+              class="text-[#07000E] text-[20px] md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] not-italic pl-0 xl:pl-[5px] hover:text-[#573DB8] transition-colors duration-300">
+              Shaping the Digital Landscape
+            </h4>
+          </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-[30px] md:gap-[75px]">
+          <div class="flex gap-5 flex-col mt-0 xl:mt-[-74px] order-2 md:order-1">
+            <div class="relative w-full">
+              <button
+                class="absolute z-10 top-[20px] left-[20px] inline-flex h-[40px] px-[20px] py-[5px] justify-center items-center gap-[10px] rounded-[20px] bg-[#07000E] text-white text-[18px] font-medium leading-7">
+                Net Connect Pro
+              </button>
+              <img src="../images/latest3.png"
+                class="w-full md:w-[605px] h-auto md:h-[485px] transform transition duration-500 ease-in-out hover:scale-105"
+                alt="img" />
+            </div>
+            <a href="#"
+              class="text-[#07000E] text-[20px] md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] not-italic hover:text-[#573DB8] transition-colors duration-300">
+              Shaping the Digital Landscape
+            </a>
+            <a href="#" class="flex items-center pt-[10px] md:pt-[60px]">
+              <div class="custom-btn"> View All Project</div>
               <div class="flex justify-center items-center">
-                <div class="icon-wrapper">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <div class="icon-wrapper group">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    class="transition-transform duration-300 group-hover:rotate-45 ">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M27.838 13.4025L13.4015 27.839L12.1641 26.6016L26.6006 12.165L27.838 13.4025Z" fill="white" />
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1082,24 +1098,24 @@
                   </svg>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
-          <a href="#" class="flex gap-5 flex-col order-1 md:order-2 group">
+          <div class="flex gap-5 flex-col order-1 md:order-2">
             <div class="relative w-full">
               <button
-                class="absolute top-[20px] left-[26px] inline-flex h-[40px] px-[20px] py-[5px] justify-center items-center gap-[10px] rounded-[20px] bg-[#07000E] text-white text-[18px] font-medium leading-7">
+                class="absolute z-10 top-[20px] left-[26px] inline-flex h-[40px] px-[20px] py-[5px] justify-center items-center gap-[10px] rounded-[20px] bg-[#07000E] text-white text-[18px] font-medium leading-7">
                 Byte Guard Protection
               </button>
               <img src="../images/latest4.png"
-                class="w-full md:w-[605px] h-auto md:h-[559px] pl-0 xl:pl-[7px] transform transition duration-500 ease-in-out group-hover:scale-105"
+                class="w-full md:w-[605px] h-auto md:h-[559px] pl-0 xl:pl-[7px] transform transition duration-500 ease-in-out hover:scale-105"
                 alt="img" />
             </div>
 
-            <h4
-              class="text-[#07000E] text-[20px] md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] not-italic pl-0 xl:pl-[5px]">
+            <a href="#"
+              class="text-[#07000E] text-[20px] md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] not-italic pl-0 xl:pl-[5px] hover:text-[#573DB8] transition-colors duration-300">
               Shaping the Digital Landscape
-            </h4>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -1128,7 +1144,7 @@
 
           <!-- Toggle Button -->
           <div id="socialToggleBtn"
-            class="absolute bottom-[95px] left-1/2 -translate-x-1/2 w-[48px] h-[48px] bg-white hover:bg-[#8FD45F] rounded-full flex items-center justify-center shadow-md z-10 ml-[4px] transition-colors duration-300">
+            class="absolute bottom-[95px] left-1/2 -translate-x-1/2 w-[48px] h-[48px] bg-white hover:bg-[#8FD45F] rounded-full flex items-center justify-center shadow-md z-10 ml-[4px] transition-colors duration-300 cursor-pointer">
             <i class="ri-share-line"></i>
           </div>
 
@@ -1165,7 +1181,7 @@
 
           <!-- Toggle Button -->
           <div id="socialToggleBtn2"
-            class="absolute bottom-[95px] left-1/2 -translate-x-1/2 w-[48px] h-[48px] bg-white hover:bg-[#8FD45F] rounded-full flex items-center justify-center shadow-md z-10 ml-[4px] transition-colors duration-300">
+            class="absolute bottom-[95px] left-1/2 -translate-x-1/2 w-[48px] h-[48px] bg-white hover:bg-[#8FD45F] rounded-full flex items-center justify-center shadow-md z-10 ml-[4px] transition-colors duration-300 cursor-pointer">
             <i class="ri-share-line"></i>
           </div>
 
@@ -1202,7 +1218,7 @@
 
           <!-- Toggle Button -->
           <div id="socialToggleBtn3"
-            class="absolute bottom-[95px] left-1/2 -translate-x-1/2 w-[48px] h-[48px] bg-white hover:bg-[#8FD45F] rounded-full flex items-center justify-center shadow-md z-10 ml-[4px] transition-colors duration-300">
+            class="absolute bottom-[95px] left-1/2 -translate-x-1/2 w-[48px] h-[48px] bg-white hover:bg-[#8FD45F] rounded-full flex items-center justify-center shadow-md z-10 ml-[4px] transition-colors duration-300 cursor-pointer">
             <i class="ri-share-line"></i>
           </div>
 
@@ -1239,7 +1255,7 @@
 
           <!-- Toggle Button -->
           <div id="socialToggleBtn4"
-            class="absolute bottom-[95px] left-1/2 -translate-x-1/2 w-[48px] h-[48px] bg-white hover:bg-[#8FD45F] rounded-full flex items-center justify-center shadow-md z-10 ml-[4px] transition-colors duration-300">
+            class="absolute bottom-[95px] left-1/2 -translate-x-1/2 w-[48px] h-[48px] bg-white hover:bg-[#8FD45F] rounded-full flex items-center justify-center shadow-md z-10 ml-[4px] transition-colors duration-300 cursor-pointer">
             <i class="ri-share-line"></i>
           </div>
 
@@ -1276,7 +1292,7 @@
 
           <!-- Toggle Button -->
           <div id="socialToggleBtn5"
-            class="absolute bottom-[95px] left-1/2 -translate-x-1/2 w-[48px] h-[48px] bg-white hover:bg-[#8FD45F] rounded-full flex items-center justify-center shadow-md z-10 ml-[4px] transition-colors duration-300">
+            class="absolute bottom-[95px] left-1/2 -translate-x-1/2 w-[48px] h-[48px] bg-white hover:bg-[#8FD45F] rounded-full flex items-center justify-center shadow-md z-10 ml-[4px] transition-colors duration-300 cursor-pointer">
             <i class="ri-share-line"></i>
           </div>
 
@@ -1451,12 +1467,12 @@
           </div>
 
           <div class="w-full lg:w-auto flex justify-center lg:justify-end">
-            <div class="flex items-center xl:mr-[-7px]">
-              <a href="#" class="custom-btn">Get Our Service</a>
+            <a href="#" class="flex items-center xl:mr-[-7px]">
+              <div class="custom-btn">Get Our Service</div>
               <div class="flex justify-center items-center">
-                <div class="icon-wrapper">
-                  <!-- SVG icon -->
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <div class="icon-wrapper group">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    class="transition-transform duration-300 group-hover:rotate-45 ">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M27.838 13.4025L13.4015 27.839L12.1641 26.6016L26.6006 12.165L27.838 13.4025Z" fill="white" />
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1468,7 +1484,7 @@
                   </svg>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -1811,7 +1827,7 @@
   </section>
 
   <section
-    class="bg-[#F7F1FC] pt-[30px] sm:pt-[45px] md:pt-[70px] lg:pt-[150px]  pb-[30px] sm:pb-[45px] md:pb-[70px] lg:pb-[148px] px-[15px]">
+    class="blog bg-[#F7F1FC] pt-[30px] sm:pt-[45px] md:pt-[70px] lg:pt-[150px]  pb-[30px] sm:pb-[45px] md:pb-[70px] lg:pb-[148px] px-[15px]">
     <div class="container">
       <div class="mx-auto text-center">
         <div class="sub-title ml-0 xl:ml-[-11px]">
@@ -1828,25 +1844,68 @@
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[25px] xl:gap-[30px] mt-[30px] md:mt-[40px] lg:mt-[60px] ">
 
         <div
-          class="card h-auto w-full  lg:max-w-[366px]   xl:max-w-[410px] lg:h-[477px] shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] bg-[#F7F1FC]  mx-auto">
+          class="card h-auto w-full  lg:max-w-[366px]   xl:max-w-[410px] lg:h-[477px] shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] bg-[#F7F1FC]  mx-auto hover:border-[#573DB8] transition-colors duration-300">
+          <div class="flex flex-col">
+            <div class="p-[10px]">
+              <img src="../images/blog2.png" class="w-full h-auto object-cover" alt="logo">
+            </div>
+            <div class="px-[31px] py-[20px] xl:py-[8px]">
+              <div class="flex items-center gap-[20px] md:gap-[30px]">
+                <a href="#" class="flex items-center gap-[5px]">
+                  <i class="ri-user-3-fill"></i>
+                  <span class="text-[#716F73] text-[12px] font-normal leading-[160%]">Admin</span>
+                </a>
+                <a href="#" class="flex items-center gap-[5px]">
+                  <i class="ri-file-copy-fill"></i>
+                  <span class="text-[#716F73] text-[12px] font-normal leading-[160%]">Category</span>
+                </a>
+              </div>
+              <h3
+                class="text-[#07000E] pt-[15px] md:pt-[20px] pb-[15px] lg:pb-[30px] text-[20px] md:text-[24px] font-bold leading-[30.91px] md:leading-[34.91px] tracking-[-0.25px]">
+                <a href="#" class="hover:text-[#573DB8] transition-colors duration-300">
+                  Redefining Excellence in Tech Shaping the Digital
+                </a>
+              </h3>
+              <a href="#" class="read-btn">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.2054 14.875H3.78906V13.125H24.2054V14.875Z"
+                    fill="#07000E" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M23.3299 13.125C19.2145 13.125 15.8516 16.7441 15.8516 20.6033V21.4783H17.6016V20.6033C17.6016 17.6733 20.2179 14.875 23.3299 14.875H24.2044V13.125H23.3299Z"
+                    fill="#07000E" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M23.3299 14.8768C19.2145 14.8768 15.8516 11.2577 15.8516 7.39844V6.52344H17.6016V7.39844C17.6016 10.3286 20.2179 13.1268 23.3299 13.1268H24.2044V14.8768H23.3299Z"
+                    fill="#07000E" />
+                </svg>
+
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div
+          class="card h-auto w-full  lg:max-w-[366px]   xl:max-w-[410px] lg:h-[477px] shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] bg-[#F7F1FC]  mx-auto hover:border-[#573DB8] transition-colors duration-300">
           <div class="flex flex-col">
             <div class="p-[10px]">
               <img src="../images/blog1.png" class="w-full h-auto object-cover" alt="logo">
             </div>
             <div class="px-[31px] py-[20px] xl:py-[8px]">
               <div class="flex items-center gap-[20px] md:gap-[30px]">
-                <div class="flex items-center gap-[5px]">
+                <a href="#" class="flex items-center gap-[5px]">
                   <i class="ri-user-3-fill"></i>
                   <span class="text-[#716F73] text-[12px] font-normal leading-[160%]">Admin</span>
-                </div>
-                <div class="flex items-center gap-[5px]">
+                </a>
+                <a href="#" class="flex items-center gap-[5px]">
                   <i class="ri-file-copy-fill"></i>
                   <span class="text-[#716F73] text-[12px] font-normal leading-[160%]">Category</span>
-                </div>
+                </a>
               </div>
               <h3
                 class="text-[#07000E] pt-[15px] md:pt-[20px] pb-[15px] lg:pb-[30px] text-[20px] md:text-[24px] font-bold leading-[30.91px] md:leading-[34.91px] tracking-[-0.25px]">
-                Redefining Excellence in Tech Shaping the Digital
+                <a href="#" class="hover:text-[#573DB8] transition-colors duration-300">
+                  Redefining Excellence in Tech Shaping the Digital
+                </a>
               </h3>
               <a href="#" class="read-btn">
                 Read More
@@ -1867,64 +1926,27 @@
 
         </div>
         <div
-          class="card h-auto w-full  lg:max-w-[366px]   xl:max-w-[410px] lg:h-[477px] shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] bg-[#F7F1FC]  mx-auto">
-          <div class="flex flex-col">
-            <div class="p-[10px]">
-              <img src="../images/blog2.png" class="w-full h-auto object-cover" alt="logo">
-            </div>
-            <div class="px-[31px] py-[20px] xl:py-[8px]">
-              <div class="flex items-center gap-[20px] md:gap-[30px]">
-                <div class="flex items-center gap-[5px]">
-                  <i class="ri-user-3-fill"></i>
-                  <span class="text-[#716F73] text-[12px] font-normal leading-[160%]">Admin</span>
-                </div>
-                <div class="flex items-center gap-[5px]">
-                  <i class="ri-file-copy-fill"></i>
-                  <span class="text-[#716F73] text-[12px] font-normal leading-[160%]">Category</span>
-                </div>
-              </div>
-              <h3
-                class="text-[#07000E] pt-[15px] md:pt-[20px] pb-[15px] lg:pb-[30px] text-[20px] md:text-[24px] font-bold leading-[30.91px] md:leading-[34.91px] tracking-[-0.25px]">
-                Redefining Excellence in Tech Shaping the Digital
-              </h3>
-              <a href="#" class="read-btn">
-                Read More
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.2054 14.875H3.78906V13.125H24.2054V14.875Z"
-                    fill="#07000E" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M23.3299 13.125C19.2145 13.125 15.8516 16.7441 15.8516 20.6033V21.4783H17.6016V20.6033C17.6016 17.6733 20.2179 14.875 23.3299 14.875H24.2044V13.125H23.3299Z"
-                    fill="#07000E" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M23.3299 14.8768C19.2145 14.8768 15.8516 11.2577 15.8516 7.39844V6.52344H17.6016V7.39844C17.6016 10.3286 20.2179 13.1268 23.3299 13.1268H24.2044V14.8768H23.3299Z"
-                    fill="#07000E" />
-                </svg>
-
-              </a>
-            </div>
-          </div>
-
-        </div>
-        <div
-          class="card h-auto w-full  lg:max-w-[366px]   xl:max-w-[410px] lg:h-[477px] shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] bg-[#F7F1FC]  mx-auto">
+          class="card h-auto w-full  lg:max-w-[366px]   xl:max-w-[410px] lg:h-[477px] shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] bg-[#F7F1FC]  mx-auto hover:border-[#573DB8] transition-colors duration-300">
           <div class="flex flex-col">
             <div class="p-[10px]">
               <img src="../images/blog3.png" class="w-full h-auto object-cover" alt="logo">
             </div>
             <div class="px-[31px] py-[20px] xl:py-[8px]">
               <div class="flex items-center gap-[20px] md:gap-[30px]">
-                <div class="flex items-center gap-[5px]">
+                <a href="#" class="flex items-center gap-[5px]">
                   <i class="ri-user-3-fill"></i>
                   <span class="text-[#716F73] text-[12px] font-normal leading-[160%]">Admin</span>
-                </div>
-                <div class="flex items-center gap-[5px]">
+                </a>
+                <a href="#" class="flex items-center gap-[5px]">
                   <i class="ri-file-copy-fill"></i>
                   <span class="text-[#716F73] text-[12px] font-normal leading-[160%]">Category</span>
-                </div>
+                </a>
               </div>
               <h3
                 class="text-[#07000E] pt-[15px] md:pt-[20px] pb-[15px] lg:pb-[30px] text-[20px] md:text-[24px] font-bold leading-[30.91px] md:leading-[34.91px] tracking-[-0.25px]">
-                Redefining Excellence in Tech Shaping the Digital
+                <a href="#" class="hover:text-[#573DB8] transition-colors duration-300">
+                  Redefining Excellence in Tech Shaping the Digital
+                </a>
               </h3>
               <a href="#" class="read-btn">
                 Read More
@@ -1944,84 +1966,8 @@
           </div>
 
         </div>
-        <!-- <div
-          class="card h-auto w-full lg:max-w-[366px]  xl:max-w-[410px] lg:h-[477px] shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] bg-[#F7F1FC]  mx-auto">
-          <div class="flex flex-col">
-            <div class="p-[10px]">
-              <img src="../images/blog2.png" class="w-full h-auto object-cover" alt="logo">
-            </div>
-            <div class="px-[31px] py-[20px] xl:py-[8px]">
-              <div class="flex items-center gap-[30px]">
-                <div class="flex items-center gap-[5px]">
-                  <i class="ri-user-3-fill"></i>
-                  <span class="text-[#716F73] text-[12px] font-normal leading-[160%]">Admin</span>
-                </div>
-                <div class="flex items-center gap-[5px]">
-                  <i class="ri-file-copy-fill"></i>
-                  <span class="text-[#716F73] text-[12px] font-normal leading-[160%]">Category</span>
-                </div>
-              </div>
-              <h3
-                class="text-[#07000E] pt-[20px] pb-5 lg:pb-[30px] text-[20px] md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px]">
-                Pioneering Technology for IT That Transforms
-              </h3>
-              <a href="#" class="read-btn">
-                Read More
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.2054 14.875H3.78906V13.125H24.2054V14.875Z"
-                    fill="#07000E" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M23.3299 13.125C19.2145 13.125 15.8516 16.7441 15.8516 20.6033V21.4783H17.6016V20.6033C17.6016 17.6733 20.2179 14.875 23.3299 14.875H24.2044V13.125H23.3299Z"
-                    fill="#07000E" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M23.3299 14.8768C19.2145 14.8768 15.8516 11.2577 15.8516 7.39844V6.52344H17.6016V7.39844C17.6016 10.3286 20.2179 13.1268 23.3299 13.1268H24.2044V14.8768H23.3299Z"
-                    fill="#07000E" />
-                </svg>
-
-              </a>
-            </div>
-          </div>
-
-        </div>
-        <div
-          class="card w-full h-auto lg:max-w-[366px]  xl:max-w-[410px] lg:h-[477px] shrink-0 rounded-[20px] border border-[rgba(7,0,14,0.2)] bg-[#F7F1FC]  mx-auto">
-          <div class="flex flex-col">
-            <div class="p-[10px]">
-              <img src="../images/blog3.png" class="w-full h-auto object-cover" alt="logo">
-            </div>
-            <div class="px-[31px] py-[20px] xl:py-[8px]">
-              <div class="flex items-center gap-[30px]">
-                <div class="flex items-center gap-[5px]">
-                  <i class="ri-user-3-fill"></i>
-                  <span class="text-[#716F73] text-[12px] font-normal leading-[160%]">Admin</span>
-                </div>
-                <div class="flex items-center gap-[5px]">
-                  <i class="ri-file-copy-fill"></i>
-                  <span class="text-[#716F73] text-[12px] font-normal leading-[160%]">Category</span>
-                </div>
-              </div>
-              <h3
-                class="text-[#07000E] pt-[20px]  pb-5 lg:pb-[30px] text-[20px] md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px]">
-                Through the Technological Not Just Informs
-              </h3>
-              <a href="#" class="read-btn">
-                Read More
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.2054 14.875H3.78906V13.125H24.2054V14.875Z"
-                    fill="#07000E" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M23.3299 13.125C19.2145 13.125 15.8516 16.7441 15.8516 20.6033V21.4783H17.6016V20.6033C17.6016 17.6733 20.2179 14.875 23.3299 14.875H24.2044V13.125H23.3299Z"
-                    fill="#07000E" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M23.3299 14.8768C19.2145 14.8768 15.8516 11.2577 15.8516 7.39844V6.52344H17.6016V7.39844C17.6016 10.3286 20.2179 13.1268 23.3299 13.1268H24.2044V14.8768H23.3299Z"
-                    fill="#07000E" />
-                </svg>
-
-              </a>
-            </div>
-          </div>
-
-        </div> -->
+      
+       
       </div>
     </div>
   </section>
