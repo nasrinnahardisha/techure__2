@@ -1,3 +1,47 @@
+ /*** Sticky header */
+       window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      if (window.scrollY > 250) {
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+      }
+    });
+
+    const body = document.body;
+    const scrollUp = "scroll-up";
+    const scrollDown = "scroll-down";
+    let lastScroll = 100;
+
+    window.addEventListener("scroll", () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll <= 0) 
+        {
+            body.classList.remove(scrollUp);
+            return;
+        }
+
+        if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) 
+        {
+            // down
+            body.classList.remove(scrollUp);
+            body.classList.add(scrollDown);
+        } 
+        else if ( currentScroll < lastScroll && body.classList.contains(scrollDown) ) 
+        {
+            // up
+            body.classList.remove(scrollDown);
+            body.classList.add(scrollUp);
+        }
+
+        lastScroll = currentScroll;
+    });
+
+
+
+    
+
+
 const menuToggle = document.getElementById('menu-toggle');
 const menuClose = document.getElementById('menu-close');
 const mobileNav = document.getElementById('mobile-nav');
@@ -295,7 +339,6 @@ circleWrapper5.addEventListener("mouseleave", () => {
     });
   });
 
-  // প্রথম অ্যাকর্ডিয়ন ডিফল্টে খোলা থাকবে
   window.addEventListener('DOMContentLoaded', () => {
     extraTexts[0].classList.remove('hidden');
     const icon = toggleButtons[0].querySelector('i');
@@ -341,3 +384,7 @@ $(document).ready(function ($) {
    ]
   });
 });
+
+
+
+  

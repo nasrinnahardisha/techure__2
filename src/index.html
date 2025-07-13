@@ -9,20 +9,26 @@
   <link rel="stylesheet" href="../src/css/slick.css">
   <link rel="stylesheet" href="../src/css/magnific-popup.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link href="./output.css" rel="stylesheet" />
   <link rel="stylesheet" href="../src/style.css" />
 </head>
 
 <body>
-  <header class="fixed w-full z-50 py-[20px] px-[30px] xl:px-[15px] bg-[#07000E] border-b border-[#ECECEC]">
+
+  <header class="header fixed w-full z-50 py-[20px] px-[30px] xl:px-[15px] bg-[#07000E] border-b border-[#ECECEC]">
     <div class="container">
-      <div class="header flex items-center justify-between">
-        <!-- logo -->
-        <div class="logo ml-0 xl:ml-[7px]">
-          <a href="index.html"><img src="../images/logo.png" alt="logo" /></a>
+      <div class="flex items-center justify-between">
+        <div class="logo">
+          <a href="index.html" class="standard-logo">
+            <img src="../images/logo.png" alt="standard-logo">
+          </a>
+          <a href="index.html" class="sticky-logo">
+            <img src="../images/footerlogo.png" alt="sticky-logo">
+          </a>
         </div>
         <div class="flex items-center gap-[33px]">
-          <!-- menu -->
+
           <nav id="nav-links" class="hidden xl:flex">
             <ul class="nav__links flex items-center gap-[20.5px] text-[18px] font-bold leading-[20px] text-white">
 
@@ -103,7 +109,7 @@
               </li>
             </ul>
           </nav>
-          <!-- btn -->
+
           <div class="hidden xl:flex items-center gap-10 mr-[-7px]">
             <button id="openSidebar" aria-label="Button" class="focus:outline-none cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none">
@@ -144,7 +150,7 @@
 
           </div>
         </div>
-        <!-- mobile-btn -->
+
         <div class="flex xl:hidden items-center gap-4">
           <button id="menu-toggle" aria-label="Open menu" class="focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 51 51" fill="none">
@@ -158,7 +164,7 @@
             <i class="ri-close-line  text-white"></i>
           </button>
         </div>
-        <!-- mobile-menu -->
+
         <nav id="mobile-nav"
           class="hidden opacity-0 translate-x-0 fixed top-[78px] right-0 h-screen w-[350px] bg-[#F7F1FC] p-6 shadow-lg z-50 xl:hidden transition-all duration-500 ease-in-out">
           <ul class="flex flex-col justify-center  gap-10 text-[18px] font-bold leading-[20px] text-[#031F42]">
@@ -244,21 +250,23 @@
     </div>
   </header>
 
-  <section class="hero px-[30px] xl:px-[15px] relative mt-[60px] xl:mt-[90px] bg-[#07000E] pb-[40px] md:pb-[60px] lg:pb-[100px] xl:pb-[142px]">
+  <section
+    class="hero px-[30px] xl:px-[15px] relative mt-[60px] xl:mt-[90px] bg-[#07000E] pb-[40px] md:pb-[60px] lg:pb-[100px] xl:pb-[142px]">
     <div class="container">
-       <div
+      <div
         class="mt-[100px] left-[100px] absolute w-[412px] h-[412px] rounded-[412px] opacity-50 bg-[var(--Home-Secondary,#573DB8)] blur-[142px] shrink-0">
       </div>
-       <div
-        class="mt-[300px] right-[200px] absolute w-[412px] h-[412px] rounded-[412px] opacity-50 bg-[var(--Home-Secondary,#573DB8)] blur-[142px] shrink-0">
+      <div
+        class="mt-[300px] hidden lg:flex right-[200px] absolute w-[412px] h-[412px] rounded-[412px] opacity-50 bg-[var(--Home-Secondary,#573DB8)] blur-[142px] shrink-0">
       </div>
       <div class="pt-[50px] lg:pt-[70px] xl:pt-[93px]">
         <h1
           class=" text-[42px] sm:text-[48px] md:text-[56px] lg:text-[72] xl:text-[80px] 2xl:text-[124px] font-bold leading-[115.264px] tracking-[3px] text-white flex flex-wrap items-center gap-4 pl-[18px] justify-center 2xl:justify-start">
           TECHNOLOGY
           <img src="../images/hero1.png" alt="icon" class="ml-0 xl:ml-[27px]" />
-          <img src="../images/hero2.png" alt="icon" class="pt-0 xl:pt-[8px] pr-0 xl:pr-[27px] order-2 md:order-1 mt-[25px] md:mt-0" />
-         <span class="order-1 md:order-2"> INFORMATION</span>
+          <img src="../images/hero2.png" alt="icon"
+            class="pt-0 xl:pt-[8px] pr-0 xl:pr-[27px] order-2 md:order-1 mt-[25px] md:mt-0" />
+          <span class="order-1 md:order-2"> INFORMATION</span>
         </h1>
       </div>
       <div class="pt-[30px] md:pt-[40px] lg:pt-[56px]">
@@ -350,7 +358,7 @@
               </div>
             </div>
           </div>
-          <a href="#"   class=" mt-0 xl:mt-[-30px] mr-0 xl:mr-[-8px]
+          <a href="#" class=" mt-0 xl:mt-[-30px] mr-0 xl:mr-[-8px]
         w-auto h-auto md:w-[150px] md:h-[150px]
          p-[10px_20px] md:py-[12px] md:px-[24px] md:p-[20px_30px]
          flex  flex-row md:flex-col justify-center items-center gap-2
@@ -382,59 +390,276 @@
   </section>
 
 
-  <section class="count px-[30px] xl:px-[15px] pt-[30px] sm:pt-[45px] md:pt-[70px] lg:pt-[166px]  pb-[30px] sm:pb-[45px] md:pb-[70px] lg:pb-[150px] ">
+  <section
+    class="bg-[#F7F1FC] count px-[30px] xl:px-[15px] pt-[30px] sm:pt-[45px] md:pt-[70px] lg:pt-[166px]  pb-[30px] sm:pb-[45px] md:pb-[70px] lg:pb-[166px] ">
     <div class="container relative">
-        <div class="absolute top-[80px] xl:flex hidden left-0 right-0 w-full h-[1px] bg-[#ECECEC] -translate-y-1/2"></div>
-        <div class="relative">
-            <div
-              class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-y-6 lg:gap-y-10 gap-x-2 md:gap-x-3 lg:gap-x-6 text-center lg:text-left">
-              <div class="flex gap-[32px] justify-center lg:justify-start items-center">
-                <div class="flex flex-col items-center lg:items-start gap-[40px] w-[179px] h-[110px] justify-center">
-                  <span
-                    class="text-[#07000E] text-[33px] sm:text-[36px] md:text-[42px] lg:text-[60px] xl:text-[72px] font-bold leading-[1] tracking-[-2px]"><span
-                      class="counter" data-target="600">0</span>+</span>
+      <div class="absolute top-[80px] xl:flex hidden left-0 right-0 w-full h-[1px] bg-[#ECECEC] -translate-y-1/2"></div>
+      <div class="relative">
+        <div
+          class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-y-6 lg:gap-y-10 gap-x-2 md:gap-x-3 lg:gap-x-6 text-center lg:text-left">
+          <div class="flex gap-[32px] justify-center lg:justify-start items-center">
+            <div class="flex flex-col items-center lg:items-start gap-[40px] w-[179px] h-[110px] justify-center">
+              <span
+                class="text-[#07000E] text-[33px] sm:text-[36px] md:text-[42px] lg:text-[60px] xl:text-[72px] font-bold leading-[1] tracking-[-2px]"><span
+                  class="counter" data-target="600">0</span>+</span>
 
-                  <span class="text-[#07000E] text-[16px] sm:text-[18px] font-medium leading-[28px]">Team member</span>
-                </div>
-              </div>
-
-              <div class="flex gap-[32px] justify-center pl-0 xl:pl-[34px] items-center">
-                <div class="flex w-[151px] h-[110px] flex-col items-center lg:items-start gap-[40px] justify-center">
-                  <span
-                    class="text-[#07000E] text-[33px] sm:text-[36px] md:text-[42px] lg:text-[60px] xl:text-[72px] font-bold leading-[1] tracking-[-2px]"><span
-                      class="counter" data-target="2">0</span>k+</span>
-                  <span class="text-[#07000E] text-[16px] sm:text-[18px] font-medium leading-[28px]">Service
-                    Complete</span>
-                </div>
-              </div>
-
-              <div class="flex gap-[32px] justify-center lg:justify-end pr-0 xl:pr-5 items-center">
-                <div class="flex w-[125px] h-[110px] flex-col items-center lg:items-start gap-[40px] justify-center">
-                  <span
-                    class="text-[#07000E] text-[33px] sm:text-[36px] md:text-[42px] lg:text-[60px] xl:text-[72px] font-bold leading-[1] tracking-[-2px]"><span
-                      class="counter" data-target="53">0</span>+</span>
-                  <span class="text-[#07000E] text-[16px] sm:text-[18px] font-medium leading-[28px]">Winning
-                    award</span>
-                </div>
-              </div>
-
-              <div class="flex gap-[32px] justify-center lg:justify-end items-center">
-                <div class="flex w-[123px] h-[110px] flex-col items-center lg:items-start gap-[40px] justify-center">
-                  <span
-                    class="text-[#07000E] text-[33px] sm:text-[36px] md:text-[42px] lg:text-[60px] xl:text-[72px] font-bold leading-[1] tracking-[-2px]"><span
-                      class="counter" data-target="53">0</span>+</span>
-                  <span class="text-[#07000E] text-[16px] sm:text-[18px] font-medium leading-[28px]">Client
-                    Reviews</span>
-                </div>
-              </div>
+              <span class="text-[#07000E] text-[16px] sm:text-[18px] font-medium leading-[28px]">Team member</span>
             </div>
+          </div>
+
+          <div class="flex gap-[32px] justify-center pl-0 xl:pl-[34px] items-center">
+            <div class="flex w-[151px] h-[110px] flex-col items-center lg:items-start gap-[40px] justify-center">
+              <span
+                class="text-[#07000E] text-[33px] sm:text-[36px] md:text-[42px] lg:text-[60px] xl:text-[72px] font-bold leading-[1] tracking-[-2px]"><span
+                  class="counter" data-target="2">0</span>k+</span>
+              <span class="text-[#07000E] text-[16px] sm:text-[18px] font-medium leading-[28px]">Service
+                Complete</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[32px] justify-center lg:justify-end pr-0 xl:pr-5 items-center">
+            <div class="flex w-[125px] h-[110px] flex-col items-center lg:items-start gap-[40px] justify-center">
+              <span
+                class="text-[#07000E] text-[33px] sm:text-[36px] md:text-[42px] lg:text-[60px] xl:text-[72px] font-bold leading-[1] tracking-[-2px]"><span
+                  class="counter" data-target="53">0</span>+</span>
+              <span class="text-[#07000E] text-[16px] sm:text-[18px] font-medium leading-[28px]">Winning
+                award</span>
+            </div>
+          </div>
+
+          <div class="flex gap-[32px] justify-center lg:justify-end items-center">
+            <div class="flex w-[123px] h-[110px] flex-col items-center lg:items-start gap-[40px] justify-center">
+              <span
+                class="text-[#07000E] text-[33px] sm:text-[36px] md:text-[42px] lg:text-[60px] xl:text-[72px] font-bold leading-[1] tracking-[-2px]"><span
+                  class="counter" data-target="53">0</span>+</span>
+              <span class="text-[#07000E] text-[16px] sm:text-[18px] font-medium leading-[28px]">Client
+                Reviews</span>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
   </section>
 
+  <section class="service bg-[#F7F1FC] px-[30px] xl:px-[15px] relative 2xl:pl-[18px] pb-[30px] sm:pb-[45px] md:pb-[70px] lg:pb-[150px] ">
+    <div class="container">
+      <div class="relative">
+        <img src="../images/latest.png" alt="logo" class=" block">
 
+        <div
+          class="slide-service absolute top-1/2 right-0 -translate-y-1/2 bg-[#F3F3E8] rounded-[10px] max-w-[570px] md:max-w-[620px] lg:max-w-[670px] xl:max-w-[710px] h-[357px] shadow-lg">
+          <div class="p-[24px] md:p-[30px] lg:p-[40px]">
+            <h2 class="text-[#07000E] font-extrabold tracking-[-0.125rem]
+         text-[40px] leading-[44px]
+         sm:text-[36px] sm:leading-[36px]
+         md:text-[42px] md:leading-[42px]
+         lg:text-[56px] lg:leading-[56px]
+         xl:text-[72px] xl:leading-[72px]">
+              Our Latest Service
+            </h2>
+            <div
+              class="text-[#716F73] text-[14px] md:text-[16px] lg:text-[18px] font-medium leading-[21px] md:leading-[28.01px] py-[15px] md:py-[20px] lg:py-[30px]">
+              <p>
+                In the realm of IT Technology, innovation and advancement are elements. From cutting-edge software
+                development to state-of-the-art hardware solutions, this category encompasses a vast array
+              </p>
+            </div>
+            <a href="#" class="both-btn flex items-center justify-center md:justify-start pl-[7px]">
+              <div class="custom-btn">View All Service</div>
+              <div class="flex justify-center items-center">
+                <div class="icon-wrapper group">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                    class="transition-transform duration-300 group-hover:rotate-45">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M27.838 13.4025L13.4015 27.839L12.1641 26.6016L26.6006 12.165L27.838 13.4025Z" fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M25.9755 12.7784C23.0654 15.6885 23.2466 20.6255 25.9755 23.3544L26.5942 23.9731L27.8316 22.7357L27.2129 22.1169C25.141 20.0451 25.0124 16.2164 27.2129 14.0159L27.8313 13.3975L26.5939 12.16L25.9755 12.7784Z"
+                      fill="white" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M27.2182 14.0172C24.3081 16.9272 19.371 16.746 16.6422 14.0172L16.0234 13.3984L17.2609 12.161L17.8796 12.7797C19.9515 14.8517 23.7802 14.9803 25.9807 12.7798L26.5991 12.1614L27.8365 13.3988L27.2182 14.0172Z"
+                      fill="white" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="service-card  lg:pt-[60px]">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+          <div
+            class="relative w-full xl:w-[410px] h-full xl:h-[267px] p-[20px] md:p-[30px]  rounded-[20px] border border-[rgba(7,0,14,0.2)] flex flex-col justify-between  transition-all duration-300 ease-in-out hover:border-[#573DB8] hover:shadow-xl hover:scale-[1.02]">
+            <div class="flex flex-col justify-between h-full">
+              <div class="flex justify-between items-center gap-[18px]">
+                <h4 class="text-[#07000E] text-xl md:text-[20px] font-bold leading-[34.91px] tracking-[-0.25px] hover:text-[#573DB8] transition-colors duration-300 ">
+                  Stream Tech Services Wise Solutions
+                </h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M44.5314 1.5625H5.46875C4.92949 1.5625 4.49219 1.9998 4.49219 2.53906V47.4611C4.49219 48.0004 4.92949 48.4377 5.46875 48.4377H44.5314C45.0707 48.4377 45.508 48.0004 45.508 47.4611V2.53906C45.508 1.99971 45.0707 1.5625 44.5314 1.5625ZM43.5549 3.51562V5.46875H22.0704C21.5312 5.46875 21.0938 5.90605 21.0938 6.44531C21.0938 6.98467 21.5312 7.42188 22.0704 7.42188H43.5549V9.375H6.44531V3.51562H43.5549ZM6.44531 46.4846V11.3281H43.5549V46.4846H6.44531Z"
+                    fill="#573DB8" />
+                  <path
+                    d="M40.6252 13.2812H9.375C8.83574 13.2812 8.39844 13.7186 8.39844 14.2578V43.5549C8.39844 44.0941 8.83574 44.5314 9.375 44.5314H40.6252C41.1645 44.5314 41.6018 44.0941 41.6018 43.5549V14.2578C41.6018 13.7186 41.1645 13.2812 40.6252 13.2812ZM39.6486 42.5782H10.3516V15.2344H39.6486V42.5782Z"
+                    fill="#573DB8" />
+                  <path d="M11.3281 16.2109H13.2812V18.1641H11.3281V16.2109Z" fill="#573DB8" />
+                  <path d="M14.2578 16.2109H35.7423V18.1641H14.2578V16.2109Z" fill="#573DB8" />
+                  <path d="M14.2578 39.6484H35.7423V41.6016H14.2578V39.6484Z" fill="#573DB8" />
+                  <path d="M8.39844 5.46875H10.3516V7.42188H8.39844V5.46875Z" fill="#573DB8" />
+                  <path d="M11.3281 5.46875H13.2812V7.42188H11.3281V5.46875Z" fill="#573DB8" />
+                  <path d="M14.2578 5.46875H16.2109V7.42188H14.2578V5.46875Z" fill="#573DB8" />
+                  <path d="M11.3281 39.6484H13.2812V41.6016H11.3281V39.6484Z" fill="#573DB8" />
+                  <path d="M11.3281 19.1406H13.2812V38.6719H11.3281V19.1406Z" fill="#573DB8" />
+                  <path d="M36.7188 16.2109H38.6719V18.1641H36.7188V16.2109Z" fill="#573DB8" />
+                  <path d="M36.7188 39.6484H38.6719V41.6016H36.7188V39.6484Z" fill="#573DB8" />
+                  <path d="M36.7188 19.1406H38.6719V38.6719H36.7188V19.1406Z" fill="#573DB8" />
+                  <path
+                    d="M16.2109 28.9062C16.2109 33.7523 20.1539 37.6953 25 37.6953C29.8461 37.6953 33.7892 33.7523 33.7892 28.9062C33.7892 24.0597 29.8461 20.1172 25 20.1172C20.1539 20.1172 16.2109 24.0597 16.2109 28.9062ZM31.8359 28.9062C31.8359 32.6758 28.7694 35.7422 25 35.7422C21.2306 35.7422 18.1641 32.6758 18.1641 28.9062C18.1641 25.1367 21.2307 22.0703 25 22.0703C28.7694 22.0703 31.8359 25.1367 31.8359 28.9062Z"
+                    fill="#573DB8" />
+                  <path
+                    d="M21.5499 29.0246C21.1684 28.6437 20.5504 28.6437 20.1689 29.0246C19.7875 29.406 19.7875 30.0245 20.1689 30.406L22.9307 33.1678C23.3122 33.5492 23.9306 33.5492 24.3122 33.1678L29.8363 27.6436C30.2177 27.2623 30.2177 26.6438 29.8363 26.2626C29.4553 25.8812 28.8369 25.8812 28.4553 26.2626L23.6215 31.0963L21.5499 29.0246Z"
+                    fill="#573DB8" />
+                </svg>
+              </div>
 
+              <div class="pt-3 md:pt-5 pb-6 md:pb-[38px] text-[#716F73] text-[18px] font-medium leading-[28.01px] w-full">
+                <p>In the realm of IT Technology, innovation and advancement are element</p>
+              </div>
 
+              <a href="#" class="read-btn group">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                  class="transition-transform duration-300 group-hover:rotate-45">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M20.7242 9.90145L9.89683 20.7289L8.96875 19.8008L19.7962 8.97338L20.7242 9.90145Z"
+                    fill="#07000E" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M19.3254 9.43636C17.1428 11.6189 17.2787 15.3217 19.3254 17.3683L19.7894 17.8324L20.7175 16.9043L20.2534 16.4403C18.6995 14.8863 18.6031 12.0148 20.2534 10.3644L20.7172 9.90065L19.7892 8.97257L19.3254 9.43636Z"
+                    fill="#07000E" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M20.2554 10.3586C18.0729 12.5411 14.3701 12.4052 12.3234 10.3586L11.8594 9.89453L12.7875 8.96645L13.2515 9.43049C14.8055 10.9845 17.677 11.0809 19.3273 9.43052L19.7911 8.96673L20.7192 9.89481L20.2554 10.3586Z"
+                    fill="#07000E" />
+                </svg>
+              </a>
+
+            </div>
+          </div>
+          <div
+            class="relative w-full xl:w-[410px] h-full xl:h-[267px] p-[20px] md:p-[30px]  rounded-[20px] border border-[rgba(7,0,14,0.2)] flex flex-col justify-between  transition-all duration-300 ease-in-out hover:border-[#573DB8] hover:shadow-xl hover:scale-[1.02]">
+            <div class="flex flex-col justify-between h-full">
+              <div class="flex justify-between items-center gap-[18px]">
+                <h4 class="text-[#07000E] text-xl md:text-[20px] font-bold leading-[34.91px] tracking-[-0.25px] hover:text-[#573DB8] transition-colors duration-300 ">
+                  Stream Tech Services Wise Solutions
+                </h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M44.5314 1.5625H5.46875C4.92949 1.5625 4.49219 1.9998 4.49219 2.53906V47.4611C4.49219 48.0004 4.92949 48.4377 5.46875 48.4377H44.5314C45.0707 48.4377 45.508 48.0004 45.508 47.4611V2.53906C45.508 1.99971 45.0707 1.5625 44.5314 1.5625ZM43.5549 3.51562V5.46875H22.0704C21.5312 5.46875 21.0938 5.90605 21.0938 6.44531C21.0938 6.98467 21.5312 7.42188 22.0704 7.42188H43.5549V9.375H6.44531V3.51562H43.5549ZM6.44531 46.4846V11.3281H43.5549V46.4846H6.44531Z"
+                    fill="#573DB8" />
+                  <path
+                    d="M40.6252 13.2812H9.375C8.83574 13.2812 8.39844 13.7186 8.39844 14.2578V43.5549C8.39844 44.0941 8.83574 44.5314 9.375 44.5314H40.6252C41.1645 44.5314 41.6018 44.0941 41.6018 43.5549V14.2578C41.6018 13.7186 41.1645 13.2812 40.6252 13.2812ZM39.6486 42.5782H10.3516V15.2344H39.6486V42.5782Z"
+                    fill="#573DB8" />
+                  <path d="M11.3281 16.2109H13.2812V18.1641H11.3281V16.2109Z" fill="#573DB8" />
+                  <path d="M14.2578 16.2109H35.7423V18.1641H14.2578V16.2109Z" fill="#573DB8" />
+                  <path d="M14.2578 39.6484H35.7423V41.6016H14.2578V39.6484Z" fill="#573DB8" />
+                  <path d="M8.39844 5.46875H10.3516V7.42188H8.39844V5.46875Z" fill="#573DB8" />
+                  <path d="M11.3281 5.46875H13.2812V7.42188H11.3281V5.46875Z" fill="#573DB8" />
+                  <path d="M14.2578 5.46875H16.2109V7.42188H14.2578V5.46875Z" fill="#573DB8" />
+                  <path d="M11.3281 39.6484H13.2812V41.6016H11.3281V39.6484Z" fill="#573DB8" />
+                  <path d="M11.3281 19.1406H13.2812V38.6719H11.3281V19.1406Z" fill="#573DB8" />
+                  <path d="M36.7188 16.2109H38.6719V18.1641H36.7188V16.2109Z" fill="#573DB8" />
+                  <path d="M36.7188 39.6484H38.6719V41.6016H36.7188V39.6484Z" fill="#573DB8" />
+                  <path d="M36.7188 19.1406H38.6719V38.6719H36.7188V19.1406Z" fill="#573DB8" />
+                  <path
+                    d="M16.2109 28.9062C16.2109 33.7523 20.1539 37.6953 25 37.6953C29.8461 37.6953 33.7892 33.7523 33.7892 28.9062C33.7892 24.0597 29.8461 20.1172 25 20.1172C20.1539 20.1172 16.2109 24.0597 16.2109 28.9062ZM31.8359 28.9062C31.8359 32.6758 28.7694 35.7422 25 35.7422C21.2306 35.7422 18.1641 32.6758 18.1641 28.9062C18.1641 25.1367 21.2307 22.0703 25 22.0703C28.7694 22.0703 31.8359 25.1367 31.8359 28.9062Z"
+                    fill="#573DB8" />
+                  <path
+                    d="M21.5499 29.0246C21.1684 28.6437 20.5504 28.6437 20.1689 29.0246C19.7875 29.406 19.7875 30.0245 20.1689 30.406L22.9307 33.1678C23.3122 33.5492 23.9306 33.5492 24.3122 33.1678L29.8363 27.6436C30.2177 27.2623 30.2177 26.6438 29.8363 26.2626C29.4553 25.8812 28.8369 25.8812 28.4553 26.2626L23.6215 31.0963L21.5499 29.0246Z"
+                    fill="#573DB8" />
+                </svg>
+              </div>
+
+              <div class="pt-3 md:pt-5 pb-6 md:pb-[38px] text-[#716F73] text-[18px] font-medium leading-[28.01px] w-full">
+                <p>In the realm of IT Technology, innovation and advancement are element</p>
+              </div>
+
+              <a href="#" class="read-btn group">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                  class="transition-transform duration-300 group-hover:rotate-45">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M20.7242 9.90145L9.89683 20.7289L8.96875 19.8008L19.7962 8.97338L20.7242 9.90145Z"
+                    fill="#07000E" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M19.3254 9.43636C17.1428 11.6189 17.2787 15.3217 19.3254 17.3683L19.7894 17.8324L20.7175 16.9043L20.2534 16.4403C18.6995 14.8863 18.6031 12.0148 20.2534 10.3644L20.7172 9.90065L19.7892 8.97257L19.3254 9.43636Z"
+                    fill="#07000E" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M20.2554 10.3586C18.0729 12.5411 14.3701 12.4052 12.3234 10.3586L11.8594 9.89453L12.7875 8.96645L13.2515 9.43049C14.8055 10.9845 17.677 11.0809 19.3273 9.43052L19.7911 8.96673L20.7192 9.89481L20.2554 10.3586Z"
+                    fill="#07000E" />
+                </svg>
+              </a>
+
+            </div>
+          </div>
+          <div
+            class="relative w-full xl:w-[410px] h-full xl:h-[267px] p-[20px] md:p-[30px]  rounded-[20px] border border-[rgba(7,0,14,0.2)] flex flex-col justify-between  transition-all duration-300 ease-in-out hover:border-[#573DB8] hover:shadow-xl hover:scale-[1.02]">
+            <div class="flex flex-col justify-between h-full">
+              <div class="flex justify-between items-center gap-[18px]">
+                <h4 class="text-[#07000E] text-xl md:text-[20px] font-bold leading-[34.91px] tracking-[-0.25px] hover:text-[#573DB8] transition-colors duration-300 ">
+                  Stream Tech Services Wise Solutions
+                </h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                  <path
+                    d="M44.5314 1.5625H5.46875C4.92949 1.5625 4.49219 1.9998 4.49219 2.53906V47.4611C4.49219 48.0004 4.92949 48.4377 5.46875 48.4377H44.5314C45.0707 48.4377 45.508 48.0004 45.508 47.4611V2.53906C45.508 1.99971 45.0707 1.5625 44.5314 1.5625ZM43.5549 3.51562V5.46875H22.0704C21.5312 5.46875 21.0938 5.90605 21.0938 6.44531C21.0938 6.98467 21.5312 7.42188 22.0704 7.42188H43.5549V9.375H6.44531V3.51562H43.5549ZM6.44531 46.4846V11.3281H43.5549V46.4846H6.44531Z"
+                    fill="#573DB8" />
+                  <path
+                    d="M40.6252 13.2812H9.375C8.83574 13.2812 8.39844 13.7186 8.39844 14.2578V43.5549C8.39844 44.0941 8.83574 44.5314 9.375 44.5314H40.6252C41.1645 44.5314 41.6018 44.0941 41.6018 43.5549V14.2578C41.6018 13.7186 41.1645 13.2812 40.6252 13.2812ZM39.6486 42.5782H10.3516V15.2344H39.6486V42.5782Z"
+                    fill="#573DB8" />
+                  <path d="M11.3281 16.2109H13.2812V18.1641H11.3281V16.2109Z" fill="#573DB8" />
+                  <path d="M14.2578 16.2109H35.7423V18.1641H14.2578V16.2109Z" fill="#573DB8" />
+                  <path d="M14.2578 39.6484H35.7423V41.6016H14.2578V39.6484Z" fill="#573DB8" />
+                  <path d="M8.39844 5.46875H10.3516V7.42188H8.39844V5.46875Z" fill="#573DB8" />
+                  <path d="M11.3281 5.46875H13.2812V7.42188H11.3281V5.46875Z" fill="#573DB8" />
+                  <path d="M14.2578 5.46875H16.2109V7.42188H14.2578V5.46875Z" fill="#573DB8" />
+                  <path d="M11.3281 39.6484H13.2812V41.6016H11.3281V39.6484Z" fill="#573DB8" />
+                  <path d="M11.3281 19.1406H13.2812V38.6719H11.3281V19.1406Z" fill="#573DB8" />
+                  <path d="M36.7188 16.2109H38.6719V18.1641H36.7188V16.2109Z" fill="#573DB8" />
+                  <path d="M36.7188 39.6484H38.6719V41.6016H36.7188V39.6484Z" fill="#573DB8" />
+                  <path d="M36.7188 19.1406H38.6719V38.6719H36.7188V19.1406Z" fill="#573DB8" />
+                  <path
+                    d="M16.2109 28.9062C16.2109 33.7523 20.1539 37.6953 25 37.6953C29.8461 37.6953 33.7892 33.7523 33.7892 28.9062C33.7892 24.0597 29.8461 20.1172 25 20.1172C20.1539 20.1172 16.2109 24.0597 16.2109 28.9062ZM31.8359 28.9062C31.8359 32.6758 28.7694 35.7422 25 35.7422C21.2306 35.7422 18.1641 32.6758 18.1641 28.9062C18.1641 25.1367 21.2307 22.0703 25 22.0703C28.7694 22.0703 31.8359 25.1367 31.8359 28.9062Z"
+                    fill="#573DB8" />
+                  <path
+                    d="M21.5499 29.0246C21.1684 28.6437 20.5504 28.6437 20.1689 29.0246C19.7875 29.406 19.7875 30.0245 20.1689 30.406L22.9307 33.1678C23.3122 33.5492 23.9306 33.5492 24.3122 33.1678L29.8363 27.6436C30.2177 27.2623 30.2177 26.6438 29.8363 26.2626C29.4553 25.8812 28.8369 25.8812 28.4553 26.2626L23.6215 31.0963L21.5499 29.0246Z"
+                    fill="#573DB8" />
+                </svg>
+              </div>
+
+              <div class="pt-3 md:pt-5 pb-6 md:pb-[38px] text-[#716F73] text-[18px] font-medium leading-[28.01px] w-full">
+                <p>In the realm of IT Technology, innovation and advancement are element</p>
+              </div>
+
+              <a href="#" class="read-btn group">
+                Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                  class="transition-transform duration-300 group-hover:rotate-45">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M20.7242 9.90145L9.89683 20.7289L8.96875 19.8008L19.7962 8.97338L20.7242 9.90145Z"
+                    fill="#07000E" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M19.3254 9.43636C17.1428 11.6189 17.2787 15.3217 19.3254 17.3683L19.7894 17.8324L20.7175 16.9043L20.2534 16.4403C18.6995 14.8863 18.6031 12.0148 20.2534 10.3644L20.7172 9.90065L19.7892 8.97257L19.3254 9.43636Z"
+                    fill="#07000E" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M20.2554 10.3586C18.0729 12.5411 14.3701 12.4052 12.3234 10.3586L11.8594 9.89453L12.7875 8.96645L13.2515 9.43049C14.8055 10.9845 17.677 11.0809 19.3273 9.43052L19.7911 8.96673L20.7192 9.89481L20.2554 10.3586Z"
+                    fill="#07000E" />
+                </svg>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
