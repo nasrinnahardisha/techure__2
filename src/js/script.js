@@ -362,14 +362,14 @@ $(document).ready(function ($) {
 
 
     $('.team-slider').slick({
-    slidesToShow: 2,
+    slidesToShow: 3,
     arrows: false,
     dots: true,
     autoplay: false,
    autoplaySpeed: 3000, 
    responsive: [
      {
-       breakpoint: 1024, 
+       breakpoint: 1199, 
        settings: {
          slidesToShow: 2,
        }

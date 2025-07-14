@@ -673,21 +673,25 @@
   <section class="IT px-[30px] xl:px-[15px]">
     <div class="container">
       <div class="flex flex-col md:flex-row justify-between gap-[40px] md:gap-[20px] xl:gap-[70px]">
-        <div class="w-full md:max-w-[440px] lg:max-w-[600px] xl:max-w-[660px] pt-[50px] md:pt-[60px] lg:pt-[90px]  xl:pt-[121px] pl-[7px]">
+        <div
+          class="w-full md:max-w-[440px] lg:max-w-[600px] xl:max-w-[660px] pt-[50px] md:pt-[60px] lg:pt-[90px]  xl:pt-[121px] pl-[7px]">
           <h2
             class="text-[#07000E] font-extrabold tracking-[-0.125rem]
          text-[40px] leading-[44px] sm:text-[36px] sm:leading-[36px] md:text-[42px] md:leading-[42px] lg:text-[56px] lg:leading-[56px] xl:text-[62px] xl:leading-[72px]">
             IT Technology constantly to the improve efficiency enhance security
           </h2>
+
           <div class="pt-[30px] md:pt-[40px] lg:pt-[51px] flex gap-[30px] md:gap-[40px] items-center">
-            <span
+            <div
               class="text-[36px] md:text-[42px] md:leading-[28px] lg:text-[56px] xl:text-[72px] leading-[34.91px] font-bold tracking-[8px] text-transparent"
-              style="-webkit-text-stroke: 1px #716f73">
-              600+
-            </span>
+              style="-webkit-text-stroke: 1px #716f73">600+
+              <!-- <span class="counter" data-target="600">0</span>+ -->
+            </div>
             <h5 class="text-[18px] leading-[28.91px] font-normal ">Services we provide</h5>
           </div>
-          <div class="pt-[20px] md:pt-[40px] lg:pt-[50px] xl:pt-[61px] pb-[20px] md:pb-[31px] text-[#716F73] text-[18px] leading-[28.01px] font-medium ">
+
+          <div
+            class="pt-[20px] md:pt-[40px] lg:pt-[50px] xl:pt-[61px] pb-[20px] md:pb-[31px] text-[#716F73] text-[18px] leading-[28.01px] font-medium ">
             <p>Technology is constantly evolving, shaping our future and transforming how we live and work. It
               encompasses innovations in software</p>
           </div>
@@ -724,12 +728,589 @@
         </div>
         <div class="w-full md:w-6/12 relative flex justify-center">
           <img src="../images/it-bg.png" alt="bg image" class="absolute inset-0 w-full h-full object-cover z-0" />
-          <img src="../images/IT-tech.png" alt="IT tech" class="relative z-10 pt-0 md:pt-[30px] lg:pt-[48px] pl-[60px]" />
+          <img src="../images/IT-tech.png" alt="IT tech"
+            class="relative z-10 pt-0 md:pt-[30px] lg:pt-[48px] pl-[60px]" />
         </div>
 
       </div>
     </div>
   </section>
+
+
+  <section
+    class="team  bg-[#F7F1FC] px-[30px] xl:px-[15px] pt-[30px] sm:pt-[45px] md:pt-[70px] lg:pt-[150px]  pb-[30px] sm:pb-[45px] md:pb-[70px] lg:pb-[150px] ">
+    <div class="container">
+      <div class="mx-auto text-center pb-[30px] md:pb-[60px] lg:pb-[95px]">
+        <div class="sub-title">
+          <h6 class="pl-[7px]">OUR TEAM</h6>
+        </div>
+        <div class="title pt-[10px] md:pt-[15px]">
+          <h2 class="pl-[11px]">Meet Our Team Member</h2>
+        </div>
+      </div>
+
+      <div class="team-slider flex  gap-[30px]">
+        <div class="px-[15px]">
+          <div class="flex  flex-col gap-[20px]">
+            <div
+              class="relative circle w-full h-full flex items-center justify-center xl:w-[410px] xl:h-[413px] rounded-[20px]  bg-[#fff]">
+
+              <div class="w-full md:w-[326px] h-auto md:h-[413px] flex items-center justify-center overflow-hidden">
+                <img src="../images/team1.png" alt="Darlene Robertson" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- Toggle Button -->
+              <div id="socialToggleBtn"
+                class="absolute bottom-[-25px] right-[14px] -translate-x-1/2 w-[50px] h-[50px] bg-white hover:bg-[#8FD45F] rounded-full flex items-center justify-center shadow-md z-20  transition-colors duration-300 cursor-pointer">
+                <i class="ri-share-line"></i>
+              </div>
+
+              <!-- Social Menu -->
+              <div id="socialMenu"
+                class="absolute w-[40px] bottom-[40px] left-[148px] md:left-[330px] flex flex-col gap-1 items-center bg-[#573DB8] rounded-full shadow-md z-50 transition-all duration-300 opacity-0 invisible">
+                <a href="https://www.quora.com/" target="_blank" rel="noopener noreferrer"
+                  class="group p-1 rounded-full transition-colors duration-300">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17" fill="none"
+                    class="text-xl text-white group-hover:text-[#8FD45F]">
+                    <path
+                      d="M6.8238 0.00980414C2.2871 0.00980414 0 3.1552 0 5.77996C0 7.36834 0.62119 8.78315 1.95474 9.30967C2.00088 9.3334 2.05216 9.34617 2.10441 9.34684C2.15666 9.34751 2.20836 9.3361 2.25514 9.31356C2.30191 9.29103 2.34245 9.25802 2.37339 9.21728C2.40433 9.17653 2.42477 9.1292 2.43301 9.07928C2.47659 8.9175 2.58095 8.50769 2.62858 8.33709C2.66542 8.24829 2.67193 8.15036 2.64714 8.05774C2.62234 7.96511 2.56754 7.88263 2.49078 7.82231C2.05631 7.31455 1.83174 6.66898 1.86048 6.01036C1.85313 5.41678 1.97068 4.82796 2.20597 4.27973C2.44125 3.7315 2.78933 3.23533 3.22907 2.82139C3.66882 2.40746 4.19099 2.08445 4.76385 1.87197C5.33671 1.65949 5.94828 1.56198 6.56131 1.58544C9.12504 1.58544 10.5336 3.10227 10.5336 5.12598C10.5336 7.78996 9.31756 10.0392 7.50673 10.0392C7.27567 10.0503 7.04518 10.0089 6.83369 9.91817C6.6222 9.82743 6.43568 9.68993 6.28911 9.51673C6.14254 9.34354 6.03998 9.1395 5.98976 8.92099C5.93954 8.70248 5.94301 8.47561 5.99991 8.25863C6.37702 7.19098 6.65911 6.09407 6.84303 4.9799C6.8652 4.80457 6.84829 4.62666 6.79343 4.45818C6.73857 4.28971 6.64704 4.13456 6.525 4.00319C6.40296 3.87182 6.25324 3.76729 6.08594 3.69661C5.91863 3.62594 5.73762 3.59079 5.55509 3.5935C4.53365 3.5935 3.71384 4.61517 3.71384 5.98588C3.70713 6.48819 3.81073 6.98614 4.01783 7.44679L2.7897 12.4825C2.57405 13.6425 2.56444 14.8296 2.76131 15.9927C2.76533 16.0165 2.77651 16.0386 2.79347 16.0563C2.81043 16.074 2.83238 16.0864 2.85662 16.0921C2.88085 16.0977 2.9063 16.0963 2.92972 16.0881C2.95314 16.0798 2.97351 16.0651 2.98829 16.0457C3.74192 15.144 4.32511 14.1207 4.71097 13.0228C4.82751 12.611 5.38284 10.4824 5.38284 10.4824C5.64091 10.8475 5.98941 11.1443 6.39654 11.3455C6.80368 11.5468 7.25646 11.6461 7.71349 11.6344C10.7829 11.6344 12.8653 8.92633 12.8653 5.30246C12.8352 4.56871 12.6542 3.84813 12.3327 3.18291C12.0113 2.51769 11.5561 1.92121 10.9935 1.42835C10.4309 0.935483 9.77226 0.556124 9.0563 0.312555C8.34033 0.0689851 7.58138 -0.033937 6.8238 0.00980414Z"
+                      fill="white" />
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                  class="group p-1 rounded-full transition-colors duration-300">
+                  <i class="ri-linkedin-box-fill text-xl text-white group-hover:text-[#8FD45F]"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+                  class="group p-1 rounded-full transition-colors duration-300">
+                  <i class="ri-twitter-x-line text-xl text-white group-hover:text-[#8FD45F]"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                  class="group p-1 rounded-full transition-colors duration-300">
+                  <i class="ri-facebook-fill text-xl text-white group-hover:text-[#8FD45F]"></i>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="flex flex-col pl-0 xl:pl-[7px] gap-[10px] text-center xl:text-start">
+              <h5
+                class="text-[#07000E] font-bold  leading-[34.91px] tracking-[-0.25px] font-['DM_Sans'] not-italic text-[18px] md:text-[24px]">
+                Dianne Russell</h5>
+              <h6 class="text-[#716F73] font-medium text-[16px] md:text-[18px] leading-[28.01px]">President of Sales
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="px-[15px]">
+          <div class="flex  flex-col gap-[20px]">
+            <div
+              class="relative circle2 w-full h-full flex items-center justify-center  xl:w-[410px] xl:h-[413px] rounded-[20px] bg-[#fff]">
+
+              <div class="w-full md:w-[326px] h-auto md:h-[413px] flex items-center justify-center overflow-hidden">
+                <img src="../images/team2.png" alt="Darlene Robertson" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- Toggle Button -->
+              <div id="socialToggleBtn2"
+                class="absolute bottom-[-25px] right-[14px] -translate-x-1/2 w-[50px] h-[50px] bg-white hover:bg-[#8FD45F] rounded-full flex items-center justify-center shadow-md z-20  transition-colors duration-300 cursor-pointer">
+                <i class="ri-share-line"></i>
+              </div>
+
+              <!-- Social Menu -->
+              <div id="socialMenu2"
+                class="absolute bottom-[40px] w-[40px] left-[148px] md:left-[330px] flex flex-col gap-1 items-center bg-[#573DB8] rounded-full shadow-md z-50 transition-all duration-300 opacity-0 invisible">
+                <a href="https://www.quora.com/" target="_blank" rel="noopener noreferrer"
+                  class="group p-1 rounded-full transition-colors duration-300">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17" fill="none"
+                    class="text-xl text-white group-hover:text-[#8FD45F]">
+                    <path
+                      d="M6.8238 0.00980414C2.2871 0.00980414 0 3.1552 0 5.77996C0 7.36834 0.62119 8.78315 1.95474 9.30967C2.00088 9.3334 2.05216 9.34617 2.10441 9.34684C2.15666 9.34751 2.20836 9.3361 2.25514 9.31356C2.30191 9.29103 2.34245 9.25802 2.37339 9.21728C2.40433 9.17653 2.42477 9.1292 2.43301 9.07928C2.47659 8.9175 2.58095 8.50769 2.62858 8.33709C2.66542 8.24829 2.67193 8.15036 2.64714 8.05774C2.62234 7.96511 2.56754 7.88263 2.49078 7.82231C2.05631 7.31455 1.83174 6.66898 1.86048 6.01036C1.85313 5.41678 1.97068 4.82796 2.20597 4.27973C2.44125 3.7315 2.78933 3.23533 3.22907 2.82139C3.66882 2.40746 4.19099 2.08445 4.76385 1.87197C5.33671 1.65949 5.94828 1.56198 6.56131 1.58544C9.12504 1.58544 10.5336 3.10227 10.5336 5.12598C10.5336 7.78996 9.31756 10.0392 7.50673 10.0392C7.27567 10.0503 7.04518 10.0089 6.83369 9.91817C6.6222 9.82743 6.43568 9.68993 6.28911 9.51673C6.14254 9.34354 6.03998 9.1395 5.98976 8.92099C5.93954 8.70248 5.94301 8.47561 5.99991 8.25863C6.37702 7.19098 6.65911 6.09407 6.84303 4.9799C6.8652 4.80457 6.84829 4.62666 6.79343 4.45818C6.73857 4.28971 6.64704 4.13456 6.525 4.00319C6.40296 3.87182 6.25324 3.76729 6.08594 3.69661C5.91863 3.62594 5.73762 3.59079 5.55509 3.5935C4.53365 3.5935 3.71384 4.61517 3.71384 5.98588C3.70713 6.48819 3.81073 6.98614 4.01783 7.44679L2.7897 12.4825C2.57405 13.6425 2.56444 14.8296 2.76131 15.9927C2.76533 16.0165 2.77651 16.0386 2.79347 16.0563C2.81043 16.074 2.83238 16.0864 2.85662 16.0921C2.88085 16.0977 2.9063 16.0963 2.92972 16.0881C2.95314 16.0798 2.97351 16.0651 2.98829 16.0457C3.74192 15.144 4.32511 14.1207 4.71097 13.0228C4.82751 12.611 5.38284 10.4824 5.38284 10.4824C5.64091 10.8475 5.98941 11.1443 6.39654 11.3455C6.80368 11.5468 7.25646 11.6461 7.71349 11.6344C10.7829 11.6344 12.8653 8.92633 12.8653 5.30246C12.8352 4.56871 12.6542 3.84813 12.3327 3.18291C12.0113 2.51769 11.5561 1.92121 10.9935 1.42835C10.4309 0.935483 9.77226 0.556124 9.0563 0.312555C8.34033 0.0689851 7.58138 -0.033937 6.8238 0.00980414Z"
+                      fill="white" />
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                  class="group p-1 rounded-full transition-colors duration-300">
+                  <i class="ri-linkedin-box-fill text-xl text-white group-hover:text-[#8FD45F]"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+                  class="group p-1 rounded-full transition-colors duration-300">
+                  <i class="ri-twitter-x-line text-xl text-white group-hover:text-[#8FD45F]"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                  class="group p-1 rounded-full transition-colors duration-300">
+                  <i class="ri-facebook-fill text-xl text-white group-hover:text-[#8FD45F]"></i>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="flex flex-col pl-0 xl:pl-[7px] gap-[10px] text-center xl:text-start">
+              <h5
+                class="text-[#07000E] font-bold  leading-[34.91px] tracking-[-0.25px] font-['DM_Sans'] not-italic text-[18px] md:text-[24px]">
+                Leslie Alexander</h5>
+              <h6 class="text-[#716F73] font-medium text-[16px] md:text-[18px] leading-[28.01px]">Web Designer</h6>
+            </div>
+          </div>
+        </div>
+        <div class="px-[15px]">
+          <div class="flex flex-col gap-[20px]">
+            <div
+              class="relative circle3 w-full h-full flex items-center justify-center  xl:w-[410px] xl:h-[413px]  rounded-[20px]  bg-[#fff]">
+
+              <div class="w-full md:w-[326px] h-auto md:h-[413px] flex items-center justify-center overflow-hidden">
+                <img src="../images/team3.png" alt="Darlene Robertson" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- Toggle Button -->
+              <div id="socialToggleBtn3"
+                class="absolute bottom-[-25px] right-[14px] -translate-x-1/2 w-[50px] h-[50px] bg-white hover:bg-[#8FD45F] rounded-full flex items-center justify-center shadow-md z-20  transition-colors duration-300 cursor-pointer">
+                <i class="ri-share-line"></i>
+              </div>
+
+              <!-- Social Menu -->
+              <div id="socialMenu3"
+                class="absolute bottom-[40px] w-[40px] left-[148px] md:left-[330px] flex flex-col gap-1 items-center bg-[#573DB8] rounded-full shadow-md z-50 transition-all duration-300 opacity-0 invisible">
+                <a href="https://www.quora.com/" target="_blank" rel="noopener noreferrer"
+                  class="group p-1 rounded-full transition-colors duration-300">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17" fill="none"
+                    class="text-xl text-white group-hover:text-[#8FD45F]">
+                    <path
+                      d="M6.8238 0.00980414C2.2871 0.00980414 0 3.1552 0 5.77996C0 7.36834 0.62119 8.78315 1.95474 9.30967C2.00088 9.3334 2.05216 9.34617 2.10441 9.34684C2.15666 9.34751 2.20836 9.3361 2.25514 9.31356C2.30191 9.29103 2.34245 9.25802 2.37339 9.21728C2.40433 9.17653 2.42477 9.1292 2.43301 9.07928C2.47659 8.9175 2.58095 8.50769 2.62858 8.33709C2.66542 8.24829 2.67193 8.15036 2.64714 8.05774C2.62234 7.96511 2.56754 7.88263 2.49078 7.82231C2.05631 7.31455 1.83174 6.66898 1.86048 6.01036C1.85313 5.41678 1.97068 4.82796 2.20597 4.27973C2.44125 3.7315 2.78933 3.23533 3.22907 2.82139C3.66882 2.40746 4.19099 2.08445 4.76385 1.87197C5.33671 1.65949 5.94828 1.56198 6.56131 1.58544C9.12504 1.58544 10.5336 3.10227 10.5336 5.12598C10.5336 7.78996 9.31756 10.0392 7.50673 10.0392C7.27567 10.0503 7.04518 10.0089 6.83369 9.91817C6.6222 9.82743 6.43568 9.68993 6.28911 9.51673C6.14254 9.34354 6.03998 9.1395 5.98976 8.92099C5.93954 8.70248 5.94301 8.47561 5.99991 8.25863C6.37702 7.19098 6.65911 6.09407 6.84303 4.9799C6.8652 4.80457 6.84829 4.62666 6.79343 4.45818C6.73857 4.28971 6.64704 4.13456 6.525 4.00319C6.40296 3.87182 6.25324 3.76729 6.08594 3.69661C5.91863 3.62594 5.73762 3.59079 5.55509 3.5935C4.53365 3.5935 3.71384 4.61517 3.71384 5.98588C3.70713 6.48819 3.81073 6.98614 4.01783 7.44679L2.7897 12.4825C2.57405 13.6425 2.56444 14.8296 2.76131 15.9927C2.76533 16.0165 2.77651 16.0386 2.79347 16.0563C2.81043 16.074 2.83238 16.0864 2.85662 16.0921C2.88085 16.0977 2.9063 16.0963 2.92972 16.0881C2.95314 16.0798 2.97351 16.0651 2.98829 16.0457C3.74192 15.144 4.32511 14.1207 4.71097 13.0228C4.82751 12.611 5.38284 10.4824 5.38284 10.4824C5.64091 10.8475 5.98941 11.1443 6.39654 11.3455C6.80368 11.5468 7.25646 11.6461 7.71349 11.6344C10.7829 11.6344 12.8653 8.92633 12.8653 5.30246C12.8352 4.56871 12.6542 3.84813 12.3327 3.18291C12.0113 2.51769 11.5561 1.92121 10.9935 1.42835C10.4309 0.935483 9.77226 0.556124 9.0563 0.312555C8.34033 0.0689851 7.58138 -0.033937 6.8238 0.00980414Z"
+                      fill="white" />
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                  class="group p-1 rounded-full transition-colors duration-300">
+                  <i class="ri-linkedin-box-fill text-xl text-white group-hover:text-[#8FD45F]"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+                  class="group p-1 rounded-full transition-colors duration-300">
+                  <i class="ri-twitter-x-line text-xl text-white group-hover:text-[#8FD45F]"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                  class="group p-1 rounded-full transition-colors duration-300">
+                  <i class="ri-facebook-fill text-xl text-white group-hover:text-[#8FD45F]"></i>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="flex flex-col pl-0 xl:pl-[7px] gap-[10px] text-center xl:text-start">
+              <h5
+                class="text-[#07000E] font-bold  leading-[34.91px] tracking-[-0.25px] font-['DM_Sans'] not-italic text-[18px] md:text-[24px]">
+                Darlene Robertson</h5>
+              <h6 class="text-[#716F73] font-medium text-[16px] md:text-[18px] leading-[28.01px]">Nursing Assistant</h6>
+            </div>
+          </div>
+        </div>
+        <div class="px-[15px]">
+          <div class="flex  flex-col gap-[20px]">
+            <div
+              class="relative circle2 w-full h-full flex items-center justify-center  xl:w-[410px] xl:h-[413px] rounded-[20px]  bg-[#fff]">
+
+              <div class="w-full md:w-[326px] h-auto md:h-[413px] flex items-center justify-center overflow-hidden">
+                <img src="../images/team2.png" alt="Darlene Robertson" class="w-full h-full object-cover" />
+              </div>
+
+              <!-- Toggle Button -->
+              <div id="socialToggleBtn2"
+                class="absolute bottom-[-25px] right-[14px] -translate-x-1/2 w-[50px] h-[50px] bg-white hover:bg-[#8FD45F] rounded-full flex items-center justify-center shadow-md z-20  transition-colors duration-300 cursor-pointer">
+                <i class="ri-share-line"></i>
+              </div>
+
+              <!-- Social Menu -->
+              <div id="socialMenu2"
+                class="absolute bottom-[40px] w-[40px] left-[148px] md:left-[330px] flex flex-col gap-1 items-center bg-[#573DB8] rounded-full shadow-md z-50 transition-all duration-300 opacity-0 invisible">
+                <a href="https://www.quora.com/" target="_blank" rel="noopener noreferrer"
+                  class="group p-1 rounded-full transition-colors duration-300">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17" fill="none"
+                    class="text-xl text-white group-hover:text-[#8FD45F]">
+                    <path
+                      d="M6.8238 0.00980414C2.2871 0.00980414 0 3.1552 0 5.77996C0 7.36834 0.62119 8.78315 1.95474 9.30967C2.00088 9.3334 2.05216 9.34617 2.10441 9.34684C2.15666 9.34751 2.20836 9.3361 2.25514 9.31356C2.30191 9.29103 2.34245 9.25802 2.37339 9.21728C2.40433 9.17653 2.42477 9.1292 2.43301 9.07928C2.47659 8.9175 2.58095 8.50769 2.62858 8.33709C2.66542 8.24829 2.67193 8.15036 2.64714 8.05774C2.62234 7.96511 2.56754 7.88263 2.49078 7.82231C2.05631 7.31455 1.83174 6.66898 1.86048 6.01036C1.85313 5.41678 1.97068 4.82796 2.20597 4.27973C2.44125 3.7315 2.78933 3.23533 3.22907 2.82139C3.66882 2.40746 4.19099 2.08445 4.76385 1.87197C5.33671 1.65949 5.94828 1.56198 6.56131 1.58544C9.12504 1.58544 10.5336 3.10227 10.5336 5.12598C10.5336 7.78996 9.31756 10.0392 7.50673 10.0392C7.27567 10.0503 7.04518 10.0089 6.83369 9.91817C6.6222 9.82743 6.43568 9.68993 6.28911 9.51673C6.14254 9.34354 6.03998 9.1395 5.98976 8.92099C5.93954 8.70248 5.94301 8.47561 5.99991 8.25863C6.37702 7.19098 6.65911 6.09407 6.84303 4.9799C6.8652 4.80457 6.84829 4.62666 6.79343 4.45818C6.73857 4.28971 6.64704 4.13456 6.525 4.00319C6.40296 3.87182 6.25324 3.76729 6.08594 3.69661C5.91863 3.62594 5.73762 3.59079 5.55509 3.5935C4.53365 3.5935 3.71384 4.61517 3.71384 5.98588C3.70713 6.48819 3.81073 6.98614 4.01783 7.44679L2.7897 12.4825C2.57405 13.6425 2.56444 14.8296 2.76131 15.9927C2.76533 16.0165 2.77651 16.0386 2.79347 16.0563C2.81043 16.074 2.83238 16.0864 2.85662 16.0921C2.88085 16.0977 2.9063 16.0963 2.92972 16.0881C2.95314 16.0798 2.97351 16.0651 2.98829 16.0457C3.74192 15.144 4.32511 14.1207 4.71097 13.0228C4.82751 12.611 5.38284 10.4824 5.38284 10.4824C5.64091 10.8475 5.98941 11.1443 6.39654 11.3455C6.80368 11.5468 7.25646 11.6461 7.71349 11.6344C10.7829 11.6344 12.8653 8.92633 12.8653 5.30246C12.8352 4.56871 12.6542 3.84813 12.3327 3.18291C12.0113 2.51769 11.5561 1.92121 10.9935 1.42835C10.4309 0.935483 9.77226 0.556124 9.0563 0.312555C8.34033 0.0689851 7.58138 -0.033937 6.8238 0.00980414Z"
+                      fill="white" />
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                  class="group p-1 rounded-full transition-colors duration-300">
+                  <i class="ri-linkedin-box-fill text-xl text-white group-hover:text-[#8FD45F]"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"
+                  class="group p-1 rounded-full transition-colors duration-300">
+                  <i class="ri-twitter-x-line text-xl text-white group-hover:text-[#8FD45F]"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                  class="group p-1 rounded-full transition-colors duration-300">
+                  <i class="ri-facebook-fill text-xl text-white group-hover:text-[#8FD45F]"></i>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="flex flex-col pl-0 xl:pl-[7px] gap-[10px] text-center xl:text-start">
+              <h5
+                class="text-[#07000E] font-bold  leading-[34.91px] tracking-[-0.25px] font-['DM_Sans'] not-italic text-[18px] md:text-[24px]">
+                Leslie Alexander</h5>
+              <h6 class="text-[#716F73] font-medium text-[16px] md:text-[18px] leading-[28.01px]">Web Designer</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="bg-[#F7F1FC] px-[30px] xl:px-[15px] pt-[20px] md:pt-[60px]  xl:pt-[108px]">
+    <div class="container">
+      <div class="relative">
+        <div class="absolute top-0 left-0 w-full h-[1px] translate-y-[-20px]" style="background: rgba(7, 0, 14, 0.2)">
+        </div>
+        <div class="sub-title text-center lg:text-left">
+          <h6>Latest Project</h6>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row items-center lg:items-end gap-3 lg:gap-32 text-center lg:text-left justify-between">
+          <div class="title pt-[10px] md:pt-[15px] !pl-0 w-full lg:w-auto text-center lg:text-left">
+            Our Latest Project
+          </div>
+          <a href="#" class="both-btn flex items-center justify-center md:justify-start pl-[7px]">
+            <div class="custom-btn">View All Service</div>
+            <div class="flex justify-center items-center">
+              <div class="icon-wrapper group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                  class="transition-transform duration-300 group-hover:rotate-45">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M27.838 13.4025L13.4015 27.839L12.1641 26.6016L26.6006 12.165L27.838 13.4025Z" fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.9755 12.7784C23.0654 15.6885 23.2466 20.6255 25.9755 23.3544L26.5942 23.9731L27.8316 22.7357L27.2129 22.1169C25.141 20.0451 25.0124 16.2164 27.2129 14.0159L27.8313 13.3975L26.5939 12.16L25.9755 12.7784Z"
+                    fill="white" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M27.2182 14.0172C24.3081 16.9272 19.371 16.746 16.6422 14.0172L16.0234 13.3984L17.2609 12.161L17.8796 12.7797C19.9515 14.8517 23.7802 14.9803 25.9807 12.7798L26.5991 12.1614L27.8365 13.3988L27.2182 14.0172Z"
+                    fill="white" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-[40px] lg:gap-[60px] pt-[30px] md:pt-[60px]">
+        <div class="flex flex-col lg:flex-row justify-between gap-6 md:gap-[40px] xl:gap-[256px]">
+          <img src="../images/latest1.png" alt="img"
+            class="w-full lg:w-auto transform transition duration-500 ease-in-out hover:scale-105">
+          <div class="flex flex-col gap-[20px] text-center lg:text-right">
+            <div class="flex flex-wrap justify-center lg:justify-end gap-[15px] md:gap-[30px] items-center">
+              <button
+                class="inline-flex h-[50px] px-[30px] py-[20px] justify-center items-center gap-[30px] shrink-0 rounded-full bg-white text-[#716F73] font-['DM_Sans'] text-[18px] font-medium leading-[28.01px]">
+                TechVibe Solutions
+              </button>
+              <button
+                class="inline-flex h-[50px] px-[30px] py-[20px] justify-center items-center gap-[30px] shrink-0 rounded-full bg-white text-[#716F73] font-['DM_Sans'] text-[18px] font-medium leading-[28.01px]">
+                Data Forge
+              </button>
+
+            </div>
+            <a href="#"
+              class="text-[#07000E] flex items-center justify-center lg:justify-end  text-xl md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] hover:text-[#573DB8] transition-colors duration-300 ">
+              Your Tech Partner for Excellence
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between gap-6 md:gap-[40px xl:gap-[256px]">
+          <img src="../images/latest2.png" alt="img"
+            class="w-full lg:w-auto transform transition duration-500 ease-in-out hover:scale-105">
+          <div class="flex flex-col gap-[20px] text-center lg:text-right">
+            <div class="flex flex-wrap justify-center lg:justify-end gap-[15px] md:gap-[30px] items-center">
+              <button
+                class="inline-flex h-[50px] px-[30px] py-[20px] justify-center items-center gap-[30px] shrink-0 rounded-full bg-white text-[#716F73] font-['DM_Sans'] text-[18px] font-medium leading-[28.01px]">
+                TechVibe Solutions
+              </button>
+              <button
+                class="inline-flex h-[50px] px-[30px] py-[20px] justify-center items-center gap-[30px] shrink-0 rounded-full bg-white text-[#716F73] font-['DM_Sans'] text-[18px] font-medium leading-[28.01px]">
+                Data Forge
+              </button>
+
+            </div>
+            <a href="#"
+              class="text-[#07000E] text-xl flex items-center justify-center lg:justify-end   md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] hover:text-[#573DB8] transition-colors duration-300 ">
+              Your Tech Partner for Excellence
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between gap-6 md:gap-[40px xl:gap-[256px]">
+          <img src="../images/latest3.png" alt="img"
+            class="w-full lg:w-auto transform transition duration-500 ease-in-out hover:scale-105">
+          <div class="flex flex-col gap-[20px] text-center lg:text-right">
+            <div class="flex flex-wrap justify-center lg:justify-end gap-[15px] md:gap-[30px] items-center">
+              <button
+                class="inline-flex h-[50px] px-[30px] py-[20px] justify-center items-center gap-[30px] shrink-0 rounded-full bg-white text-[#716F73] font-['DM_Sans'] text-[18px] font-medium leading-[28.01px]">
+                TechVibe Solutions
+              </button>
+              <button
+                class="inline-flex h-[50px] px-[30px] py-[20px] justify-center items-center gap-[30px] shrink-0 rounded-full bg-white text-[#716F73] font-['DM_Sans'] text-[18px] font-medium leading-[28.01px]">
+                Data Forge
+              </button>
+
+            </div>
+            <a href="#"
+              class="text-[#07000E] text-xl flex items-center justify-center lg:justify-end   md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] hover:text-[#573DB8] transition-colors duration-300 ">
+              Your Tech Partner for Excellence
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between gap-6 md:gap-[40px xl:gap-[256px]">
+          <img src="../images/latest4.png" alt="img"
+            class="w-full lg:w-auto transform transition duration-500 ease-in-out hover:scale-105">
+          <div class="flex flex-col gap-[20px] text-center lg:text-right">
+            <div class="flex flex-wrap justify-center lg:justify-end gap-[15px] md:gap-[30px] items-center">
+              <button
+                class="inline-flex h-[50px] px-[30px] py-[20px] justify-center items-center gap-[30px] shrink-0 rounded-full bg-white text-[#716F73] font-['DM_Sans'] text-[18px] font-medium leading-[28.01px]">
+                TechVibe Solutions
+              </button>
+              <button
+                class="inline-flex h-[50px] px-[30px] py-[20px] justify-center items-center gap-[30px] shrink-0 rounded-full bg-white text-[#716F73] font-['DM_Sans'] text-[18px] font-medium leading-[28.01px]">
+                Data Forge
+              </button>
+
+            </div>
+            <a href="#"
+              class="text-[#07000E] flex items-center justify-center lg:justify-end  text-xl md:text-[24px] font-bold leading-[34.91px] tracking-[-0.25px] hover:text-[#573DB8] transition-colors duration-300 ">
+              Your Tech Partner for Excellence
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section
+    class="bg-[#F7F1FC] pt-[30px] sm:pt-[45px] md:pt-[70px] lg:pt-[150px]  pb-[30px] sm:pb-[45px] md:pb-[70px] lg:pb-[150px] ">
+    <div
+      class=" xl:pl-[49px] xl:pt-[28px] lg:py-6 md:py-5 py-4 xl:pb-[21px] bg-[#573DB8] relative  z-20 overflow-hidden">
+      <div class="slick marquee flex items-center justify-center gap-10 w-full mx-auto px-4 whitespace-nowrap">
+        <div class="inner">
+          <div class=" flex items-center justify-center">
+            <img src="../images/Tech Mastery1.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="inner">
+          <div class="flex items-center justify-center slick-slide">
+            <div class="w-[81px] h-[81px] flex items-center justify-center rounded-full bg-white/10">
+              <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                <path
+                  d="M36.7589 2.10937L4.89808 2.10938C4.45824 2.10938 4.10156 2.46606 4.10156 2.90589L4.10156 39.5459C4.10156 39.9857 4.45824 40.3424 4.89808 40.3424L36.7589 40.3424C37.1988 40.3424 37.5555 39.9857 37.5555 39.5459V2.90589C37.5555 2.46598 37.1988 2.10937 36.7589 2.10937ZM35.9624 3.70241V5.29545L18.439 5.29545C17.9991 5.29545 17.6424 5.65213 17.6424 6.09196C17.6424 6.53188 17.9991 6.88848 18.439 6.88848L35.9624 6.88848V8.48152L5.6946 8.48152V3.70241L35.9624 3.70241ZM5.6946 38.7493V10.0746L35.9624 10.0746V38.7493L5.6946 38.7493Z"
+                  fill="white" />
+                <path
+                  d="M33.5743 11.668L8.08558 11.668C7.64574 11.668 7.28906 12.0246 7.28906 12.4645V36.3602C7.28906 36.8 7.64574 37.1567 8.08558 37.1567H33.5743C34.0141 37.1567 34.3708 36.8 34.3708 36.3602V12.4645C34.3708 12.0246 34.0141 11.668 33.5743 11.668ZM32.7778 35.5636H8.8821V13.261L32.7778 13.261V35.5636Z"
+                  fill="white" />
+                <path d="M9.67188 14.0547H11.2649V15.6477H9.67188V14.0547Z" fill="white" />
+                <path d="M12.0703 14.0586L29.5938 14.0586V15.6516L12.0703 15.6516V14.0586Z" fill="white" />
+                <path d="M12.0625 33.1758H29.586V34.7688H12.0625V33.1758Z" fill="white" />
+                <path d="M7.28906 5.29688H8.8821V6.88991H7.28906V5.29688Z" fill="white" />
+                <path d="M9.67188 5.29688H11.2649V6.88991H9.67188V5.29688Z" fill="white" />
+                <path d="M12.0703 5.29297H13.6633V6.886H12.0703V5.29297Z" fill="white" />
+                <path d="M9.67969 33.1758H11.2727V34.7688H9.67969V33.1758Z" fill="white" />
+                <path d="M9.67969 16.4453H11.2727V32.3757H9.67969V16.4453Z" fill="white" />
+                <path d="M30.3906 14.0547H31.9837V15.6477H30.3906V14.0547Z" fill="white" />
+                <path d="M30.3906 33.1719H31.9837V34.7649H30.3906V33.1719Z" fill="white" />
+                <path d="M30.3828 16.4453H31.9758V32.3757H30.3828V16.4453Z" fill="white" />
+                <path
+                  d="M13.6562 24.4108C13.6562 28.3635 16.8723 31.5795 20.8249 31.5795C24.7775 31.5795 27.9936 28.3635 27.9936 24.4108C27.9936 20.4578 24.7775 17.2422 20.8249 17.2422C16.8723 17.2422 13.6562 20.4578 13.6562 24.4108ZM26.4005 24.4108C26.4005 27.4854 23.8994 29.9865 20.8249 29.9865C17.7504 29.9865 15.2493 27.4854 15.2493 24.4108C15.2493 21.3363 17.7505 18.8352 20.8249 18.8352C23.8994 18.8352 26.4005 21.3363 26.4005 24.4108Z"
+                  fill="white" />
+                <path
+                  d="M18.0159 24.5056C17.7048 24.1949 17.2008 24.1949 16.8896 24.5056C16.5785 24.8167 16.5785 25.3211 16.8896 25.6323L19.1422 27.885C19.4533 28.196 19.9578 28.196 20.269 27.885L24.7746 23.3792C25.0858 23.0682 25.0858 22.5638 24.7746 22.2529C24.4639 21.9418 23.9595 21.9418 23.6483 22.2529L19.7057 26.1954L18.0159 24.5056Z"
+                  fill="white" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="inner">
+          <div class=" flex items-center justify-center">
+            <img src="../images/Tech Mastery1.png" alt="img" />
+          </div>
+        </div>
+        <div class="inner">
+          <div class="flex items-center justify-center slick-slide">
+            <div class="w-[81px] h-[81px] flex items-center justify-center rounded-full bg-white/10">
+              <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                <path
+                  d="M36.7589 2.10937L4.89808 2.10938C4.45824 2.10938 4.10156 2.46606 4.10156 2.90589L4.10156 39.5459C4.10156 39.9857 4.45824 40.3424 4.89808 40.3424L36.7589 40.3424C37.1988 40.3424 37.5555 39.9857 37.5555 39.5459V2.90589C37.5555 2.46598 37.1988 2.10937 36.7589 2.10937ZM35.9624 3.70241V5.29545L18.439 5.29545C17.9991 5.29545 17.6424 5.65213 17.6424 6.09196C17.6424 6.53188 17.9991 6.88848 18.439 6.88848L35.9624 6.88848V8.48152L5.6946 8.48152V3.70241L35.9624 3.70241ZM5.6946 38.7493V10.0746L35.9624 10.0746V38.7493L5.6946 38.7493Z"
+                  fill="white" />
+                <path
+                  d="M33.5743 11.668L8.08558 11.668C7.64574 11.668 7.28906 12.0246 7.28906 12.4645V36.3602C7.28906 36.8 7.64574 37.1567 8.08558 37.1567H33.5743C34.0141 37.1567 34.3708 36.8 34.3708 36.3602V12.4645C34.3708 12.0246 34.0141 11.668 33.5743 11.668ZM32.7778 35.5636H8.8821V13.261L32.7778 13.261V35.5636Z"
+                  fill="white" />
+                <path d="M9.67188 14.0547H11.2649V15.6477H9.67188V14.0547Z" fill="white" />
+                <path d="M12.0703 14.0586L29.5938 14.0586V15.6516L12.0703 15.6516V14.0586Z" fill="white" />
+                <path d="M12.0625 33.1758H29.586V34.7688H12.0625V33.1758Z" fill="white" />
+                <path d="M7.28906 5.29688H8.8821V6.88991H7.28906V5.29688Z" fill="white" />
+                <path d="M9.67188 5.29688H11.2649V6.88991H9.67188V5.29688Z" fill="white" />
+                <path d="M12.0703 5.29297H13.6633V6.886H12.0703V5.29297Z" fill="white" />
+                <path d="M9.67969 33.1758H11.2727V34.7688H9.67969V33.1758Z" fill="white" />
+                <path d="M9.67969 16.4453H11.2727V32.3757H9.67969V16.4453Z" fill="white" />
+                <path d="M30.3906 14.0547H31.9837V15.6477H30.3906V14.0547Z" fill="white" />
+                <path d="M30.3906 33.1719H31.9837V34.7649H30.3906V33.1719Z" fill="white" />
+                <path d="M30.3828 16.4453H31.9758V32.3757H30.3828V16.4453Z" fill="white" />
+                <path
+                  d="M13.6562 24.4108C13.6562 28.3635 16.8723 31.5795 20.8249 31.5795C24.7775 31.5795 27.9936 28.3635 27.9936 24.4108C27.9936 20.4578 24.7775 17.2422 20.8249 17.2422C16.8723 17.2422 13.6562 20.4578 13.6562 24.4108ZM26.4005 24.4108C26.4005 27.4854 23.8994 29.9865 20.8249 29.9865C17.7504 29.9865 15.2493 27.4854 15.2493 24.4108C15.2493 21.3363 17.7505 18.8352 20.8249 18.8352C23.8994 18.8352 26.4005 21.3363 26.4005 24.4108Z"
+                  fill="white" />
+                <path
+                  d="M18.0159 24.5056C17.7048 24.1949 17.2008 24.1949 16.8896 24.5056C16.5785 24.8167 16.5785 25.3211 16.8896 25.6323L19.1422 27.885C19.4533 28.196 19.9578 28.196 20.269 27.885L24.7746 23.3792C25.0858 23.0682 25.0858 22.5638 24.7746 22.2529C24.4639 21.9418 23.9595 21.9418 23.6483 22.2529L19.7057 26.1954L18.0159 24.5056Z"
+                  fill="white" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="inner">
+          <div class=" flex items-center justify-center">
+            <img src="../images/Tech Mastery1.png" alt="img" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="contact bg-[#F7F1FC] px-[30px] xl:px-[15px] xl:pl-[29px]">
+  <div class="container">
+    <div class="flex flex-col lg:flex-row gap-[30px] justify-between">
+     
+      <div class="flex flex-col gap-[30px] w-full lg:w-1/2">
+        <div class="w-full rounded-[20px] border border-[#8FD45F] bg-white">
+          <div class="px-[26px] md:px-[40px] py-[40px]">
+            <div class="flex justify-between items-center">
+              <h5 class="text-[#07000E] font-bold text-[20px] md:text-[24px] leading-[28.91px] md:leading-[34.91px] tracking-[-0.25px]">
+                Jenny Wilson
+              </h5>
+              <span class="text-[#716F73] font-medium text-[18px] leading-[28.01px]">Designer</span>
+            </div>
+
+            <div class="text-[#716F73] my-[10px] md:my-[30px] font-medium text-[20px] md:text-[32px] leading-[28px] md:leading-[44px] text-center md:text-start">
+              <p>
+                Information Technology is a rapidly evolving field that encompasses the study.
+              </p>
+            </div>
+
+            <div class="flex justify-between items-center">
+              <div class="flex gap-[10px] text-[#FFB34E] text-[20px] font-black leading-none">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill text-[#716F73]"></i>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                class="ml-0 xl:ml-[-18px]">
+                <path d="M59.5 9.07422V34.1699L51.1191 50.9316H39.3799L47.5898 34.5117L47.9521 33.7881L34.7861 33.7881V9.07422L59.5 9.07422ZM25.2139 9.07422L25.2139 34.1699L16.833 50.9316H5.09473L13.3047 34.5117L13.666 33.7881H0.5L0.5 9.07422L25.2139 9.07422Z"
+                  stroke="#573DB8" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <img src="../images/contact.png" alt="img" class="w-full h-auto object-cover rounded-[20px]">
+      </div>
+
+      <div class="bg-white rounded-[20px] w-full lg:w-1/2 p-[20px] md:px-[40px] md:py-[60px]">
+        <form action="#" method="POST">
+          <div class="space-y-4 md:space-y-[30px] mb-5 md:mb-[40px]">
+            <div class="flex flex-col md:flex-row gap-4 md:gap-[30px]">
+              <div class="flex flex-col gap-[10px] w-full">
+                <label for="name" class="text-[18px] font-medium text-black">Name</label>
+                <input type="text" id="name" required placeholder="Your Name"
+                  class="w-full py-4 px-[30px] text-[#716F73] bg-white focus:outline-none text-[18px] leading-[155%] font-normal rounded-full border border-[#07000E]/20">
+              </div>
+              <div class="flex flex-col gap-[10px] w-full">
+                <label for="email" class="text-[18px] font-medium text-black">Email</label>
+                <input type="email" required placeholder="Email"
+                  class="w-full py-4 px-[30px] text-[#716F73] bg-white focus:outline-none text-[18px] leading-[155%] font-normal rounded-full border border-[#07000E]/20">
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-[10px]">
+              <label for="option" class="text-[18px] font-medium text-black">Option</label>
+              <div class="relative">
+                <select id="option" required
+                  class="appearance-none w-full py-4 px-[30px] bg-white focus:outline-none text-[18px] leading-[155%] font-normal rounded-full border border-[#07000E]/20">
+                  <option value="" class="text-[#716F73]">Choose an option</option>
+                  <option value="option1">Option One</option>
+                  <option value="option2">Option Two</option>
+                  <option value="option3">Option Three</option>
+                </select>
+                <svg class="w-4 h-4 absolute right-[22px] top-[22px] pointer-events-none text-black" fill="none"
+                  stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="flex flex-col gap-[10px]">
+              <label for="message" class="text-[18px] font-medium text-black">Message</label>
+              <textarea id="message" required rows="4"
+                class="h-[129px] text-[#716F73] w-full py-[17px] px-[30px] bg-white focus:outline-none text-[18px] leading-[155%] font-normal rounded-[20px] border border-[#07000E]/20"
+                placeholder="Type Here"></textarea>
+            </div>
+          </div>
+
+          <button type="submit"
+            class="w-full md:w-[550px] flex items-center justify-center gap-[10px] h-[60px] px-[30px] py-[20px] rounded-full bg-[#8FD45F] text-[#07000E] text-[18px] font-bold leading-[111%] tracking-[-0.25px] font-['DM_Sans']">
+            Sent Now
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21.1297 10.3561L9.76216 20.615L8.88281 19.6406L20.2503 9.38173L21.1297 10.3561Z"
+                  fill="#07000E" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M19.7576 9.82429C17.4662 11.8922 17.4123 15.5971 19.3515 17.7459L19.7912 18.233L20.7655 17.3537L20.3259 16.8665C18.8535 15.2351 18.9042 12.3624 20.6369 10.7987L21.1238 10.3592L20.2445 9.38485L19.7576 9.82429Z"
+                  fill="#07000E" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M20.6425 10.7956C18.3511 12.8636 14.6601 12.5383 12.7209 10.3895L12.2812 9.90234L13.2556 9.023L13.6953 9.51018C15.1677 11.1417 18.0305 11.385 19.7632 9.82127L20.2501 9.38183L21.1294 10.3562L20.6425 10.7956Z"
+                  fill="#07000E" />
+              </svg>
+            </span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <script src="../src/js/jquery-3.6.1.min.js"></script>
   <script src="../src/js/slick.min.js"></script>

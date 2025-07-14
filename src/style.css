@@ -35,9 +35,17 @@ body {
     transition: .3s;
 }
 
+.slick-slider {
+  display: flex;
+  justify-content: center;
+  margin: 0 15px; /* maintain gap between slides */
+}
+.slick-list {
+  margin: 0 -15px; /* compensate for padding in slides */
+}
 
 
-.circle:before {
+/* .circle:before {
     position: absolute;
     left: -10px;
     top: -10px;
@@ -59,15 +67,14 @@ body {
     border-radius: 50%;
     content: "";
     border: 1px solid #D9D9D9;
-}
+} */
 
 
 .testimonial-area ul, .team-slider ul {
     position: absolute;
-    bottom: 10px;
+    bottom: -92px;
     left: 50%;
     transform: translate(-50%);
-    margin-left: 14px;
 }
 
 .testimonial-area ul li, .team-slider ul li {
@@ -76,15 +83,17 @@ body {
 
 .testimonial-area ul li button, .team-slider ul li button {
     font-size: 0;
-    width: 15px;
-    height: 15px;
+    width: 60px;
+    height: 10px;
     background: #716F73;
     margin: 0 10px;
-    border-radius: 50%;
+    border-radius: 999px;
 }
 
 .testimonial-area ul li.slick-active button, .team-slider ul li.slick-active button {
     background: #573DB8;
+    width: 111px;
+    height: 10px;
 }
 
 .slick .inner {
@@ -190,6 +199,10 @@ body {
     width: 55px;
     height: 55px;
   }
+  .testimonial-area ul, .team-slider ul {
+    bottom: -45px;
+}
+
 }
 
 /* 991px */
