@@ -303,48 +303,54 @@ circleWrapper5.addEventListener("mouseleave", () => {
 
 
 
-  const toggleButtons = document.querySelectorAll('[id^="toggleBtn"]');
-  const extraTexts = document.querySelectorAll('[id^="extraText"]');
+const toggleButtons = document.querySelectorAll('[id^="toggleBtn"]');
+const extraTexts = document.querySelectorAll('[id^="extraText"]');
 
-  const plusIconClass = 'ri-add-line';
-  const subtractIconClass = 'ri-subtract-fill';
+const plusIconClass = 'ri-add-line';
+const subtractIconClass = 'ri-subtract-fill';
 
-  function hideAllExcept(currentIndex) {
-    extraTexts.forEach((text, index) => {
-      const icon = toggleButtons[index].querySelector('i');
-      if (index !== currentIndex) {
-        text.classList.add('hidden');
-        icon.classList.remove(subtractIconClass);
-        icon.classList.add(plusIconClass);
-      }
-    });
-  }
+function hideAllExcept(currentIndex) {
+  extraTexts.forEach((text, index) => {
+    const icon = toggleButtons[index].querySelector('i');
+    if (index !== currentIndex) {
+      text.classList.add('hidden');
+      icon.classList.remove(subtractIconClass);
+      icon.classList.add(plusIconClass);
+    }
+  });
+}
 
-  toggleButtons.forEach((btn, index) => {
-    btn.addEventListener('click', () => {
-      const currentText = extraTexts[index];
-      const icon = btn.querySelector('i');
-      const isHidden = currentText.classList.contains('hidden');
+toggleButtons.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    const currentText = extraTexts[index];
+    const icon = btn.querySelector('i');
+    const isHidden = currentText.classList.contains('hidden');
 
-      if (isHidden) {
-        hideAllExcept(index); // অন্য সব বন্ধ করে
-        currentText.classList.remove('hidden');
-        icon.classList.remove(plusIconClass);
-        icon.classList.add(subtractIconClass);
-      } else {
-        currentText.classList.add('hidden');
-        icon.classList.remove(subtractIconClass);
-        icon.classList.add(plusIconClass);
-      }
-    });
+    if (isHidden) {
+      hideAllExcept(index); 
+      currentText.classList.remove('hidden');
+      icon.classList.remove(plusIconClass);
+      icon.classList.add(subtractIconClass);
+    } else {
+      currentText.classList.add('hidden');
+      icon.classList.remove(subtractIconClass);
+      icon.classList.add(plusIconClass);
+    }
+  });
+});
+window.addEventListener('DOMContentLoaded', () => {
+  extraTexts.forEach((text, index) => {
+    text.classList.add('hidden');
+    const icon = toggleButtons[index].querySelector('i');
+    icon.classList.remove(subtractIconClass);
+    icon.classList.add(plusIconClass);
   });
 
-  window.addEventListener('DOMContentLoaded', () => {
-    extraTexts[0].classList.remove('hidden');
-    const icon = toggleButtons[0].querySelector('i');
-    icon.classList.remove(plusIconClass);
-    icon.classList.add(subtractIconClass);
-  });
+  extraTexts[1].classList.remove('hidden');
+  const icon = toggleButtons[1].querySelector('i');
+  icon.classList.remove(plusIconClass);
+  icon.classList.add(subtractIconClass);
+});
 
 
 
